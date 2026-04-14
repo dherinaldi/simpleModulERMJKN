@@ -56,7 +56,7 @@ function buildMedicationResource($listObat,$pasien,$dokter,$diagnosa)
 
                     "reasonCode" => [[
                         "coding" => [
-                            "system" => "https://fhir.rsuini.co.id/kfa/reason",
+                            "system" => "https://fhir.rsuini.co.id/kfa/reason",                            
                             "code" => $diagnosa[0]['code'],
                             "display" => $diagnosa[0]['display']
                         ],

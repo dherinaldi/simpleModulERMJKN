@@ -1,0 +1,29 @@
+<?php
+
+function dataRahasia($env = 'DEV')
+{/* 
+    $config['bpjs_erm_cons_id']    = '12809';
+    $config['bpjs_erm_secret_key'] = '9wK69AEE8F';
+    $config['bpjs_kode_ppk']       = '0187R006'; */
+
+    $config                        = [
+        'DEV'  => [
+            "consid"    => "12809",
+            "secretkey" => "9wK69AEE8F",
+            "koders"    => "0187R006",
+            "userkey"   => "a669571369be76ef8d7b17e95a1d1611",
+            "base_url"  => "https://apijkn-dev.bpjs-kesehatan.go.id/erekammedis_dev",
+        ],
+
+        'PROD' => [
+            "consid"    => "ISI_CONSID_PROD",
+            "secretkey" => "ISI_SECRET_PROD",
+            "koders"    => "ISI_KODERS_PROD",
+            "userkey"   => "ISI_USERKEY_PROD",
+            "base_url"  => "https://api-production.com",
+        ],
+
+    ];
+
+    return $config[$env] ?? null;
+}

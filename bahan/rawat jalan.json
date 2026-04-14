@@ -1,0 +1,1395 @@
+{
+    "bulan": 2,
+    "tahun": 2026,
+    "jenisPelayanan": 2,
+    "nomorSEP": "1301R0050226V000002",
+    "dataRekamMedis": {
+        "resourceType": "Bundle",
+        "id": "1301R005-2-1-5115991e-a5f1-4320-9194-3168bd6948ba",
+        "meta": {
+            "lastUpdated": "2026-02-27T10:54:53.810+07:00"
+        },
+        "type": "document",
+        "identifier": {
+            "system": "SEP",
+            "value": "1301R0050226V000002"
+        },
+        "entry": [
+            {
+                "resource": [
+                    {
+                        "resourceType": "Procedure",
+                        "id": "1301R005-2-1-b482c3c5-127a-46ed-b9d9-d214f7af6355",
+                        "text": {
+                            "status": "generated",
+                            "div": "Generated Narrative with Details"
+                        },
+                        "status": "completed",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                                    "code": "",
+                                    "display": "Administrasi UGD"
+                                }
+                            ]
+                        },
+                        "performedPeriod": {
+                            "start": "2026-02-23T10:36:45+07:00",
+                            "end": "2026-02-23T10:36:45+07:00"
+                        },
+                        "bodySite": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "38866009",
+                                        "display": "Body part structure (body structure)"
+                                    }
+                                ]
+                            }
+                        ],
+                        "note": [
+                            {
+                                "text": ""
+                            }
+                        ],
+                        "subject": {
+                            "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                            "display": "TESTING 4"
+                        },
+                        "context": {
+                            "reference": "Encounter/1301R005-2-1-34fe19e0-57e3-4387-92bb-8f60a36757e0",
+                            "display": ""
+                        },
+                        "reasonCode": [
+                            {
+                                "text": "Encounter/1301R005-2-1-34fe19e0-57e3-4387-92bb-8f60a36757e0"
+                            }
+                        ],
+                        "performer": [
+                            {
+                                "role": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "158965000",
+                                            "display": "Medical practitioner (occupation)"
+                                        }
+                                    ]
+                                },
+                                "actor": {
+                                    "reference": "Practitioner/1301R005-2-1-62c83b2d-cc5d-4b0c-ac28-ba2883eac3af",
+                                    "display": "dr. Rochib Umar Zani"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "Procedure",
+                        "id": "1301R005-2-1-9dc64310-c220-4652-b9af-5fa47229e79f",
+                        "text": {
+                            "status": "generated",
+                            "div": "Generated Narrative with Details"
+                        },
+                        "status": "completed",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                                    "code": "96.59",
+                                    "display": "Angkat Jahitan"
+                                }
+                            ]
+                        },
+                        "performedPeriod": {
+                            "start": "2026-02-23T10:37:27+07:00",
+                            "end": "2026-02-23T10:37:27+07:00"
+                        },
+                        "bodySite": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "38866009",
+                                        "display": "Body part structure (body structure)"
+                                    }
+                                ]
+                            }
+                        ],
+                        "note": [
+                            {
+                                "text": ""
+                            }
+                        ],
+                        "subject": {
+                            "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                            "display": "TESTING 4"
+                        },
+                        "context": {
+                            "reference": "Encounter/1301R005-2-1-34fe19e0-57e3-4387-92bb-8f60a36757e0",
+                            "display": ""
+                        },
+                        "reasonCode": [
+                            {
+                                "text": "Encounter/1301R005-2-1-34fe19e0-57e3-4387-92bb-8f60a36757e0"
+                            }
+                        ],
+                        "performer": [
+                            {
+                                "role": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "158965000",
+                                            "display": "Medical practitioner (occupation)"
+                                        }
+                                    ]
+                                },
+                                "actor": {
+                                    "reference": "Practitioner/1301R005-2-1-62c83b2d-cc5d-4b0c-ac28-ba2883eac3af",
+                                    "display": "dr. Rochib Umar Zani"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": [
+                    {
+                        "resourceType": "DiagnosticReport",
+                        "id": "1301R005-2-1-3208c815-c476-4e83-b3fc-62dbb62b298f",
+                        "category": {
+                            "coding": {
+                                "system": "http://hl7.org/fhir/v2/0074",
+                                "code": "LAB",
+                                "display": "Laboratory"
+                            }
+                        },
+                        "status": "final",
+                        "result": [
+                            {
+                                "resourceType": "Observation",
+                                "id": "1301R005-2-1-cb142ce4-dcbb-4ab0-bd63-71c597b4f777",
+                                "status": "final",
+                                "text": {
+                                    "status": "generated",
+                                    "div": "<div>OB Paratyphi B: Negatif</div>"
+                                },
+                                "issued": "2026-02-25T08:54:40+07:00",
+                                "effectiveDateTime": "2026-02-25T08:54:40+07:00",
+                                "code": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": "OB Paratyphi B"
+                                    },
+                                    "text": "OB Paratyphi B"
+                                },
+                                "image": [
+                                    {
+                                        "comment": "",
+                                        "link": {
+                                            "reference": "",
+                                            "display": ""
+                                        }
+                                    }
+                                ],
+                                "conclusion": "",
+                                "valueQuantity": {
+                                    "value": "Negatif",
+                                    "unit": "",
+                                    "system": "",
+                                    "code": ""
+                                },
+                                "interpretation": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": ""
+                                    }
+                                },
+                                "referenceRange": {
+                                    "low": {
+                                        "value": 0
+                                    },
+                                    "high": {
+                                        "value": 1
+                                    }
+                                }
+                            },
+                            {
+                                "resourceType": "Observation",
+                                "id": "1301R005-2-1-cb142ce4-dcbb-4ab0-bd63-71c597b4f777",
+                                "status": "final",
+                                "text": {
+                                    "status": "generated",
+                                    "div": "<div>OA Paratyphi A: Negatif</div>"
+                                },
+                                "issued": "2026-02-25T08:54:40+07:00",
+                                "effectiveDateTime": "2026-02-25T08:54:40+07:00",
+                                "code": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": "OA Paratyphi A"
+                                    },
+                                    "text": "OA Paratyphi A"
+                                },
+                                "image": [
+                                    {
+                                        "comment": "",
+                                        "link": {
+                                            "reference": "",
+                                            "display": ""
+                                        }
+                                    }
+                                ],
+                                "conclusion": "",
+                                "valueQuantity": {
+                                    "value": "Negatif",
+                                    "unit": "",
+                                    "system": "",
+                                    "code": ""
+                                },
+                                "interpretation": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": ""
+                                    }
+                                },
+                                "referenceRange": {
+                                    "low": {
+                                        "value": 0
+                                    },
+                                    "high": {
+                                        "value": 1
+                                    }
+                                }
+                            },
+                            {
+                                "resourceType": "Observation",
+                                "id": "1301R005-2-1-cb142ce4-dcbb-4ab0-bd63-71c597b4f777",
+                                "status": "final",
+                                "text": {
+                                    "status": "generated",
+                                    "div": "<div>H Salmonela typhosa: Negatif</div>"
+                                },
+                                "issued": "2026-02-25T08:54:40+07:00",
+                                "effectiveDateTime": "2026-02-25T08:54:40+07:00",
+                                "code": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": "H Salmonela typhosa"
+                                    },
+                                    "text": "H Salmonela typhosa"
+                                },
+                                "image": [
+                                    {
+                                        "comment": "",
+                                        "link": {
+                                            "reference": "",
+                                            "display": ""
+                                        }
+                                    }
+                                ],
+                                "conclusion": "",
+                                "valueQuantity": {
+                                    "value": "Negatif",
+                                    "unit": "",
+                                    "system": "",
+                                    "code": ""
+                                },
+                                "interpretation": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": ""
+                                    }
+                                },
+                                "referenceRange": {
+                                    "low": {
+                                        "value": 0
+                                    },
+                                    "high": {
+                                        "value": 1
+                                    }
+                                }
+                            },
+                            {
+                                "resourceType": "Observation",
+                                "id": "1301R005-2-1-cb142ce4-dcbb-4ab0-bd63-71c597b4f777",
+                                "status": "final",
+                                "text": {
+                                    "status": "generated",
+                                    "div": "<div>O Salmonela typhosa: 1/200</div>"
+                                },
+                                "issued": "2026-02-25T08:54:40+07:00",
+                                "effectiveDateTime": "2026-02-25T08:54:40+07:00",
+                                "code": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": "O Salmonela typhosa"
+                                    },
+                                    "text": "O Salmonela typhosa"
+                                },
+                                "image": [
+                                    {
+                                        "comment": "",
+                                        "link": {
+                                            "reference": "",
+                                            "display": ""
+                                        }
+                                    }
+                                ],
+                                "conclusion": "",
+                                "valueQuantity": {
+                                    "value": "1/200",
+                                    "unit": "",
+                                    "system": "",
+                                    "code": ""
+                                },
+                                "interpretation": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": ""
+                                    }
+                                },
+                                "referenceRange": {
+                                    "low": {
+                                        "value": 0
+                                    },
+                                    "high": {
+                                        "value": 1
+                                    }
+                                }
+                            }
+                        ],
+                        "subject": {
+                            "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                            "display": "TESTING 4",
+                            "noSep": "1301R0050226V000002"
+                        },
+                        "performer": [
+                            {
+                                "reference": "Practitioner/1301R005-2-1-62c83b2d-cc5d-4b0c-ac28-ba2883eac3af",
+                                "display": "dr. Rochib Umar Zani"
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "DiagnosticReport",
+                        "id": "1301R005-2-1-17b563a8-efb9-47d4-82a6-62a1d1e72703",
+                        "category": {
+                            "coding": {
+                                "system": "http://hl7.org/fhir/v2/0074",
+                                "code": "LAB",
+                                "display": "Laboratory"
+                            }
+                        },
+                        "status": "final",
+                        "result": [
+                            {
+                                "resourceType": "Observation",
+                                "id": "1301R005-2-1-52f1bf12-1149-40a7-8361-7f0b46c97ffa",
+                                "status": "final",
+                                "text": {
+                                    "status": "generated",
+                                    "div": "<div>SGOT (AST): 25</div>"
+                                },
+                                "issued": "2026-02-23T12:49:20+07:00",
+                                "effectiveDateTime": "2026-02-23T12:49:20+07:00",
+                                "code": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": "SGOT (AST)"
+                                    },
+                                    "text": "SGOT (AST)"
+                                },
+                                "image": [
+                                    {
+                                        "comment": "",
+                                        "link": {
+                                            "reference": "",
+                                            "display": ""
+                                        }
+                                    }
+                                ],
+                                "conclusion": "",
+                                "valueQuantity": {
+                                    "value": "25",
+                                    "unit": "",
+                                    "system": "",
+                                    "code": ""
+                                },
+                                "interpretation": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": ""
+                                    }
+                                },
+                                "referenceRange": {
+                                    "low": {
+                                        "value": 0
+                                    },
+                                    "high": {
+                                        "value": 1
+                                    }
+                                }
+                            }
+                        ],
+                        "subject": {
+                            "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                            "display": "TESTING 4",
+                            "noSep": "1301R0050226V000002"
+                        },
+                        "performer": [
+                            {
+                                "reference": "Practitioner/1301R005-2-1-62c83b2d-cc5d-4b0c-ac28-ba2883eac3af",
+                                "display": "dr. Rochib Umar Zani"
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "DiagnosticReport",
+                        "id": "1301R005-2-1-1c737175-3e15-447c-8571-7b6cd7231c0a",
+                        "category": {
+                            "coding": {
+                                "system": "http://hl7.org/fhir/v2/0074",
+                                "code": "RAD",
+                                "display": "Radiology"
+                            }
+                        },
+                        "status": "final",
+                        "result": [
+                            {
+                                "resourceType": "Observation",
+                                "id": "1301R005-2-1-e32d6edb-c56e-407f-b45b-b538a55cfa93",
+                                "status": "final",
+                                "text": {
+                                    "status": "generated",
+                                    "div": "<div><h1>undefined</h1><ul>\n<li><span lang=\"EN-US\" style=\"mso-bidi-font-size: 12.0pt; line-height: 115%; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold;\">Cor<span style=\"mso-spacerun: yes;\">&nbsp;&nbsp;&nbsp;&nbsp; </span>:<span style=\"mso-spacerun: yes;\">&nbsp; </span>Besar dan bentuk normal </span></li>\n<li><span lang=\"EN-US\" style=\"mso-bidi-font-size: 12.0pt; line-height: 115%; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold;\">Pulmo :<span style=\"mso-spacerun: yes;\">&nbsp; </span>Tak tampak infiltrate</span></li>\n<li><span lang=\"EN-US\" style=\"mso-bidi-font-size: 12.0pt; line-height: 115%; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold;\">Kedua sinus phrenicocostalis tajam</span></li>\n<li><span lang=\"EN-US\" style=\"mso-bidi-font-size: 12.0pt; line-height: 115%; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold;\">Tulang-tulang dan soft tissue normal </span></li>\n</ul></div>"
+                                },
+                                "issued": "2026-02-23T12:49:37+07:00",
+                                "effectiveDateTime": "2026-02-23T12:49:37+07:00",
+                                "code": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": "THORAX AP/PA DEWASA"
+                                    },
+                                    "text": "THORAX AP/PA DEWASA"
+                                },
+                                "image": [
+                                    {
+                                        "comment": "",
+                                        "link": {
+                                            "reference": "",
+                                            "display": ""
+                                        }
+                                    }
+                                ],
+                                "conclusion": "<p><ul>\n<li><span lang=\"EN-US\" style=\"mso-bidi-font-size: 12.0pt; line-height: 115%; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold;\">Cor<span style=\"mso-spacerun: yes;\">&nbsp;&nbsp;&nbsp;&nbsp; </span>:<span style=\"mso-spacerun: yes;\">&nbsp; </span>Besar dan bentuk normal </span></li>\n<li><span lang=\"EN-US\" style=\"mso-bidi-font-size: 12.0pt; line-height: 115%; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold;\">Pulmo :<span style=\"mso-spacerun: yes;\">&nbsp; </span>Tak tampak infiltrate</span></li>\n<li><span lang=\"EN-US\" style=\"mso-bidi-font-size: 12.0pt; line-height: 115%; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold;\">Kedua sinus phrenicocostalis tajam</span></li>\n<li><span lang=\"EN-US\" style=\"mso-bidi-font-size: 12.0pt; line-height: 115%; mso-bidi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold;\">Tulang-tulang dan soft tissue normal </span></li>\n</ul></p>",
+                                "valueQuantity": {
+                                    "value": "",
+                                    "unit": "",
+                                    "system": "",
+                                    "code": ""
+                                },
+                                "interpretation": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": ""
+                                    }
+                                },
+                                "referenceRange": {
+                                    "low": {
+                                        "value": 0
+                                    },
+                                    "high": {
+                                        "value": 1
+                                    }
+                                }
+                            }
+                        ],
+                        "subject": {
+                            "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                            "display": "TESTING 4",
+                            "noSep": "1301R0050226V000002"
+                        },
+                        "performer": [
+                            {
+                                "reference": "Practitioner/1301R005-2-1-62c83b2d-cc5d-4b0c-ac28-ba2883eac3af",
+                                "display": "dr. Rochib Umar Zani"
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "DiagnosticReport",
+                        "id": "1301R005-2-1-ec93c457-04b2-4711-8793-72f41ba2b6cc",
+                        "category": {
+                            "coding": {
+                                "system": "http://hl7.org/fhir/v2/0074",
+                                "code": "RAD",
+                                "display": "Radiology"
+                            }
+                        },
+                        "status": "final",
+                        "result": [
+                            {
+                                "resourceType": "Observation",
+                                "id": "1301R005-2-1-072cb74d-b8a3-48f5-8fd7-bde646ee3706",
+                                "status": "final",
+                                "text": {
+                                    "status": "generated",
+                                    "div": "<div><h1>undefined</h1><p>Buli buli :</p>\n<ul>\n<li>Teterisi cukup</li>\n<li>Dinding rata</li>\n<li>Tak tampak batu / massa</li>\n</ul>\n<p>Uterus :</p>\n<ul>\n<li>Besar dan bentuk normal</li>\n<li>Tak tampak massa/kalsifikasi</li>\n<li>Tak tampak intensitas echo cairan di cavum abdomen</li>\n</ul>\n<p>Adnexa kanan : Tak tampak lesi kistik maupun solid <br />Adnexa kiri : Tak tampak lesi kistik maupun solid&nbsp; <br /><br /><br /></p></div>"
+                                },
+                                "issued": "2026-02-25T09:14:18+07:00",
+                                "effectiveDateTime": "2026-02-25T09:14:18+07:00",
+                                "code": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": "USG GYNAECOLOGI"
+                                    },
+                                    "text": "USG GYNAECOLOGI"
+                                },
+                                "image": [
+                                    {
+                                        "comment": "",
+                                        "link": {
+                                            "reference": "",
+                                            "display": ""
+                                        }
+                                    }
+                                ],
+                                "conclusion": "<p><p>Buli buli :</p>\n<ul>\n<li>Teterisi cukup</li>\n<li>Dinding rata</li>\n<li>Tak tampak batu / massa</li>\n</ul>\n<p>Uterus :</p>\n<ul>\n<li>Besar dan bentuk normal</li>\n<li>Tak tampak massa/kalsifikasi</li>\n<li>Tak tampak intensitas echo cairan di cavum abdomen</li>\n</ul>\n<p>Adnexa kanan : Tak tampak lesi kistik maupun solid <br />Adnexa kiri : Tak tampak lesi kistik maupun solid&nbsp; <br /><br /><br /></p></p>",
+                                "valueQuantity": {
+                                    "value": "",
+                                    "unit": "",
+                                    "system": "",
+                                    "code": ""
+                                },
+                                "interpretation": {
+                                    "coding": {
+                                        "system": "",
+                                        "code": "",
+                                        "display": ""
+                                    }
+                                },
+                                "referenceRange": {
+                                    "low": {
+                                        "value": 0
+                                    },
+                                    "high": {
+                                        "value": 1
+                                    }
+                                }
+                            }
+                        ],
+                        "subject": {
+                            "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                            "display": "TESTING 4",
+                            "noSep": "1301R0050226V000002"
+                        },
+                        "performer": [
+                            {
+                                "reference": "Practitioner/1301R005-2-1-62c83b2d-cc5d-4b0c-ac28-ba2883eac3af",
+                                "display": "dr. Rochib Umar Zani"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": [
+                    {
+                        "resourceType": "MedicationRequest",
+                        "id": "1301R005-2-1-f4fd01e6-252b-44a5-996f-05150d02382a",
+                        "identifier": {
+                            "system": "id_resep_pulang",
+                            "value": "1301R005-2-1-7d70004f-7af3-464d-a7e5-4397e864e619"
+                        },
+                        "dosageInstruction": [
+                            {
+                                "doseQuantity": {
+                                    "code": "AMP",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "AMP",
+                                    "value": 30
+                                },
+                                "route": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "",
+                                            "display": ""
+                                        }
+                                    ]
+                                },
+                                "timing": {
+                                    "repeat": {
+                                        "frequency": "",
+                                        "period": 0,
+                                        "periodUnit": ""
+                                    }
+                                },
+                                "additionalInstruction": [
+                                    {
+                                        "text": "tab diminum Malam , sesudah makan"
+                                    }
+                                ]
+                            }
+                        ],
+                        "reasonCode": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "",
+                                        "code": "",
+                                        "display": ""
+                                    }
+                                ],
+                                "text": ""
+                            }
+                        ],
+                        "requester": {
+                            "agent": {
+                                "reference": "Practitioner/1301R005-2-1-62c83b2d-cc5d-4b0c-ac28-ba2883eac3af",
+                                "display": "dr. Rochib Umar Zani"
+                            },
+                            "onBehalfOf": {
+                                "reference": "Practitioner/1301R005-2-1-62c83b2d-cc5d-4b0c-ac28-ba2883eac3af",
+                                "display": "dr. Rochib Umar Zani"
+                            }
+                        },
+                        "medicationCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "",
+                                    "code": "",
+                                    "display": ""
+                                }
+                            ],
+                            "text": "JKN HARNAL OCAS TAB/ 30s"
+                        },
+                        "status": "active",
+                        "intent": "order",
+                        "meta": {
+                            "lastUpdated": "2026-02-27T10:54:53.810+07:00"
+                        },
+                        "subject": {
+                            "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                            "display": "TESTING 4"
+                        }
+                    },
+                    {
+                        "resourceType": "MedicationRequest",
+                        "id": "1301R005-2-1-e08dcb2b-6e52-4662-a024-d70b11837a33",
+                        "identifier": {
+                            "system": "id_resep_pulang",
+                            "value": "1301R005-2-1-f2d6e6e0-2ef3-472b-a7d9-affed5f1badc"
+                        },
+                        "dosageInstruction": [
+                            {
+                                "doseQuantity": {
+                                    "code": "AMP",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "AMP",
+                                    "value": 30
+                                },
+                                "route": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "",
+                                            "display": ""
+                                        }
+                                    ]
+                                },
+                                "timing": {
+                                    "repeat": {
+                                        "frequency": "",
+                                        "period": 0,
+                                        "periodUnit": ""
+                                    }
+                                },
+                                "additionalInstruction": [
+                                    {
+                                        "text": "Pagi"
+                                    }
+                                ]
+                            }
+                        ],
+                        "reasonCode": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "",
+                                        "code": "",
+                                        "display": ""
+                                    }
+                                ],
+                                "text": ""
+                            }
+                        ],
+                        "requester": {
+                            "agent": {
+                                "reference": "Practitioner/1301R005-2-1-62c83b2d-cc5d-4b0c-ac28-ba2883eac3af",
+                                "display": "dr. Rochib Umar Zani"
+                            },
+                            "onBehalfOf": {
+                                "reference": "Practitioner/1301R005-2-1-62c83b2d-cc5d-4b0c-ac28-ba2883eac3af",
+                                "display": "dr. Rochib Umar Zani"
+                            }
+                        },
+                        "medicationCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "",
+                                    "code": "",
+                                    "display": ""
+                                }
+                            ],
+                            "text": "DUTASTERID TAB/30."
+                        },
+                        "status": "active",
+                        "intent": "order",
+                        "meta": {
+                            "lastUpdated": "2026-02-27T10:54:53.810+07:00"
+                        },
+                        "subject": {
+                            "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                            "display": "TESTING 4"
+                        }
+                    }
+                ]
+            },
+            {
+                "resource": {
+                    "resourceType": "Composition",
+                    "id": "1301R005-2-1-27399519-4c97-4e6a-bd50-4cca020b287d",
+                    "status": "final",
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "81218-0",
+                                "display": "Discharge Summary"
+                            }
+                        ],
+                        "text": "Discharge Summary"
+                    },
+                    "date": "2026-02-23T10:37:57+07:00",
+                    "title": "Discharge Summary",
+                    "confidentiality": "N",
+                    "section": {
+                        "1": {
+                            "title": "Chief complaint Narrative - Reported",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "10154-3",
+                                        "display": "Chief complaint Narrative - Reported"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "status": "additional",
+                                "div": "<div>sds</div>"
+                            },
+                            "mode": "working",
+                            "entry": [
+                                {
+                                    "reference": "Encounter/1301R005-2-1-34fe19e0-57e3-4387-92bb-8f60a36757e0"
+                                }
+                            ]
+                        },
+                        "2": {
+                            "title": "History of present illness Narrative",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "10164-2",
+                                        "display": "History of present illness Narrative"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "status": "additional",
+                                "div": "<div>ds</div>"
+                            },
+                            "mode": "working",
+                            "entry": [
+                                {
+                                    "reference": "Encounter/1301R005-2-1-34fe19e0-57e3-4387-92bb-8f60a36757e0"
+                                }
+                            ]
+                        },
+                        "3": {
+                            "title": "Physical findings Narrative",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "29545-1",
+                                        "display": "Physical findings Narrative"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "status": "additional",
+                                "div": "<div><p><strong>Pemeriksaan Fisik Umum:</strong><br>Kepala: Normal<br>Mata: Normal<br>THT: Normal<br>Leher: Normal<br>Paru: Normal<br>Jantung: Normal<br>Abdomen: Normal<br>Ekstermitas: Normal<br>Uro: Normal</p></div>"
+                            },
+                            "mode": "working",
+                            "entry": [
+                                {
+                                    "reference": "Encounter/1301R005-2-1-34fe19e0-57e3-4387-92bb-8f60a36757e0"
+                                }
+                            ]
+                        },
+                        "4": {
+                            "title": "Plan of treatment (narrative)",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "18776-5",
+                                        "display": "Plan of treatment (narrative)"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "status": "additional",
+                                "div": "<div>sad</div>"
+                            },
+                            "mode": "working",
+                            "entry": [
+                                {
+                                    "reference": "Encounter/1301R005-2-1-34fe19e0-57e3-4387-92bb-8f60a36757e0"
+                                }
+                            ]
+                        },
+                        "5": {
+                            "title": "Vital signs",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "8716-3",
+                                        "display": "Vital signs"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "status": "additional",
+                                "div": "<div>TD: 4 mmHg; Nadi: 5 x/mnt; Nafas: 7 x/mnt; Suhu: 6 °C</div>"
+                            },
+                            "mode": "working",
+                            "entry": [
+                                {
+                                    "reference": "Encounter/1301R005-2-1-34fe19e0-57e3-4387-92bb-8f60a36757e0"
+                                }
+                            ]
+                        },
+                        "6": {
+                            "title": "Payment sources Document",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "48768-6",
+                                        "display": "Payment sources Document"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "status": "additional",
+                                "div": "<div>BPJS KESEHATAN </div>"
+                            },
+                            "mode": "working",
+                            "entry": [
+                                {
+                                    "reference": "Encounter/1301R005-2-1-34fe19e0-57e3-4387-92bb-8f60a36757e0"
+                                }
+                            ]
+                        }
+                    },
+                    "subject": {
+                        "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                        "display": "TESTING 4"
+                    },
+                    "encounter": {
+                        "reference": "Encounter/1301R005-2-1-34fe19e0-57e3-4387-92bb-8f60a36757e0",
+                        "display": ""
+                    },
+                    "author": [
+                        {
+                            "reference": "Practitioner/1301R005-2-1-62c83b2d-cc5d-4b0c-ac28-ba2883eac3af",
+                            "display": "dr. Rochib Umar Zani"
+                        }
+                    ]
+                }
+            },
+            {
+                "resource": {
+                    "resourceType": "Patient",
+                    "id": "1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                    "active": true,
+                    "identifier": [
+                        {
+                            "use": "usual",
+                            "type": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v2/0203",
+                                        "code": "MR"
+                                    }
+                                ],
+                                "text": "Nomor RM"
+                            },
+                            "value": "484928",
+                            "assigner": {
+                                "display": "RSI Surabaya Jemursari"
+                            }
+                        },
+                        {
+                            "use": "official",
+                            "type": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v2/0203",
+                                        "code": "MB"
+                                    }
+                                ],
+                                "text": "Nomor Peserta BPJS Kesehatan"
+                            },
+                            "value": "0002081647866",
+                            "assigner": {
+                                "display": "BPJS KESEHATAN"
+                            }
+                        },
+                        {
+                            "use": "official",
+                            "type": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v2/0203",
+                                        "code": "NNIDN"
+                                    }
+                                ],
+                                "text": "NIK"
+                            },
+                            "value": "3671043112100019",
+                            "assigner": {
+                                "display": "KEMDAGRI"
+                            }
+                        }
+                    ],
+                    "name": [
+                        {
+                            "use": "official",
+                            "text": "TESTING 4"
+                        }
+                    ],
+                    "telecom": [
+                        {
+                            "system": "phone",
+                            "value": "undefined",
+                            "use": "mobile"
+                        }
+                    ],
+                    "gender": "male",
+                    "birthDate": "2005-02-01",
+                    "deceasedBoolean": false,
+                    "maritalStatus": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/v3/MaritalStatus",
+                                "code": "Married"
+                            }
+                        ]
+                    },
+                    "address": [
+                        {
+                            "use": "home",
+                            "type": "physical",
+                            "text": "MASTRIP",
+                            "line": [
+                                "MASTRIP"
+                            ],
+                            "city": "KOTA SURABAYA",
+                            "district": "-",
+                            "state": "-",
+                            "postalCode": "",
+                            "country": "IDN"
+                        }
+                    ],
+                    "managingOrganization": {
+                        "reference": "Organization/1301R005-2-1-a0860979-d5eb-496b-9242-308a356846f7",
+                        "display": "IGD"
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "resourceType": "Encounter",
+                    "id": "1301R005-2-1-34fe19e0-57e3-4387-92bb-8f60a36757e0",
+                    "identifier": [
+                        {
+                            "system": "http://api.bpjs-kesehatan.go.id:8080/Vclaim-rest/SEP/",
+                            "value": "1301R0050226V000002"
+                        }
+                    ],
+                    "subject": {
+                        "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                        "display": "TESTING 4",
+                        "noSep": "1301R0050226V000002"
+                    },
+                    "class": {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                        "code": "AMB",
+                        "display": "ambulatory"
+                    },
+                    "incomingReferral": [
+                        {
+                            "identifier": [
+                                {
+                                    "system": "nomor_rujukan_bpjs",
+                                    "value": "1301R0050226V000002"
+                                }
+                            ]
+                        }
+                    ],
+                    "reason": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-10",
+                                    "code": "",
+                                    "display": ""
+                                }
+                            ],
+                            "text": "sds"
+                        }
+                    ],
+                    "diagnosis": [
+                        {
+                            "condition": {
+                                "reference": "Condition/1301R005-2-1-aebd27c3-ecd9-4330-8fdc-c4b68d4f856b",
+                                "role": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/diagnosis-role",
+                                            "code": "DD",
+                                            "display": "Discharge Diagnosis"
+                                        }
+                                    ]
+                                },
+                                "rank": 1
+                            }
+                        },
+                        {
+                            "condition": {
+                                "reference": "Condition/1301R005-2-1-62ecdbac-53e4-474b-91bb-cc5a0b9f795c",
+                                "role": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/diagnosis-role",
+                                            "code": "DD",
+                                            "display": "Discharge Diagnosis"
+                                        }
+                                    ]
+                                },
+                                "rank": 2
+                            }
+                        },
+                        {
+                            "condition": {
+                                "reference": "Condition/1301R005-2-1-2499f265-866f-4cf0-be9c-b0c772d77ed7",
+                                "role": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/diagnosis-role",
+                                            "code": "DD",
+                                            "display": "Discharge Diagnosis"
+                                        }
+                                    ]
+                                },
+                                "rank": 2
+                            }
+                        }
+                    ],
+                    "hospitalization": {
+                        "dischargeDisposition": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+                                        "code": "home",
+                                        "display": "Home"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "period": {
+                        "start": "2026-02-23T10:38:47+07:00",
+                        "end": "2026-02-23T10:38:47+07:00"
+                    },
+                    "status": "finished",
+                    "text": {
+                        "div": "Admitted to IGD RSI Surabaya Jemursari tanggal Mon Feb 23 2026 00:00:00 GMT+0700 (Western Indonesia Time)",
+                        "status": "generated"
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "resourceType": "Practitioner",
+                    "id": "1301R005-2-1-62c83b2d-cc5d-4b0c-ac28-ba2883eac3af",
+                    "identifier": [
+                        {
+                            "use": "official",
+                            "system": "urn:oid:nomor_sip",
+                            "value": "503.446/1784/I/IP.DU/436.7.2/2019"
+                        },
+                        {
+                            "use": "official",
+                            "type": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v2/0203",
+                                        "code": "NNIDN"
+                                    }
+                                ],
+                                "text": "NIK"
+                            },
+                            "value": "3578101203830007",
+                            "assigner": {
+                                "display": "KEMDAGRI"
+                            }
+                        }
+                    ],
+                    "name": [
+                        {
+                            "use": "official",
+                            "text": "dr. Rochib Umar Zani"
+                        }
+                    ],
+                    "telecom": [
+                        {
+                            "system": "phone",
+                            "value": "021000000",
+                            "use": "work"
+                        }
+                    ],
+                    "gender": "male",
+                    "birthDate": null,
+                    "address": [
+                        {
+                            "use": "home",
+                            "type": "physical",
+                            "text": "-",
+                            "line": [
+                                "-"
+                            ],
+                            "city": "",
+                            "district": "",
+                            "state": "",
+                            "postalCode": "",
+                            "country": "IDN"
+                        }
+                    ]
+                }
+            },
+            {
+                "resource": {
+                    "resourceType": "Organization",
+                    "id": "1301R005-2-1-a0860979-d5eb-496b-9242-308a356846f7",
+                    "identifier": [
+                        {
+                            "use": "official",
+                            "system": "urn:oid:bpjs",
+                            "value": "1301R005"
+                        },
+                        {
+                            "use": "official",
+                            "system": "urn:oid:kemkes",
+                            "value": "undefined"
+                        }
+                    ],
+                    "type": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/organization-type",
+                                    "code": "prov",
+                                    "display": "Healthcare Provider"
+                                }
+                            ],
+                            "text": "RSI Surabaya Jemursari"
+                        }
+                    ],
+                    "name": "IGD",
+                    "alias": [
+                        "IGD"
+                    ],
+                    "telecom": [
+                        {
+                            "system": "phone",
+                            "value": "(031) 8471877",
+                            "use": "work"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "use": "work",
+                            "type": "physical",
+                            "text": "Jl. Jemursari 51 - 57 Surabaya ",
+                            "line": [
+                                "Jl. Jemursari 51 - 57 Surabaya "
+                            ],
+                            "city": "Surabaya",
+                            "district": "Wonocolo",
+                            "state": "Jawa Timur",
+                            "postalCode": "69471",
+                            "country": "IDN"
+                        }
+                    ],
+                    "contact": [
+                        {
+                            "purpose": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                                        "code": "PATINF",
+                                        "display": "Patient Information"
+                                    }
+                                ]
+                            },
+                            "telecom": [
+                                {
+                                    "system": "phone",
+                                    "value": "(031) 8471877"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "resource": {
+                    "resourceType": "Condition",
+                    "id": "1301R005-2-1-aebd27c3-ecd9-4330-8fdc-c4b68d4f856b",
+                    "clinicalStatus": "active",
+                    "verificationStatus": "confirmed",
+                    "category": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/condition-category",
+                                    "code": "encounter-diagnosis",
+                                    "display": "Encounter Diagnosis"
+                                }
+                            ]
+                        }
+                    ],
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/sid/icd-10",
+                                "code": "D50.1",
+                                "display": "Sideropenic dysphagia "
+                            }
+                        ],
+                        "text": "Sideropenic dysphagia "
+                    },
+                    "onsetDateTime": "2026-02-23T10:37:02+07:00",
+                    "subject": {
+                        "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                        "display": "TESTING 4"
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "resourceType": "Condition",
+                    "id": "1301R005-2-1-62ecdbac-53e4-474b-91bb-cc5a0b9f795c",
+                    "clinicalStatus": "active",
+                    "verificationStatus": "confirmed",
+                    "category": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/condition-category",
+                                    "code": "encounter-diagnosis",
+                                    "display": "Encounter Diagnosis"
+                                }
+                            ]
+                        }
+                    ],
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/sid/icd-10",
+                                "code": "D03.6",
+                                "display": "Melanoma in situ of upper limb, including shoulder  "
+                            }
+                        ],
+                        "text": "Melanoma in situ of upper limb, including shoulder  "
+                    },
+                    "onsetDateTime": "2026-02-25T08:53:40+07:00",
+                    "subject": {
+                        "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                        "display": "TESTING 4"
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "resourceType": "Condition",
+                    "id": "1301R005-2-1-2499f265-866f-4cf0-be9c-b0c772d77ed7",
+                    "clinicalStatus": "active",
+                    "verificationStatus": "confirmed",
+                    "category": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/condition-category",
+                                    "code": "encounter-diagnosis",
+                                    "display": "Encounter Diagnosis"
+                                }
+                            ]
+                        }
+                    ],
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/sid/icd-10",
+                                "code": "R06.5",
+                                "display": "Mouth breathing "
+                            }
+                        ],
+                        "text": "Mouth breathing "
+                    },
+                    "onsetDateTime": "2026-02-25T08:53:54+07:00",
+                    "subject": {
+                        "reference": "Patient/1301R005-2-1-738c10d2-edae-4ac3-96f9-f2f675db8e2c",
+                        "display": "TESTING 4"
+                    }
+                }
+            }
+        ]
+    }
+}

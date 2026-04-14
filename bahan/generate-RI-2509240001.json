@@ -1,0 +1,3591 @@
+{
+    "resourceType": "Bundle",
+    "id": "1413R001-6207033-22-e02b0368-6853-71a3-6bfc-3ce01e982990",
+    "meta": {
+        "lastUpdated": "2025-09-24 12:00:36"
+    },
+    "identifier": {
+        "use": null,
+        "type": {
+            "coding": [],
+            "text": null
+        },
+        "system": "SEP",
+        "value": "1413R0010925V000033",
+        "assigner": {
+            "display": null
+        }
+    },
+    "type": "document",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "1413R001-6207033-22-50b027a1-6ad1-e39d-f37b-470bf2d118f0",
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "type": {
+                            "coding": [],
+                            "text": ""
+                        },
+                        "system": "http:\/\/api.bpjs-kesehatan.go.id:8080\/Vclaim-rest\/SEP\/",
+                        "value": "1413R0010925V000033",
+                        "assigner": {
+                            "display": ""
+                        }
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                    "display": "ZULIYATI",
+                    "noSep": "1413R0010925V000033"
+                },
+                "class": {
+                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v3-ActCode",
+                    "code": "AMB",
+                    "display": "Ambulatory"
+                },
+                "incomingReferral": [
+                    {
+                        "identifier": [
+                            {
+                                "use": "usual",
+                                "type": {
+                                    "coding": [],
+                                    "text": ""
+                                },
+                                "system": "nomor_rujukan_bpjs",
+                                "value": "1413R0010925K000015",
+                                "assigner": {
+                                    "display": "Surat Pengantar Rawat Inap"
+                                }
+                            },
+                            {
+                                "use": "usual",
+                                "type": {
+                                    "coding": [],
+                                    "text": ""
+                                },
+                                "system": "nomor_rujukan_internal_rs",
+                                "value": "1413R0010925V000031",
+                                "assigner": {
+                                    "display": "SEP DARI RAJAL"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "code": "O60.1",
+                                "display": "Preterm labour with preterm delivery",
+                                "system": "http:\/\/hl7.org\/fhir\/sid\/icd-10"
+                            }
+                        ],
+                        "text": "O60.1 Preterm labour with preterm delivery"
+                    }
+                ],
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition\/1413R001-6207033-22-cd0e381d-0d14-c69a-2601-d22a040ddced",
+                            "role": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/hl7.org\/fhir\/diagnosis-role",
+                                        "code": "DD",
+                                        "display": "Discharge Diagnosis"
+                                    }
+                                ],
+                                "text": "persalinan prematur pada usia kehamilan 32 minggu"
+                            },
+                            "rank": 1
+                        }
+                    },
+                    {
+                        "condition": {
+                            "reference": "Condition\/1413R001-6207033-22-14d2b4b2-0128-bdea-6f45-f0ccb6dfe4cf",
+                            "role": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/hl7.org\/fhir\/diagnosis-role",
+                                        "code": "DD",
+                                        "display": "Discharge Diagnosis"
+                                    }
+                                ],
+                                "text": "kondisi gawat janin (fetal distress) adalah alasan darurat dilakukannya operasi sesar"
+                            },
+                            "rank": 2
+                        }
+                    },
+                    {
+                        "condition": {
+                            "reference": "Condition\/1413R001-6207033-22-24feaf59-0ac8-f906-5120-1c668311efa8",
+                            "role": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/hl7.org\/fhir\/diagnosis-role",
+                                        "code": "DD",
+                                        "display": "Discharge Diagnosis"
+                                    }
+                                ],
+                                "text": "Ketuban pecah dini"
+                            },
+                            "rank": 3
+                        }
+                    }
+                ],
+                "hospitalization": {
+                    "dischargeDisposition": [
+                        {
+                            "coding": [
+                                {
+                                    "code": "home",
+                                    "display": "Home",
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/discharge-disposition"
+                                }
+                            ],
+                            "text": null
+                        }
+                    ]
+                },
+                "period": {
+                    "start": "2025-09-23 11:50:23",
+                    "end": "2025-09-24 11:56:40"
+                },
+                "status": "finished",
+                "text": {
+                    "div": "Admitted to Ruang Melati Kelas 2, RSUD Sukamara between 2025-09-23 11:50:23 and 2025-09-24 11:56:40",
+                    "status": "generated"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v2-0203",
+                                    "code": "MR",
+                                    "display": "Medical record number"
+                                }
+                            ],
+                            "text": "Medical record number"
+                        },
+                        "value": "00092002",
+                        "assigner": {
+                            "display": "RSUD Sukamara"
+                        }
+                    },
+                    {
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v2-0203",
+                                    "code": "MB",
+                                    "display": "Member Number"
+                                }
+                            ],
+                            "text": "No. Peserta BPJS"
+                        },
+                        "value": "0002061139961",
+                        "assigner": {
+                            "display": "BPJS KESEHATAN"
+                        }
+                    },
+                    {
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0203",
+                                    "code": "NNIDN",
+                                    "display": "National Person Identifier"
+                                }
+                            ],
+                            "text": "KTP"
+                        },
+                        "value": "1119192709810009",
+                        "assigner": {
+                            "display": "KEMENDAGRI"
+                        }
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "ZULIYATI"
+                    }
+                ],
+                "maritalStatus": {
+                    "coding": [
+                        {
+                            "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v3-MaritalStatus",
+                            "code": "M",
+                            "display": "MENIKAH"
+                        }
+                    ],
+                    "text": "MENIKAH"
+                },
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "",
+                        "use": "work"
+                    },
+                    {
+                        "system": "phone",
+                        "value": "089454545454",
+                        "use": "mobile"
+                    },
+                    {
+                        "system": "phone",
+                        "value": "",
+                        "use": "home"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1994-09-27 00:00:00",
+                "deceasedBoolean": false,
+                "address": [
+                    {
+                        "line": [
+                            "JL. PUDU RT 1 RW 1"
+                        ],
+                        "city": "SUKAMARA",
+                        "district": "SUKAMARA",
+                        "state": "",
+                        "postalCode": "74172",
+                        "text": "JL. PUDU RT 1 RW 1",
+                        "use": "home",
+                        "type": "both"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization\/1413R001-6207033-22-f5d6761b-6c09-6bbf-cd8c-34140d08da5a",
+                    "display": "Ruang Melati Kelas 2"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Organization",
+                "id": "1413R001-6207033-22-f5d6761b-6c09-6bbf-cd8c-34140d08da5a",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "urn:oid:bpjs",
+                        "value": "1413R001"
+                    },
+                    {
+                        "use": "official",
+                        "system": "urn:oid:kemkes",
+                        "value": "6207033"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http:\/\/terminology.hl7.org\/CodeSystem\/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ],
+                        "text": "Healthcare Provider"
+                    }
+                ],
+                "name": "Ruang Melati Kelas 2",
+                "alias": [
+                    "Ruang Melati Kelas 2"
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "(0532) 26752",
+                        "use": "work"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "work",
+                        "text": "Jl. Tjilik Riwut No.kM. 5.5, Natai Sedawak, Kec. Sukamara, Kabupaten Sukamara, Kalimantan Tengah 74171",
+                        "line": [
+                            "Jl. Tjilik Riwut No.kM. 5.5, Natai Sedawak, Kec. Sukamara, Kabupaten Sukamara, Kalimantan Tengah 74171"
+                        ],
+                        "city": "Kabupaten Sukamara",
+                        "state": "Kalimantan Tengah",
+                        "postalCode": "74171",
+                        "country": "INDONESIA"
+                    }
+                ],
+                "contact": [
+                    {
+                        "purpose": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/hl7.org\/fhir\/contactentity-type",
+                                    "code": "ADMIN",
+                                    "display": "Administrative"
+                                }
+                            ]
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "(0532) 26752",
+                                "use": "work"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Organization",
+                "id": "1413R001-6207033-22-0e0c3a55-920f-c525-f949-b406552f6261",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "urn:oid:bpjs",
+                        "value": "1413R001"
+                    },
+                    {
+                        "use": "official",
+                        "system": "urn:oid:kemkes",
+                        "value": "6207033"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http:\/\/terminology.hl7.org\/CodeSystem\/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ],
+                        "text": "Healthcare Provider"
+                    }
+                ],
+                "name": "Depo Farmasi Rawat Inap",
+                "alias": [
+                    "Depo Farmasi Rawat Inap"
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "(0532) 26752",
+                        "use": "work"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "work",
+                        "text": "Jl. Tjilik Riwut No.kM. 5.5, Natai Sedawak, Kec. Sukamara, Kabupaten Sukamara, Kalimantan Tengah 74171",
+                        "line": [
+                            "Jl. Tjilik Riwut No.kM. 5.5, Natai Sedawak, Kec. Sukamara, Kabupaten Sukamara, Kalimantan Tengah 74171"
+                        ],
+                        "city": "Kabupaten Sukamara",
+                        "state": "Kalimantan Tengah",
+                        "postalCode": "74171",
+                        "country": "INDONESIA"
+                    }
+                ],
+                "contact": [
+                    {
+                        "purpose": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/hl7.org\/fhir\/contactentity-type",
+                                    "code": "ADMIN",
+                                    "display": "Administrative"
+                                }
+                            ]
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "(0532) 26752",
+                                "use": "work"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Organization",
+                "id": "1413R001-6207033-22-80624ee0-d4a2-6c2e-c094-9f53ca025373",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "urn:oid:bpjs",
+                        "value": "1413R001"
+                    },
+                    {
+                        "use": "official",
+                        "system": "urn:oid:kemkes",
+                        "value": "6207033"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http:\/\/terminology.hl7.org\/CodeSystem\/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ],
+                        "text": "Healthcare Provider"
+                    }
+                ],
+                "name": "IGD",
+                "alias": [
+                    "IGD"
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "(0532) 26752",
+                        "use": "work"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "work",
+                        "text": "Jl. Tjilik Riwut No.kM. 5.5, Natai Sedawak, Kec. Sukamara, Kabupaten Sukamara, Kalimantan Tengah 74171",
+                        "line": [
+                            "Jl. Tjilik Riwut No.kM. 5.5, Natai Sedawak, Kec. Sukamara, Kabupaten Sukamara, Kalimantan Tengah 74171"
+                        ],
+                        "city": "Kabupaten Sukamara",
+                        "state": "Kalimantan Tengah",
+                        "postalCode": "74171",
+                        "country": "INDONESIA"
+                    }
+                ],
+                "contact": [
+                    {
+                        "purpose": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/hl7.org\/fhir\/contactentity-type",
+                                    "code": "ADMIN",
+                                    "display": "Administrative"
+                                }
+                            ]
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "(0532) 26752",
+                                "use": "work"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Organization",
+                "id": "1413R001-6207033-22-2ddfd761-3cab-5702-011e-d34aa4c85f34",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "urn:oid:bpjs",
+                        "value": "1413R001"
+                    },
+                    {
+                        "use": "official",
+                        "system": "urn:oid:kemkes",
+                        "value": "6207033"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http:\/\/terminology.hl7.org\/CodeSystem\/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ],
+                        "text": "Healthcare Provider"
+                    }
+                ],
+                "name": "Laboratorium",
+                "alias": [
+                    "Laboratorium"
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "(0532) 26752",
+                        "use": "work"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "work",
+                        "text": "Jl. Tjilik Riwut No.kM. 5.5, Natai Sedawak, Kec. Sukamara, Kabupaten Sukamara, Kalimantan Tengah 74171",
+                        "line": [
+                            "Jl. Tjilik Riwut No.kM. 5.5, Natai Sedawak, Kec. Sukamara, Kabupaten Sukamara, Kalimantan Tengah 74171"
+                        ],
+                        "city": "Kabupaten Sukamara",
+                        "state": "Kalimantan Tengah",
+                        "postalCode": "74171",
+                        "country": "INDONESIA"
+                    }
+                ],
+                "contact": [
+                    {
+                        "purpose": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/hl7.org\/fhir\/contactentity-type",
+                                    "code": "ADMIN",
+                                    "display": "Administrative"
+                                }
+                            ]
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "(0532) 26752",
+                                "use": "work"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Organization",
+                "id": "1413R001-6207033-22-7a999e18-0150-ad51-714e-7eb7057ef7ba",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "urn:oid:bpjs",
+                        "value": "1413R001"
+                    },
+                    {
+                        "use": "official",
+                        "system": "urn:oid:kemkes",
+                        "value": "6207033"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http:\/\/terminology.hl7.org\/CodeSystem\/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ],
+                        "text": "Healthcare Provider"
+                    }
+                ],
+                "name": "Ultrasonografi",
+                "alias": [
+                    "Ultrasonografi"
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "(0532) 26752",
+                        "use": "work"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "work",
+                        "text": "Jl. Tjilik Riwut No.kM. 5.5, Natai Sedawak, Kec. Sukamara, Kabupaten Sukamara, Kalimantan Tengah 74171",
+                        "line": [
+                            "Jl. Tjilik Riwut No.kM. 5.5, Natai Sedawak, Kec. Sukamara, Kabupaten Sukamara, Kalimantan Tengah 74171"
+                        ],
+                        "city": "Kabupaten Sukamara",
+                        "state": "Kalimantan Tengah",
+                        "postalCode": "74171",
+                        "country": "INDONESIA"
+                    }
+                ],
+                "contact": [
+                    {
+                        "purpose": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/hl7.org\/fhir\/contactentity-type",
+                                    "code": "ADMIN",
+                                    "display": "Administrative"
+                                }
+                            ]
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "(0532) 26752",
+                                "use": "work"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "urn:oid:nomor_sip",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v2-0203",
+                                    "code": "MD",
+                                    "display": "Medical License number"
+                                }
+                            ]
+                        },
+                        "value": "02SIP-TESTING.D08092025",
+                        "assigner": {
+                            "display": "KEMENKES"
+                        }
+                    },
+                    {
+                        "use": "official",
+                        "system": "NIK",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v2-0203",
+                                    "code": "NNIDN",
+                                    "display": "National Person Identifier"
+                                }
+                            ]
+                        },
+                        "value": "6208082301727427",
+                        "assigner": {
+                            "display": "KEMDAGRI"
+                        }
+                    },
+                    {
+                        "use": "usual",
+                        "system": "NIP",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/hl7.org\/fhir\/name-use",
+                                    "code": "EN",
+                                    "display": "Employer number"
+                                }
+                            ]
+                        },
+                        "value": "",
+                        "assigner": {
+                            "display": "RSUD Sukamara"
+                        }
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "ANNISA MAULIDIA MAHDI,dr,Sp.OG"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "081352448899",
+                        "use": "work"
+                    },
+                    {
+                        "system": "email",
+                        "value": "annisa.rsud@gmail.com",
+                        "use": "work"
+                    },
+                    {
+                        "system": "fax",
+                        "value": "",
+                        "use": "work"
+                    },
+                    {
+                        "system": "home",
+                        "value": "",
+                        "use": "home"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "home",
+                        "text": "Jl. Pinang Merah No.5",
+                        "line": [
+                            "Jl. Pinang Merah No.5"
+                        ],
+                        "city": "Sukamara",
+                        "postalCode": "74172",
+                        "country": "INDONESIA"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1991-09-15 00:00:00"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "1413R001-6207033-22-77d11054-b161-40e9-29b9-746cff8aba41",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "urn:oid:nomor_sip",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v2-0203",
+                                    "code": "MD",
+                                    "display": "Medical License number"
+                                }
+                            ]
+                        },
+                        "value": "501234SIP-FARMASI.D2024",
+                        "assigner": {
+                            "display": "KEMENKES"
+                        }
+                    },
+                    {
+                        "use": "official",
+                        "system": "NIK",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v2-0203",
+                                    "code": "NNIDN",
+                                    "display": "National Person Identifier"
+                                }
+                            ]
+                        },
+                        "value": "1623916492864242",
+                        "assigner": {
+                            "display": "KEMDAGRI"
+                        }
+                    },
+                    {
+                        "use": "usual",
+                        "system": "NIP",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/hl7.org\/fhir\/name-use",
+                                    "code": "EN",
+                                    "display": "Employer number"
+                                }
+                            ]
+                        },
+                        "value": "",
+                        "assigner": {
+                            "display": "RSUD Sukamara"
+                        }
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "BELLA PERMATASANI,,S.Farm., Apt.(Petugas Depo Farmasi Rawat Inap)"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "",
+                        "use": "work"
+                    },
+                    {
+                        "system": "email",
+                        "value": "bellaapotik@gmail.com",
+                        "use": "work"
+                    },
+                    {
+                        "system": "fax",
+                        "value": "",
+                        "use": "work"
+                    },
+                    {
+                        "system": "home",
+                        "value": "",
+                        "use": "home"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "home",
+                        "text": "Jl. Pelabuhan",
+                        "line": [
+                            "Jl. Pelabuhan"
+                        ],
+                        "city": "Sukamara",
+                        "postalCode": "74172",
+                        "country": "INDONESIA"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1996-07-29 00:00:00"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "1413R001-6207033-22-644d23fd-eecb-c984-c459-3ba7190be44e",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "urn:oid:nomor_sip",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v2-0203",
+                                    "code": "MD",
+                                    "display": "Medical License number"
+                                }
+                            ]
+                        },
+                        "value": "503001SIP-DDPMPTSP.D2024",
+                        "assigner": {
+                            "display": "KEMENKES"
+                        }
+                    },
+                    {
+                        "use": "official",
+                        "system": "NIK",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v2-0203",
+                                    "code": "NNIDN",
+                                    "display": "National Person Identifier"
+                                }
+                            ]
+                        },
+                        "value": "6239572934572347",
+                        "assigner": {
+                            "display": "KEMDAGRI"
+                        }
+                    },
+                    {
+                        "use": "usual",
+                        "system": "NIP",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/hl7.org\/fhir\/name-use",
+                                    "code": "EN",
+                                    "display": "Employer number"
+                                }
+                            ]
+                        },
+                        "value": "",
+                        "assigner": {
+                            "display": "RSUD Sukamara"
+                        }
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "SITI MARYANI,dr,Sp.PD."
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "082353169481",
+                        "use": "work"
+                    },
+                    {
+                        "system": "email",
+                        "value": "sitimaryani@gmail.com",
+                        "use": "work"
+                    },
+                    {
+                        "system": "fax",
+                        "value": "",
+                        "use": "work"
+                    },
+                    {
+                        "system": "home",
+                        "value": "",
+                        "use": "home"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "home",
+                        "text": "Jl. Lapangan Mini",
+                        "line": [
+                            "Jl. Lapangan Mini"
+                        ],
+                        "city": "Sukamara",
+                        "postalCode": "74172",
+                        "country": "INDONESIA"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1974-08-15 00:00:00"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "1413R001-6207033-22-f0b5f768-dd91-1137-1184-3e7e236aff52",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "urn:oid:nomor_sip",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v2-0203",
+                                    "code": "MD",
+                                    "display": "Medical License number"
+                                }
+                            ]
+                        },
+                        "value": "5011010SIP-DDPMPTSP.D2024",
+                        "assigner": {
+                            "display": "KEMENKES"
+                        }
+                    },
+                    {
+                        "use": "official",
+                        "system": "NIK",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v2-0203",
+                                    "code": "NNIDN",
+                                    "display": "National Person Identifier"
+                                }
+                            ]
+                        },
+                        "value": "1271215110820002",
+                        "assigner": {
+                            "display": "KEMDAGRI"
+                        }
+                    },
+                    {
+                        "use": "usual",
+                        "system": "NIP",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/hl7.org\/fhir\/name-use",
+                                    "code": "EN",
+                                    "display": "Employer number"
+                                }
+                            ]
+                        },
+                        "value": "",
+                        "assigner": {
+                            "display": "RSUD Sukamara"
+                        }
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "RAPINA AMBARITA,dr,Sp.PK"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "085344226677",
+                        "use": "work"
+                    },
+                    {
+                        "system": "email",
+                        "value": "rapinalab@gmail.com",
+                        "use": "work"
+                    },
+                    {
+                        "system": "fax",
+                        "value": "",
+                        "use": "work"
+                    },
+                    {
+                        "system": "home",
+                        "value": "",
+                        "use": "home"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "home",
+                        "text": "Perum Villa Permata Paus III Blok C No.3",
+                        "line": [
+                            "Perum Villa Permata Paus III Blok C No.3"
+                        ],
+                        "city": "Sukamara",
+                        "postalCode": "74172",
+                        "country": "INDONESIA"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1982-10-11 00:00:00"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "1413R001-6207033-22-222c8117-a97a-f595-5508-873cede69613",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "urn:oid:nomor_sip",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v2-0203",
+                                    "code": "MD",
+                                    "display": "Medical License number"
+                                }
+                            ]
+                        },
+                        "value": "502525SIP-DDPMPTSP.D2024",
+                        "assigner": {
+                            "display": "KEMENKES"
+                        }
+                    },
+                    {
+                        "use": "official",
+                        "system": "NIK",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/terminology.hl7.org\/CodeSystem\/v2-0203",
+                                    "code": "NNIDN",
+                                    "display": "National Person Identifier"
+                                }
+                            ]
+                        },
+                        "value": "3471120403810002",
+                        "assigner": {
+                            "display": "KEMDAGRI"
+                        }
+                    },
+                    {
+                        "use": "usual",
+                        "system": "NIP",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/hl7.org\/fhir\/name-use",
+                                    "code": "EN",
+                                    "display": "Employer number"
+                                }
+                            ]
+                        },
+                        "value": "",
+                        "assigner": {
+                            "display": "RSUD Sukamara"
+                        }
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "TONI HENDRAWAN MARDIHUSODO,dr,Sp.Rad"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "085344221313",
+                        "use": "work"
+                    },
+                    {
+                        "system": "email",
+                        "value": "toniradiologi@gmail.com",
+                        "use": "work"
+                    },
+                    {
+                        "system": "fax",
+                        "value": "",
+                        "use": "work"
+                    },
+                    {
+                        "system": "home",
+                        "value": "",
+                        "use": "home"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "home",
+                        "text": "Mergangsan Kidul MG.II 1310 Yogyakarta",
+                        "line": [
+                            "Mergangsan Kidul MG.II 1310 Yogyakarta"
+                        ],
+                        "city": "Sukamara",
+                        "postalCode": "74172",
+                        "country": "INDONESIA"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1981-03-04 00:00:00"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Composition",
+                "id": "1413R001-6207033-22-f20d5c54-b534-6bfc-1754-373d8741d5ab",
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http:\/\/loinc.org",
+                            "code": "11503-0",
+                            "display": "Medical records"
+                        }
+                    ],
+                    "text": "Medical records"
+                },
+                "subject": {
+                    "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                    "display": "ZULIYATI"
+                },
+                "encounter": {
+                    "reference": "Encounter\/1413R001-6207033-22-50b027a1-6ad1-e39d-f37b-470bf2d118f0"
+                },
+                "date": "2025-09-24 11:51:34",
+                "author": [
+                    {
+                        "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271",
+                        "display": "ANNISA MAULIDIA MAHDI,dr,Sp.OG"
+                    }
+                ],
+                "title": "Medical records",
+                "confidentiality": "N",
+                "section": {
+                    "0": {
+                        "title": "Reason for admission",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "29299-5",
+                                    "display": "Reason for visit Narrative"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "Nyeri pasca operasi"
+                        },
+                        "mode": "working",
+                        "entry": []
+                    },
+                    "1": {
+                        "title": "Chief complaint",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "10154-3",
+                                    "display": "Chief complaint Narrative"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "persalinan prematur pada usia kehamilan 32 minggu"
+                        },
+                        "mode": "working",
+                        "entry": []
+                    },
+                    "2": {
+                        "title": "Admission diagnosis",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "42347-5",
+                                    "display": "Admission diagnosis Narrative"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "persalinan prematur pada usia kehamilan 32 minggu"
+                        },
+                        "mode": "working",
+                        "entry": []
+                    },
+                    "4": {
+                        "title": "Medications on Discharge",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "75311-1",
+                                    "display": "Hospital discharge medications Narrative"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "Ceftriaxone 1 Gr"
+                        },
+                        "mode": "working",
+                        "entry": [
+                            {
+                                "reference": "MedicationRequest\/1413R001-6207033-22-0eef0fd0-f8dc-7422-550e-4c230abbd59c"
+                            },
+                            {
+                                "reference": "MedicationRequest\/1413R001-6207033-22-a174b03e-34c8-f344-223e-4cd99a2ed13a"
+                            },
+                            {
+                                "reference": "MedicationRequest\/1413R001-6207033-22-be991c78-0258-07d9-e998-a505bdf7946a"
+                            }
+                        ]
+                    },
+                    "5": {
+                        "title": "Plan of care",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "18776-5",
+                                    "display": "Plan of care"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "lanjut kontrol kalau masih merasakan sakit"
+                        },
+                        "mode": "working",
+                        "entry": ""
+                    },
+                    "7": {
+                        "title": "Known allergies",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "235860006",
+                                    "display": "Peanut allergy (disorder)"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "additional",
+                            "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">Pasien memiliki alergi terhadap KACANG TANAH (Peanut allergy (disorder), Critically : high).<\/div>"
+                        },
+                        "mode": "working",
+                        "entry": []
+                    }
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "1413R001-6207033-22-cd0e381d-0d14-c69a-2601-d22a040ddced",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http:\/\/hl7.org\/fhir\/condition-category",
+                                "code": "encounter-diagnosis",
+                                "display": "Encounter Diagnosis"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http:\/\/hl7.org\/fhir\/sid\/icd-10",
+                            "code": "O60.1",
+                            "display": "Preterm labour with preterm delivery"
+                        }
+                    ],
+                    "text": "persalinan prematur pada usia kehamilan 32 minggu"
+                },
+                "subject": {
+                    "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65"
+                },
+                "onsetDateTime": "2025-09-23 11:45:59",
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "1413R001-6207033-22-14d2b4b2-0128-bdea-6f45-f0ccb6dfe4cf",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http:\/\/hl7.org\/fhir\/condition-category",
+                                "code": "encounter-diagnosis",
+                                "display": "Encounter Diagnosis"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http:\/\/hl7.org\/fhir\/sid\/icd-10",
+                            "code": "O68.1",
+                            "display": "Labour and delivery complicated by meconium in amniotic fluid"
+                        }
+                    ],
+                    "text": "kondisi gawat janin (fetal distress) adalah alasan darurat dilakukannya operasi sesar"
+                },
+                "subject": {
+                    "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65"
+                },
+                "onsetDateTime": "2025-09-23 11:45:59",
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "1413R001-6207033-22-24feaf59-0ac8-f906-5120-1c668311efa8",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http:\/\/hl7.org\/fhir\/condition-category",
+                                "code": "encounter-diagnosis",
+                                "display": "Encounter Diagnosis"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http:\/\/hl7.org\/fhir\/sid\/icd-10",
+                            "code": "O42.9",
+                            "display": "Premature rupture of membranes, unspecified"
+                        }
+                    ],
+                    "text": "Ketuban pecah dini"
+                },
+                "subject": {
+                    "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65"
+                },
+                "onsetDateTime": "2025-09-23 11:45:59",
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed"
+            }
+        },
+        {
+            "resource": [
+                {
+                    "resourceType": "Procedure",
+                    "id": "1413R001-6207033-22-c7881b29-0857-269f-b4f0-541aa96a76c9",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">Generated Narrative with Details<\/div>"
+                    },
+                    "status": "completed",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http:\/\/snomed.info\/sct",
+                                "code": "225390008",
+                                "display": "Triage"
+                            }
+                        ]
+                    },
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI"
+                    },
+                    "performedPeriod": {
+                        "start": "2025-09-23 10:54:41",
+                        "end": "2025-09-23 11:44:52"
+                    },
+                    "performer": [
+                        {
+                            "actor": {
+                                "reference": "Practitioner\/1413R001-6207033-22-644d23fd-eecb-c984-c459-3ba7190be44e",
+                                "display": "SITI MARYANI,dr,Sp.PD."
+                            },
+                            "role": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/snomed.info\/sct",
+                                        "code": "310512001",
+                                        "display": "Medical oncologist"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "reasonCode": [
+                        {
+                            "text": "DiagnosticReport\/1413R001-6207033-22-20d7c49c-89a9-2f2b-97dd-aba410eaa15c"
+                        }
+                    ],
+                    "bodySite": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "",
+                                    "display": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "focalDevice": [
+                        {
+                            "action": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/hl7.org\/fhir\/device-action",
+                                        "code": "analyze",
+                                        "display": "analyze"
+                                    }
+                                ]
+                            },
+                            "manipulated": {
+                                "reference": "Device\/1413R001-6207033-22-d5540f4c-2037-d0fd-d1b0-01e07fcc4419"
+                            }
+                        }
+                    ],
+                    "context": {
+                        "reference": "Encounter\/1413R001-6207033-22-27b136d6-d6f6-1aff-dac7-05a81f01e9f1",
+                        "display": "ZULIYATI encounter on IGD"
+                    },
+                    "note": [
+                        {
+                            "text": "SUHU=37.5, SISTOLE=150, DIASTOLE=90, FREK_NADI=100, FREK_NAFAS=22, METODE_UKUR=, SKALA_NYERI="
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "Procedure",
+                    "id": "1413R001-6207033-22-1819e32c-53cb-9866-2f4d-608dd54d54d4",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">Generated Narrative with Details<\/div>"
+                    },
+                    "status": "completed",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http:\/\/loinc.org",
+                                "code": "18748-4",
+                                "display": "Radiology Study"
+                            }
+                        ]
+                    },
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI"
+                    },
+                    "performedPeriod": {
+                        "start": "2025-09-23 11:13:26",
+                        "end": "2025-09-23 11:25:29"
+                    },
+                    "performer": [
+                        {
+                            "actor": {
+                                "reference": "Practitioner\/1413R001-6207033-22-222c8117-a97a-f595-5508-873cede69613",
+                                "display": "TONI HENDRAWAN MARDIHUSODO,dr,Sp.Rad"
+                            },
+                            "role": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/snomed.info\/sct",
+                                        "code": "310512001",
+                                        "display": "Medical oncologist"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "reasonCode": [
+                        {
+                            "text": "DiagnosticReport\/1413R001-6207033-22-cfecdb27-6f63-4854-f3ef-915e2e980c31"
+                        }
+                    ],
+                    "bodySite": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "45036003",
+                                    "display": "Ultrasonography of abdomen"
+                                }
+                            ]
+                        }
+                    ],
+                    "focalDevice": [
+                        {
+                            "action": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/hl7.org\/fhir\/device-action",
+                                        "code": "exposure",
+                                        "display": "Exposure"
+                                    }
+                                ]
+                            },
+                            "manipulated": {
+                                "reference": "Device\/1413R001-6207033-22-7545e9cd-3897-b3a6-4078-b67996e2b2a4"
+                            }
+                        }
+                    ],
+                    "context": {
+                        "reference": "Encounter\/1413R001-6207033-22-27b136d6-d6f6-1aff-dac7-05a81f01e9f1",
+                        "display": "ZULIYATI encounter on Ultrasonografi"
+                    },
+                    "note": [
+                        {
+                            "text": "USG Abdomen"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "Procedure",
+                    "id": "1413R001-6207033-22-9c42ffa3-d9b6-e0d5-ed68-23e7dfb7a5db",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">Generated Narrative with Details<\/div>"
+                    },
+                    "status": "completed",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http:\/\/loinc.org",
+                                "code": "5842-5",
+                                "display": "General chemistry panel"
+                            }
+                        ]
+                    },
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI"
+                    },
+                    "performedPeriod": {
+                        "start": "2025-09-23 11:12:11",
+                        "end": "2025-09-23 11:16:12"
+                    },
+                    "performer": [
+                        {
+                            "actor": {
+                                "reference": "Practitioner\/1413R001-6207033-22-f0b5f768-dd91-1137-1184-3e7e236aff52",
+                                "display": "RAPINA AMBARITA,dr,Sp.PK"
+                            },
+                            "role": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/snomed.info\/sct",
+                                        "code": "310512001",
+                                        "display": "Medical oncologist"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "reasonCode": [
+                        {
+                            "text": "DiagnosticReport\/1413R001-6207033-22-ae3a12e6-6288-4604-c069-b4dfc5a13afd"
+                        }
+                    ],
+                    "bodySite": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "386312004",
+                                    "display": "Urinalysis"
+                                }
+                            ]
+                        }
+                    ],
+                    "focalDevice": [
+                        {
+                            "action": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/hl7.org\/fhir\/device-action",
+                                        "code": ""
+                                    }
+                                ]
+                            },
+                            "manipulated": {
+                                "reference": ""
+                            }
+                        }
+                    ],
+                    "context": {
+                        "reference": "Encounter\/1413R001-6207033-22-27b136d6-d6f6-1aff-dac7-05a81f01e9f1",
+                        "display": "ZULIYATI encounter on Laboratorium"
+                    },
+                    "note": [
+                        {
+                            "text": "Urine Lengkap"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "Procedure",
+                    "id": "1413R001-6207033-22-5e3f270e-2172-2d0a-4cd6-e8e2f019f6a8",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">Generated Narrative with Details<\/div>"
+                    },
+                    "status": "completed",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http:\/\/loinc.org",
+                                "code": "11504-8",
+                                "display": "Surgical operation note"
+                            }
+                        ]
+                    },
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI"
+                    },
+                    "performedPeriod": {
+                        "start": "2025-09-23 11:30:00",
+                        "end": "2025-09-23 11:34:58"
+                    },
+                    "performer": [
+                        {
+                            "actor": {
+                                "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271",
+                                "display": "dr,ANNISA MAULIDIA MAHDI,Sp.OG"
+                            },
+                            "role": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/snomed.info\/sct",
+                                        "code": "310512001",
+                                        "display": "Medical oncologist"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "reasonCode": [
+                        {
+                            "text": "DiagnosticReport\/1413R001-6207033-22-d41d8cd9-8f00-b204-e980-0998ecf8427e"
+                        }
+                    ],
+                    "bodySite": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "177141003",
+                                    "display": "Cesarean section"
+                                }
+                            ]
+                        }
+                    ],
+                    "focalDevice": [
+                        {
+                            "action": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/hl7.org\/fhir\/device-action",
+                                        "code": ""
+                                    }
+                                ]
+                            },
+                            "manipulated": {
+                                "reference": ""
+                            }
+                        }
+                    ],
+                    "context": {
+                        "reference": "Encounter\/1413R001-6207033-22-27b136d6-d6f6-1aff-dac7-05a81f01e9f1",
+                        "display": "ZULIYATI encounter on Kamar Operasi"
+                    },
+                    "note": [
+                        {
+                            "text": "Seksio Sesaria"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "Procedure",
+                    "id": "1413R001-6207033-22-6dcfd5e4-7250-11aa-1606-d3a7a95f9864",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">Generated Narrative with Details<\/div>"
+                    },
+                    "status": "completed",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http:\/\/hl7.org\/fhir\/sid\/icd-9-cm",
+                                "code": "86.22",
+                                "display": "Excisional debridement of wound- infection- or bur"
+                            }
+                        ]
+                    },
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI"
+                    },
+                    "performedPeriod": {
+                        "start": "2025-09-23 11:50:23",
+                        "end": "2025-09-24 11:56:40"
+                    },
+                    "performer": [
+                        {
+                            "actor": {
+                                "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271",
+                                "display": "ANNISA MAULIDIA MAHDI,dr,Sp.OG"
+                            },
+                            "role": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/snomed.info\/sct",
+                                        "code": "310512001",
+                                        "display": "Medical oncologist"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "reasonCode": [
+                        {
+                            "text": "DiagnosticReport\/"
+                        }
+                    ],
+                    "bodySite": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/hl7.org\/fhir\/sid\/icd-9-cm",
+                                    "code": "86.22",
+                                    "display": "Excisional debridement of wound- infection- or bur"
+                                }
+                            ]
+                        }
+                    ],
+                    "focalDevice": [
+                        {
+                            "action": {
+                                "coding": [
+                                    {
+                                        "system": "",
+                                        "code": "",
+                                        "display": ""
+                                    }
+                                ]
+                            },
+                            "manipulated": {
+                                "reference": "Device\/"
+                            }
+                        }
+                    ],
+                    "context": {
+                        "reference": "Encounter\/1413R001-6207033-22-50b027a1-6ad1-e39d-f37b-470bf2d118f0",
+                        "display": "ZULIYATI encounter on 2025-09-23 11:50:23 Location Ruang Melati Kelas 2"
+                    },
+                    "note": [
+                        {
+                            "text": ""
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "Procedure",
+                    "id": "1413R001-6207033-22-20d43b92-0907-ab36-5445-9b4a02669e19",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">Generated Narrative with Details<\/div>"
+                    },
+                    "status": "completed",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http:\/\/loinc.org",
+                                "code": "85353-1",
+                                "display": "Vital signs panel"
+                            }
+                        ]
+                    },
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI"
+                    },
+                    "performedPeriod": {
+                        "start": "2025-09-23T11:53:00.000Z",
+                        "end": "2025-09-23T11:53:00.000Z"
+                    },
+                    "performer": [
+                        {
+                            "actor": {
+                                "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271",
+                                "display": "ANNISA MAULIDIA MAHDI,dr,Sp.OG"
+                            },
+                            "role": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/snomed.info\/sct",
+                                        "code": "310512001",
+                                        "display": "Medical oncologist"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "reasonCode": [
+                        {
+                            "text": "DiagnosticReport\/1413R001-6207033-22-b16202aa-6c66-c142-476e-60210cb5bf25"
+                        }
+                    ],
+                    "bodySite": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "",
+                                    "display": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "focalDevice": [
+                        {
+                            "action": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/hl7.org\/fhir\/device-action",
+                                        "code": ""
+                                    }
+                                ]
+                            },
+                            "manipulated": {
+                                "reference": ""
+                            }
+                        }
+                    ],
+                    "context": {
+                        "reference": "Encounter\/1413R001-6207033-22-50b027a1-6ad1-e39d-f37b-470bf2d118f0",
+                        "display": "ZULIYATI encounter on Ruang Melati Kelas 2"
+                    },
+                    "note": [
+                        {
+                            "text": "Tanda tanda vital"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "resource": [
+                {
+                    "resourceType": "MedicationRequest",
+                    "text": {
+                        "div": "Ceftriaxone 1 Gr"
+                    },
+                    "identifier": {
+                        "system": "resep",
+                        "value": "1413R001-6207033-22-0eef0fd0-f8dc-7422-550e-4c230abbd59c"
+                    },
+                    "subject": {
+                        "display": "ZULIYATI",
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65"
+                    },
+                    "intent": "final",
+                    "medicationCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "3099",
+                                "system": "simgos.sukamarakab.go.id\/drug"
+                            }
+                        ],
+                        "text": "Ceftriaxone 1 Gr"
+                    },
+                    "dosageInstruction": [
+                        {
+                            "doseQuantity": {
+                                "code": "53",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "unit": "Vial",
+                                "value": "1.00"
+                            },
+                            "route": {
+                                "coding": [
+                                    {
+                                        "code": "26643006",
+                                        "display": "Oral route",
+                                        "system": "http:\/\/snomed.info\/sct"
+                                    }
+                                ]
+                            },
+                            "timing": {
+                                "repeat": {
+                                    "frequency": "1",
+                                    "period": 1,
+                                    "periodUnit": "d"
+                                }
+                            },
+                            "additionalInstruction": [
+                                {
+                                    "text": "1 Tablet"
+                                }
+                            ]
+                        }
+                    ],
+                    "requester": {
+                        "agent": {
+                            "display": "ANNISA MAULIDIA MAHDI,dr,Sp.OG",
+                            "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271"
+                        },
+                        "onBehalfOf": {
+                            "reference": "Organization\/1413R001-6207033-22-f5d6761b-6c09-6bbf-cd8c-34140d08da5a"
+                        }
+                    },
+                    "meta": {
+                        "lastUpdated": "2025-09-24 11:42:58"
+                    }
+                },
+                {
+                    "resourceType": "MedicationRequest",
+                    "text": {
+                        "div": "Ringer Lactat \/ RL ( Otsuka )"
+                    },
+                    "identifier": {
+                        "system": "resep",
+                        "value": "1413R001-6207033-22-a174b03e-34c8-f344-223e-4cd99a2ed13a"
+                    },
+                    "subject": {
+                        "display": "ZULIYATI",
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65"
+                    },
+                    "intent": "final",
+                    "medicationCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "3855",
+                                "system": "simgos.sukamarakab.go.id\/drug"
+                            }
+                        ],
+                        "text": "Ringer Lactat \/ RL ( Otsuka )"
+                    },
+                    "dosageInstruction": [
+                        {
+                            "doseQuantity": {
+                                "code": "8",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "unit": "Btl",
+                                "value": "2.00"
+                            },
+                            "route": {
+                                "coding": [
+                                    {
+                                        "code": "47622000",
+                                        "display": "Intravenous route",
+                                        "system": "http:\/\/snomed.info\/sct"
+                                    }
+                                ]
+                            },
+                            "timing": {
+                                "repeat": {
+                                    "frequency": "7",
+                                    "period": 1,
+                                    "periodUnit": "d"
+                                }
+                            },
+                            "additionalInstruction": [
+                                {
+                                    "text": "500ML\/Jam"
+                                }
+                            ]
+                        }
+                    ],
+                    "requester": {
+                        "agent": {
+                            "display": "ANNISA MAULIDIA MAHDI,dr,Sp.OG",
+                            "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271"
+                        },
+                        "onBehalfOf": {
+                            "reference": "Organization\/1413R001-6207033-22-f5d6761b-6c09-6bbf-cd8c-34140d08da5a"
+                        }
+                    },
+                    "meta": {
+                        "lastUpdated": "2025-09-24 11:42:58"
+                    }
+                },
+                {
+                    "resourceType": "MedicationRequest",
+                    "text": {
+                        "div": "Sulfadiazine Silver 35 Gr"
+                    },
+                    "identifier": {
+                        "system": "resep",
+                        "value": "1413R001-6207033-22-be991c78-0258-07d9-e998-a505bdf7946a"
+                    },
+                    "subject": {
+                        "display": "ZULIYATI",
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65"
+                    },
+                    "intent": "final",
+                    "medicationCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "3986",
+                                "system": "simgos.sukamarakab.go.id\/drug"
+                            }
+                        ],
+                        "text": "Sulfadiazine Silver 35 Gr"
+                    },
+                    "dosageInstruction": [
+                        {
+                            "doseQuantity": {
+                                "code": "50",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "unit": "Tube",
+                                "value": "3.00"
+                            },
+                            "route": {
+                                "coding": [
+                                    {
+                                        "code": "60643009",
+                                        "display": "Topical route",
+                                        "system": "http:\/\/snomed.info\/sct"
+                                    }
+                                ]
+                            },
+                            "timing": {
+                                "repeat": {
+                                    "frequency": "7",
+                                    "period": 1,
+                                    "periodUnit": "d"
+                                }
+                            },
+                            "additionalInstruction": [
+                                {
+                                    "text": "Dioles tiap 2 jam"
+                                }
+                            ]
+                        }
+                    ],
+                    "requester": {
+                        "agent": {
+                            "display": "ANNISA MAULIDIA MAHDI,dr,Sp.OG",
+                            "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271"
+                        },
+                        "onBehalfOf": {
+                            "reference": "Organization\/1413R001-6207033-22-f5d6761b-6c09-6bbf-cd8c-34140d08da5a"
+                        }
+                    },
+                    "meta": {
+                        "lastUpdated": "2025-09-24 11:42:58"
+                    }
+                }
+            ]
+        },
+        {
+            "resource": [
+                {
+                    "resourceType": "DiagnosticReport",
+                    "id": "1413R001-6207033-22-cfecdb27-6f63-4854-f3ef-915e2e980c31",
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI",
+                        "noSep": "1413R0010925V000031"
+                    },
+                    "category": {
+                        "coding": {
+                            "system": "http:\/\/hl7.org\/fhir\/v2\/0074",
+                            "code": "RAD",
+                            "display": "Radiology"
+                        }
+                    },
+                    "status": "final",
+                    "performer": [
+                        {
+                            "reference": "Organization\/1413R001-6207033-22-7a999e18-0150-ad51-714e-7eb7057ef7ba",
+                            "display": "Ultrasonografi"
+                        }
+                    ],
+                    "result": [
+                        {
+                            "resourceType": "Observation",
+                            "id": "2509230001190",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Disimpulkan adanya gawat janin"
+                            },
+                            "issued": "2025-09-23 11:25:29",
+                            "effectiveDateTime": "2025-09-23 11:13:26",
+                            "valueQuantity": {
+                                "value": "-",
+                                "comparator": "",
+                                "unit": "-",
+                                "system": "-",
+                                "code": "-"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\\\/\\\/hl7.org\\\/fhir\\\/v2\\\/0078",
+                                    "code": "-",
+                                    "display": "-"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "-",
+                                    "unit": "-",
+                                    "system": "http:\\\/\\\/unitsofmeasure.org",
+                                    "code": "-"
+                                },
+                                "high": {
+                                    "value": "-",
+                                    "unit": "-",
+                                    "system": "http:\\\/\\\/unitsofmeasure.org",
+                                    "code": "-"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "45036003",
+                                    "display": "Ultrasonography of abdomen"
+                                },
+                                "text": "USG Abdomen"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-222c8117-a97a-f595-5508-873cede69613",
+                                "display": "TONI HENDRAWAN MARDIHUSODO,dr,Sp.Rad"
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/3a842997e6380e4dc4db4a3f12c59e28.png",
+                                        "display": "Laporan Radiologi"
+                                    }
+                                }
+                            ],
+                            "conclusion": "Usia kehamilan 32 minggu, taksiran berat janin sesuai, air ketuban sangat sedikit, dan denyut jantung janin cepat"
+                        }
+                    ],
+                    "basedOn": [
+                        {
+                            "reference": "Procedure\/1413R001-6207033-22-1819e32c-53cb-9866-2f4d-608dd54d54d4",
+                            "display": "Prosedur Radiologi"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "DiagnosticReport",
+                    "id": "1413R001-6207033-22-81374713-d991-042a-0e18-865aa693cc24",
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI",
+                        "noSep": "1413R0010925V000031"
+                    },
+                    "category": {
+                        "coding": {
+                            "system": "http:\/\/hl7.org\/fhir\/v2\/0074",
+                            "code": "LAB",
+                            "display": "Laboratory"
+                        }
+                    },
+                    "status": "final",
+                    "performer": [
+                        {
+                            "reference": "Organization\/1413R001-6207033-22-2ddfd761-3cab-5702-011e-d34aa4c85f34",
+                            "display": "Laboratorium"
+                        }
+                    ],
+                    "result": [
+                        {
+                            "resourceType": "Observation",
+                            "id": "2509230001250923000056",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Urine Lengkap"
+                            },
+                            "issued": "2025-09-23 11:16:12",
+                            "effectiveDateTime": "2025-09-23 11:12:11",
+                            "valueQuantity": {
+                                "value": "2",
+                                "comparator": "",
+                                "unit": "mg\/dL",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "mg\/dL"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "L",
+                                    "display": "Low"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "Negatif",
+                                    "unit": "mg\/dL",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "mg\/dL"
+                                },
+                                "high": {
+                                    "value": "Negatif",
+                                    "unit": "mg\/dL",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "mg\/dL"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "386312004",
+                                    "display": "Urinalysis"
+                                },
+                                "text": "Urine Lengkap"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-f0b5f768-dd91-1137-1184-3e7e236aff52",
+                                "display": "RAPINA AMBARITA,dr,Sp.PK"
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/cdce7f934ff75fd572840339d4508cff.png",
+                                        "display": "Laporan Laboratorium"
+                                    }
+                                }
+                            ],
+                            "conclusion": "Nilai Hasil Pengujian A.5 Proteiun Urine  2 mg\/dL"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "2509230001250923000125",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Darah Lengkap Analiser"
+                            },
+                            "issued": "2025-09-23 11:18:21",
+                            "effectiveDateTime": "2025-09-23 11:12:11",
+                            "valueQuantity": {
+                                "value": "180",
+                                "comparator": "",
+                                "unit": "10^3\/ul",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "10^3\/ul"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "N",
+                                    "display": "Normal"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "150",
+                                    "unit": "10^3\/ul",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "10^3\/ul"
+                                },
+                                "high": {
+                                    "value": "400",
+                                    "unit": "10^3\/ul",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "10^3\/ul"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "26604007",
+                                    "display": "Complete blood count"
+                                },
+                                "text": "Darah Lengkap Analiser"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-f0b5f768-dd91-1137-1184-3e7e236aff52",
+                                "display": "RAPINA AMBARITA,dr,Sp.PK"
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/cdce7f934ff75fd572840339d4508cff.png",
+                                        "display": "Laporan Laboratorium"
+                                    }
+                                }
+                            ],
+                            "conclusion": "Nilai Hasil Pengujian 3. Trombosit  180 10^3\/ul"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "2509230001250923000127",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Darah Lengkap Analiser"
+                            },
+                            "issued": "2025-09-23 11:18:21",
+                            "effectiveDateTime": "2025-09-23 11:12:11",
+                            "valueQuantity": {
+                                "value": "15",
+                                "comparator": "",
+                                "unit": "10^3\/ul",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "10^3\/ul"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "H",
+                                    "display": "High"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "4",
+                                    "unit": "10^3\/ul",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "10^3\/ul"
+                                },
+                                "high": {
+                                    "value": "11",
+                                    "unit": "10^3\/ul",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "10^3\/ul"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "26604007",
+                                    "display": "Complete blood count"
+                                },
+                                "text": "Darah Lengkap Analiser"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-f0b5f768-dd91-1137-1184-3e7e236aff52",
+                                "display": "RAPINA AMBARITA,dr,Sp.PK"
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/cdce7f934ff75fd572840339d4508cff.png",
+                                        "display": "Laporan Laboratorium"
+                                    }
+                                }
+                            ],
+                            "conclusion": "Nilai Hasil Pengujian 2. Leukosit  15 10^3\/ul"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "2509230001250923000129",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Darah Lengkap Analiser"
+                            },
+                            "issued": "2025-09-23 11:18:21",
+                            "effectiveDateTime": "2025-09-23 11:12:11",
+                            "valueQuantity": {
+                                "value": "11",
+                                "comparator": "",
+                                "unit": "gr\/dl",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "gr\/dl"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "L",
+                                    "display": "Low"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "12",
+                                    "unit": "gr\/dl",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "gr\/dl"
+                                },
+                                "high": {
+                                    "value": "16",
+                                    "unit": "gr\/dl",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "gr\/dl"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "26604007",
+                                    "display": "Complete blood count"
+                                },
+                                "text": "Darah Lengkap Analiser"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-f0b5f768-dd91-1137-1184-3e7e236aff52",
+                                "display": "RAPINA AMBARITA,dr,Sp.PK"
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/cdce7f934ff75fd572840339d4508cff.png",
+                                        "display": "Laporan Laboratorium"
+                                    }
+                                }
+                            ],
+                            "conclusion": "Nilai Hasil Pengujian 1. Haemoglobin Wanita  11 gr\/dl"
+                        }
+                    ],
+                    "basedOn": [
+                        {
+                            "reference": "Procedure\/1413R001-6207033-22-95d63b53-d4c6-5db1-10ff-fccd0d1cba3f",
+                            "display": "Prosedur Laboratorium"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "DiagnosticReport",
+                    "id": "d41d8cd9-8f00-b204-e980-0998ecf8427e",
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI",
+                        "noSep": "1413R0010925V000031"
+                    },
+                    "category": {
+                        "coding": {
+                            "system": "http:\/\/hl7.org\/fhir\/v2\/0074",
+                            "code": "SUR",
+                            "display": "Surgery"
+                        }
+                    },
+                    "status": "final",
+                    "performer": [
+                        {
+                            "reference": "Organization\/1413R001-6207033-22-f81f1681-0a9a-42a4-045f-fb01545c58f4",
+                            "display": "Kamar Operasi"
+                        }
+                    ],
+                    "result": [
+                        {
+                            "resourceType": "Observation",
+                            "id": "2509230001752",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "<ul><li><span style=\"font-size:12.0pt;line-height:107%;\nfont-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\nmso-ansi-language:EN-ID;mso-fareast-language:EN-ID;mso-bidi-language:AR-SA\">Insisi\nkulit transversa (bikini).<\/span><\/li><li><span style=\"font-size:12.0pt;line-height:107%;\nfont-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\nmso-ansi-language:EN-ID;mso-fareast-language:EN-ID;mso-bidi-language:AR-SA\">Insisi\nuterus transversa bawah<\/span><\/li><li><span style=\"font-size:12.0pt;line-height:107%;\nfont-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\nmso-ansi-language:EN-ID;mso-fareast-language:EN-ID;mso-bidi-language:AR-SA\">Pengangkatan\nbayi, pengangkatan plasenta, dan penjahitan uterus berlapis<\/span><\/li><li><span style=\"font-size:12.0pt;line-height:107%;\nfont-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\nmso-ansi-language:EN-ID;mso-fareast-language:EN-ID;mso-bidi-language:AR-SA\">Perdarahan\nselama operasi: \u00b1400 cc<\/span>?<\/li><\/ul>"
+                            },
+                            "issued": "2025-09-23 11:34:58",
+                            "effectiveDateTime": "2025-09-23 11:30:00",
+                            "valueQuantity": {
+                                "value": "-",
+                                "comparator": null,
+                                "unit": "-",
+                                "system": "-",
+                                "code": "-"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\\\/\\\/hl7.org\\\/fhir\\\/v2\\\/0078",
+                                    "code": "-",
+                                    "display": "-"
+                                },
+                                "text": null
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "-",
+                                    "unit": "-",
+                                    "system": "http:\\\/\\\/unitsofmeasure.org",
+                                    "code": "-"
+                                },
+                                "high": {
+                                    "value": "-",
+                                    "unit": "-",
+                                    "system": "http:\\\/\\\/unitsofmeasure.org",
+                                    "code": "-"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "177141003",
+                                    "display": "Cesarean section"
+                                },
+                                "text": "Seksio Sesaria"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271",
+                                "display": "dr,ANNISA MAULIDIA MAHDI,Sp.OG"
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/5cfa6eeefcda2d862a2e495d0c5f0e82.png",
+                                        "display": "Laporan Operasi"
+                                    }
+                                }
+                            ],
+                            "conclusion": "<span style=\"font-size:12.0pt;line-height:107%;\nfont-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\nmso-ansi-language:EN-ID;mso-fareast-language:EN-ID;mso-bidi-language:AR-SA\">Stabil<\/span>"
+                        }
+                    ],
+                    "basedOn": [
+                        {
+                            "reference": "Procedure\/1413R001-6207033-22-5e3f270e-2172-2d0a-4cd6-e8e2f019f6a8",
+                            "display": "Prosedur Operasi"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "DiagnosticReport",
+                    "id": "1413R001-6207033-22-32a0fa65-3b18-aae7-a5aa-c1eec8366d95",
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI",
+                        "noSep": "1413R0010925V000033"
+                    },
+                    "category": {
+                        "coding": {
+                            "system": "http:\/\/hl7.org\/fhir\/v2\/0074",
+                            "code": "NRS",
+                            "display": "Nursing Service Measures"
+                        }
+                    },
+                    "status": "final",
+                    "performer": [
+                        {
+                            "reference": "Organization\/1413R001-6207033-22-f5d6761b-6c09-6bbf-cd8c-34140d08da5a",
+                            "display": "Ruang Melati Kelas 2"
+                        }
+                    ],
+                    "result": [
+                        {
+                            "resourceType": "Observation",
+                            "id": "VS2509240001001",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Tanda Vital: FREKUENSI NADI, Nilai: 88.00"
+                            },
+                            "issued": "2025-09-23T11:53:00.000Z",
+                            "effectiveDateTime": "2025-09-24T11:53:19.000Z",
+                            "valueQuantity": {
+                                "value": "88.00",
+                                "comparator": "",
+                                "unit": "beats\/min",
+                                "system": "",
+                                "code": "beats\/min"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "N",
+                                    "display": "Normal"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "60.0",
+                                    "unit": "beats\/min",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "beats\/min"
+                                },
+                                "high": {
+                                    "value": "100.0",
+                                    "unit": "beats\/min",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "beats\/min"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "8867-4",
+                                    "display": "Heart rate"
+                                },
+                                "text": "Heart rate"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271",
+                                "display": "ANNISA MAULIDIA MAHDI,dr,Sp.OG"
+                            },
+                            "conclusion": "Tanda Vital"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "VS2509240001002",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Tanda Vital: FREKUENSI NAFAS, Nilai: 20.00"
+                            },
+                            "issued": "2025-09-23T11:53:00.000Z",
+                            "effectiveDateTime": "2025-09-24T11:53:19.000Z",
+                            "valueQuantity": {
+                                "value": "20.00",
+                                "comparator": "",
+                                "unit": "breaths\/min",
+                                "system": "",
+                                "code": "breaths\/min"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "N",
+                                    "display": "Normal"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "12.0",
+                                    "unit": "breaths\/min",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "breaths\/min"
+                                },
+                                "high": {
+                                    "value": "20.0",
+                                    "unit": "breaths\/min",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "breaths\/min"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "9279-1",
+                                    "display": "Respiratory rate"
+                                },
+                                "text": "Respiratory rate"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271",
+                                "display": "ANNISA MAULIDIA MAHDI,dr,Sp.OG"
+                            },
+                            "conclusion": "Tanda Vital"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "VS2509240001003",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Tanda Vital: SUHU, Nilai: 36.80"
+                            },
+                            "issued": "2025-09-23T11:53:00.000Z",
+                            "effectiveDateTime": "2025-09-24T11:53:19.000Z",
+                            "valueQuantity": {
+                                "value": "36.80",
+                                "comparator": "",
+                                "unit": "Cel",
+                                "system": "",
+                                "code": "Cel"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "N",
+                                    "display": "Normal"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "36.5",
+                                    "unit": "Cel",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "Cel"
+                                },
+                                "high": {
+                                    "value": "37.5",
+                                    "unit": "Cel",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "Cel"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "8310-5",
+                                    "display": "Body temperature"
+                                },
+                                "text": "Body temperature"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271",
+                                "display": "ANNISA MAULIDIA MAHDI,dr,Sp.OG"
+                            },
+                            "conclusion": "Tanda Vital"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "VS2509240001004",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Tanda Vital: SATURASI O2, Nilai: 98.00"
+                            },
+                            "issued": "2025-09-23T11:53:00.000Z",
+                            "effectiveDateTime": "2025-09-24T11:53:19.000Z",
+                            "valueQuantity": {
+                                "value": "98.00",
+                                "comparator": "",
+                                "unit": "Percent",
+                                "system": "",
+                                "code": "Percent"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "N",
+                                    "display": "Normal"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "95.0",
+                                    "unit": "Percent",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "Percent"
+                                },
+                                "high": {
+                                    "value": "100.0",
+                                    "unit": "Percent",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "Percent"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "59408-5",
+                                    "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+                                },
+                                "text": "Oxygen saturation in Arterial blood by Pulse oximetry"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271",
+                                "display": "ANNISA MAULIDIA MAHDI,dr,Sp.OG"
+                            },
+                            "conclusion": "Tanda Vital"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "VS2509240001005",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Tanda Vital: TEKANAN DARAH (SISTOLIK), Nilai: 130.00"
+                            },
+                            "issued": "2025-09-23T11:53:00.000Z",
+                            "effectiveDateTime": "2025-09-24T11:53:19.000Z",
+                            "valueQuantity": {
+                                "value": "130.00",
+                                "comparator": "",
+                                "unit": "mm[Hg]",
+                                "system": "",
+                                "code": "mm[Hg]"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "H",
+                                    "display": "High"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "90.0",
+                                    "unit": "mm[Hg]",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "mm[Hg]"
+                                },
+                                "high": {
+                                    "value": "120.0",
+                                    "unit": "mm[Hg]",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "mm[Hg]"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure"
+                                },
+                                "text": "Systolic blood pressure"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271",
+                                "display": "ANNISA MAULIDIA MAHDI,dr,Sp.OG"
+                            },
+                            "conclusion": "Tanda Vital"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "VS2509240001006",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Tanda Vital: TEKANAN DARAH (DIASTOLIK), Nilai: 80.00"
+                            },
+                            "issued": "2025-09-23T11:53:00.000Z",
+                            "effectiveDateTime": "2025-09-24T11:53:19.000Z",
+                            "valueQuantity": {
+                                "value": "80.00",
+                                "comparator": "",
+                                "unit": "mm[Hg]",
+                                "system": "",
+                                "code": "mm[Hg]"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "N",
+                                    "display": "Normal"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "60.0",
+                                    "unit": "mm[Hg]",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "mm[Hg]"
+                                },
+                                "high": {
+                                    "value": "80.0",
+                                    "unit": "mm[Hg]",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "mm[Hg]"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure"
+                                },
+                                "text": "Diastolic blood pressure"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-2f180bc6-7763-fd87-f76a-d4ee461ef271",
+                                "display": "ANNISA MAULIDIA MAHDI,dr,Sp.OG"
+                            },
+                            "conclusion": "Tanda Vital"
+                        }
+                    ],
+                    "basedOn": [
+                        {
+                            "reference": "Procedure\/1413R001-6207033-22-35d6f2f3-3290-44fb-6531-152082244633",
+                            "display": "Prosedur Vital Sign"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "DiagnosticReport",
+                    "id": "1413R001-6207033-22-71645fdf-e5aa-a544-1a56-a9a2c5f8c195",
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI",
+                        "noSep": "1413R0010925V000031"
+                    },
+                    "category": {
+                        "coding": {
+                            "system": "http:\/\/hl7.org\/fhir\/v2\/0074",
+                            "code": "OTH",
+                            "display": "Other (Triage)"
+                        }
+                    },
+                    "status": "final",
+                    "performer": [
+                        {
+                            "reference": "Organization\/1413R001-6207033-22-80624ee0-d4a2-6c2e-c094-9f53ca025373",
+                            "display": "IGD"
+                        }
+                    ],
+                    "result": [
+                        {
+                            "resourceType": "Observation",
+                            "id": "1010112120614118",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "body temperature 37.5 C<\/div>"
+                            },
+                            "issued": "2025-09-23T11:01:40+00:00",
+                            "effectiveDateTime": "2025-09-23T10:54:41+00:00",
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "8310-5",
+                                    "display": "Body temperature"
+                                },
+                                "text": "Body temperature"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-644d23fd-eecb-c984-c459-3ba7190be44e",
+                                "display": "SITI MARYANI,dr,Sp.PD."
+                            },
+                            "valueQuantity": {
+                                "value": "37.5",
+                                "unit": "C",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "Cel"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "N",
+                                    "display": "Normal"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "36.5",
+                                    "unit": "Cel",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "Cel"
+                                },
+                                "high": {
+                                    "value": "37.5",
+                                    "unit": "Cel",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "Cel"
+                                }
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/48a8532d5cd074d1b8ffe59ac2d03066.png",
+                                        "display": "Laporan Triage"
+                                    }
+                                }
+                            ],
+                            "conclusion": "EMERGENCY"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "3109101421313811",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "systolic blood pressure 150 mm Hg<\/div>"
+                            },
+                            "issued": "2025-09-23T11:01:40+00:00",
+                            "effectiveDateTime": "2025-09-23T10:54:41+00:00",
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure"
+                                },
+                                "text": "Systolic blood pressure"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-644d23fd-eecb-c984-c459-3ba7190be44e",
+                                "display": "SITI MARYANI,dr,Sp.PD."
+                            },
+                            "valueQuantity": {
+                                "value": "150",
+                                "unit": "mm Hg",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "mm[Hg]"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "H",
+                                    "display": "High"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "90",
+                                    "unit": "mm[Hg]",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "mm[Hg]"
+                                },
+                                "high": {
+                                    "value": "120",
+                                    "unit": "mm[Hg]",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "mm[Hg]"
+                                }
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/48a8532d5cd074d1b8ffe59ac2d03066.png",
+                                        "display": "Laporan Triage"
+                                    }
+                                }
+                            ],
+                            "conclusion": "EMERGENCY"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "2151800111118154",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "diastolic blood pressure 90 mm Hg<\/div>"
+                            },
+                            "issued": "2025-09-23T11:01:40+00:00",
+                            "effectiveDateTime": "2025-09-23T10:54:41+00:00",
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure"
+                                },
+                                "text": "Diastolic blood pressure"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-644d23fd-eecb-c984-c459-3ba7190be44e",
+                                "display": "SITI MARYANI,dr,Sp.PD."
+                            },
+                            "valueQuantity": {
+                                "value": "90",
+                                "unit": "mm Hg",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "mm[Hg]"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "H",
+                                    "display": "High"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "60",
+                                    "unit": "mm[Hg]",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "mm[Hg]"
+                                },
+                                "high": {
+                                    "value": "80",
+                                    "unit": "mm[Hg]",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "mm[Hg]"
+                                }
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/48a8532d5cd074d1b8ffe59ac2d03066.png",
+                                        "display": "Laporan Triage"
+                                    }
+                                }
+                            ],
+                            "conclusion": "EMERGENCY"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "5119256102031412",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "heart rate 100 beats\/min<\/div>"
+                            },
+                            "issued": "2025-09-23T11:01:40+00:00",
+                            "effectiveDateTime": "2025-09-23T10:54:41+00:00",
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "8867-4",
+                                    "display": "Heart rate"
+                                },
+                                "text": "Heart rate"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-644d23fd-eecb-c984-c459-3ba7190be44e",
+                                "display": "SITI MARYANI,dr,Sp.PD."
+                            },
+                            "valueQuantity": {
+                                "value": "100",
+                                "unit": "beats\/min",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "\/min"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "N",
+                                    "display": "Normal"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "60",
+                                    "unit": "\/min",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "\/min"
+                                },
+                                "high": {
+                                    "value": "100",
+                                    "unit": "\/min",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "\/min"
+                                }
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/48a8532d5cd074d1b8ffe59ac2d03066.png",
+                                        "display": "Laporan Triage"
+                                    }
+                                }
+                            ],
+                            "conclusion": "EMERGENCY"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "7110861118948911",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "respiratory rate 22 breaths\/min<\/div>"
+                            },
+                            "issued": "2025-09-23T11:01:40+00:00",
+                            "effectiveDateTime": "2025-09-23T10:54:41+00:00",
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "9279-1",
+                                    "display": "Respiratory rate"
+                                },
+                                "text": "Respiratory rate"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-644d23fd-eecb-c984-c459-3ba7190be44e",
+                                "display": "SITI MARYANI,dr,Sp.PD."
+                            },
+                            "valueQuantity": {
+                                "value": "22",
+                                "unit": "breaths\/min",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "\/min"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "H",
+                                    "display": "High"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "12",
+                                    "unit": "\/min",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "\/min"
+                                },
+                                "high": {
+                                    "value": "20",
+                                    "unit": "\/min",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "\/min"
+                                }
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/48a8532d5cd074d1b8ffe59ac2d03066.png",
+                                        "display": "Laporan Triage"
+                                    }
+                                }
+                            ],
+                            "conclusion": "EMERGENCY"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "5671515102715154",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "gestational age 32 breaths\/min<\/div>"
+                            },
+                            "issued": "2025-09-23T11:01:40+00:00",
+                            "effectiveDateTime": "2025-09-23T10:54:41+00:00",
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "11884-4",
+                                    "display": "Gestational age"
+                                },
+                                "text": "Gestational age"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-644d23fd-eecb-c984-c459-3ba7190be44e",
+                                "display": "SITI MARYANI,dr,Sp.PD."
+                            },
+                            "valueQuantity": {
+                                "value": 32,
+                                "unit": "weeks",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "wk"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\\\/\\\/hl7.org\\\/fhir\\\/v2\\\/0078",
+                                    "code": "L",
+                                    "display": "Low"
+                                },
+                                "text": "Gestational age : 32 weeks"
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "37",
+                                    "unit": "wk",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "wk"
+                                },
+                                "high": {
+                                    "value": "42",
+                                    "unit": "wk",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "wk"
+                                }
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/6b8af3db240270a59f10414d84981b6a.png",
+                                        "display": "Laporan Triage Obgyn"
+                                    }
+                                }
+                            ],
+                            "conclusion": "EMERGENCY"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "0411521415151086",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "fetal heart rate 180 breaths\/min<\/div>"
+                            },
+                            "issued": "2025-09-23T11:01:40+00:00",
+                            "effectiveDateTime": "2025-09-23T10:54:41+00:00",
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "8770-3",
+                                    "display": "Fetal heart rate"
+                                },
+                                "text": "Fetal heart rate"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-644d23fd-eecb-c984-c459-3ba7190be44e",
+                                "display": "SITI MARYANI,dr,Sp.PD."
+                            },
+                            "valueQuantity": {
+                                "value": 180,
+                                "unit": "beats\/min",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "\/min"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\\\/\\\/hl7.org\\\/fhir\\\/v2\\\/0078",
+                                    "code": "H",
+                                    "display": "High"
+                                },
+                                "text": "Fetal heart rate : 180 beats\/min"
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "110",
+                                    "unit": "\/min",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "\/min"
+                                },
+                                "high": {
+                                    "value": "160",
+                                    "unit": "\/min",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "\/min"
+                                }
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/6b8af3db240270a59f10414d84981b6a.png",
+                                        "display": "Laporan Triage Obgyn"
+                                    }
+                                }
+                            ],
+                            "conclusion": "EMERGENCY"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "9210515211111014",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "cervical dilation 7 breaths\/min<\/div>"
+                            },
+                            "issued": "2025-09-23T11:01:40+00:00",
+                            "effectiveDateTime": "2025-09-23T10:54:41+00:00",
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "11885-1",
+                                    "display": "Cervical dilation"
+                                },
+                                "text": "Cervical dilation"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-644d23fd-eecb-c984-c459-3ba7190be44e",
+                                "display": "SITI MARYANI,dr,Sp.PD."
+                            },
+                            "valueQuantity": {
+                                "value": 7,
+                                "unit": "cm",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "cm"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\\\/\\\/hl7.org\\\/fhir\\\/v2\\\/0078",
+                                    "code": "N",
+                                    "display": "Normal"
+                                },
+                                "text": "Cervical dilation : 7 cm"
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "0",
+                                    "unit": "cm",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "cm"
+                                },
+                                "high": {
+                                    "value": "10",
+                                    "unit": "cm",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "cm"
+                                }
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/6b8af3db240270a59f10414d84981b6a.png",
+                                        "display": "Laporan Triage Obgyn"
+                                    }
+                                }
+                            ],
+                            "conclusion": "EMERGENCY"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "1132515810131934",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "uterine contractions reguler breaths\/min<\/div>"
+                            },
+                            "issued": "2025-09-23T11:01:40+00:00",
+                            "effectiveDateTime": "2025-09-23T10:54:41+00:00",
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/loinc.org",
+                                    "code": "8665-2",
+                                    "display": "Uterine contractions"
+                                },
+                                "text": "Uterine contractions"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-644d23fd-eecb-c984-c459-3ba7190be44e",
+                                "display": "SITI MARYANI,dr,Sp.PD."
+                            },
+                            "valueQuantity": {
+                                "value": "0",
+                                "unit": "",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": ""
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\\\/\\\/hl7.org\\\/fhir\\\/v2\\\/0078",
+                                    "code": "N",
+                                    "display": "Normal"
+                                },
+                                "text": "Uterine contractions : 0 "
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "",
+                                    "unit": "",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": ""
+                                },
+                                "high": {
+                                    "value": "",
+                                    "unit": "",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": ""
+                                }
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/6b8af3db240270a59f10414d84981b6a.png",
+                                        "display": "Laporan Triage Obgyn"
+                                    }
+                                }
+                            ],
+                            "conclusion": "EMERGENCY",
+                            "valueString": "reguler"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "resource": [
+                {
+                    "resourceType": "Device",
+                    "id": "1413R001-6207033-22-7545e9cd-3897-b3a6-4078-b67996e2b2a4",
+                    "text": {
+                        "status": "generated",
+                        "div": "Generated Narrative with Details"
+                    },
+                    "identifier": [
+                        {
+                            "system": "http:\/\/acme.com\/devices\/pacemakers\/octane\/serial",
+                            "value": "SN-XRAY-002B"
+                        }
+                    ],
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http:\/\/acme.com\/devices",
+                                "code": "SN-XRAY-002B",
+                                "display": "X-ray machine"
+                            }
+                        ]
+                    },
+                    "lotNumber": "",
+                    "manufacturer": "CardioCare, Inc.",
+                    "manufactureDate": "2023-01-01",
+                    "expirationDate": "2030-12-31",
+                    "model": "CardioScan 5000",
+                    "patient": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65"
+                    },
+                    "contact": [
+                        {
+                            "system": "phone",
+                            "value": "+62-21-98765432",
+                            "use": "work"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "Device",
+                    "id": "1413R001-6207033-22-d5540f4c-2037-d0fd-d1b0-01e07fcc4419",
+                    "text": {
+                        "status": "generated",
+                        "div": "Generated Narrative with Details"
+                    },
+                    "identifier": [
+                        {
+                            "system": "http:\/\/hospital-b.org\/devices\/xray",
+                            "value": "COBASE411"
+                        }
+                    ],
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http:\/\/snomed.info\/sct",
+                                "code": "422030006",
+                                "display": "Automated clinical chemistry analyzer"
+                            }
+                        ]
+                    },
+                    "lotNumber": "",
+                    "manufacturer": "Roche Diagnostics",
+                    "manufactureDate": "2023-01-01",
+                    "expirationDate": "2030-12-31",
+                    "model": "cobas e 411",
+                    "patient": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65"
+                    },
+                    "contact": [
+                        {
+                            "system": "phone",
+                            "value": "+62-21-98765432",
+                            "use": "work"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
