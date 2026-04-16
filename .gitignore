@@ -1,4 +1,6 @@
-.dicomrouter-webhook.php
-.dicomrouter-webhook2.php
+# webhook sensitif
+dicomrouter-webhook.php
+dicomrouter-webhook2.php
 
-.*.log
+# log
+*.log
