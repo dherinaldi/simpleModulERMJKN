@@ -1,0 +1,122 @@
+[2026-04-16 13:01:36] [WARNING] Request method tidak valid: GET
+[2026-04-16 13:01:39] [WARNING] Request method tidak valid: GET
+[2026-04-16 13:30:00] [DEBUG] Raw input received (214 bytes)
+[2026-04-16 13:30:00] [DEBUG] Payload: {
+  "status": true,
+  "stage": "STORE",
+  "data": {
+    "accessionNumber": "ACC001",
+    "studyInstanceUID": "1.2.840.10008.1",
+    "imagingStudyId": "thorax_ap.dcm"
+  },
+  "message": "Test dari Postman"
+}
+[2026-04-16 13:30:00] [DEBUG] Payload valid, structure: {"status":true,"stage":"STORE","has_data":true,"has_error":false}
+[2026-04-16 13:30:00] [INFO] Accession number found: ACC001
+[2026-04-16 13:30:00] [DEBUG] Querying patient data untuk accession: ACC001
+[16-Apr-2026 13:30:00 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\laragon\www\simpleModulERMJKN\dicomrouter-webhook2.php on line 47
+[16-Apr-2026 13:30:00 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\laragon\www\simpleModulERMJKN\dicomrouter-webhook2.php on line 47
+[2026-04-16 13:30:00] [ERROR] Database error: Database connection failed: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+[2026-04-16 13:30:00] [WARNING] Patient data not found di database
+[2026-04-16 13:30:01] [INFO] Notifikasi Telegram berhasil dikirim
+[2026-04-16 13:30:01] [INFO] Webhook processed successfully - Accession: ACC001
+[2026-04-16 13:31:57] [DEBUG] Raw input received (214 bytes)
+[2026-04-16 13:31:57] [DEBUG] Payload: {
+  "status": true,
+  "stage": "STORE",
+  "data": {
+    "accessionNumber": "ACC001",
+    "studyInstanceUID": "1.2.840.10008.1",
+    "imagingStudyId": "thorax_ap.dcm"
+  },
+  "message": "Test dari Postman"
+}
+[2026-04-16 13:31:57] [DEBUG] Payload valid, structure: {"status":true,"stage":"STORE","has_data":true,"has_error":false}
+[2026-04-16 13:31:57] [INFO] Accession number found: ACC001
+[2026-04-16 13:31:57] [DEBUG] Querying patient data untuk accession: ACC001
+[16-Apr-2026 13:31:57 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\laragon\www\simpleModulERMJKN\dicomrouter-webhook2.php on line 47
+[16-Apr-2026 13:31:57 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\laragon\www\simpleModulERMJKN\dicomrouter-webhook2.php on line 47
+[2026-04-16 13:31:57] [ERROR] Database error: Database connection failed: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+[2026-04-16 13:31:57] [WARNING] Patient data not found di database
+[2026-04-16 13:31:58] [INFO] Notifikasi Telegram berhasil dikirim
+[2026-04-16 13:31:58] [INFO] Webhook processed successfully - Accession: ACC001
+[2026-04-16 13:33:50] [DEBUG] Raw input received (214 bytes)
+[2026-04-16 13:33:50] [DEBUG] Payload: {
+  "status": true,
+  "stage": "STORE",
+  "data": {
+    "accessionNumber": "ACC001",
+    "studyInstanceUID": "1.2.840.10008.1",
+    "imagingStudyId": "thorax_ap.dcm"
+  },
+  "message": "Test dari Postman"
+}
+[2026-04-16 13:33:50] [DEBUG] Payload valid, structure: {"status":true,"stage":"STORE","has_data":true,"has_error":false}
+[2026-04-16 13:33:50] [INFO] Accession number found: ACC001
+[2026-04-16 13:33:50] [DEBUG] Querying patient data untuk accession: ACC001
+[16-Apr-2026 13:33:50 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\laragon\www\simpleModulERMJKN\dicomrouter-webhook2.php on line 47
+[16-Apr-2026 13:33:50 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\laragon\www\simpleModulERMJKN\dicomrouter-webhook2.php on line 47
+[2026-04-16 13:33:50] [ERROR] Database error: Database connection failed: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+[2026-04-16 13:33:50] [WARNING] Patient data not found di database
+[2026-04-16 13:33:55] [INFO] Notifikasi Telegram berhasil dikirim
+[2026-04-16 13:33:55] [INFO] Webhook processed successfully - Accession: ACC001
+[2026-04-16 13:35:18] [DEBUG] Raw input received (214 bytes)
+[2026-04-16 13:35:18] [DEBUG] Payload: {
+  "status": true,
+  "stage": "STORE",
+  "data": {
+    "accessionNumber": "ACC001",
+    "studyInstanceUID": "1.2.840.10008.1",
+    "imagingStudyId": "thorax_ap.dcm"
+  },
+  "message": "Test dari Postman"
+}
+[2026-04-16 13:35:18] [DEBUG] Payload valid, structure: {"status":true,"stage":"STORE","has_data":true,"has_error":false}
+[2026-04-16 13:35:18] [INFO] Accession number found: ACC001
+[2026-04-16 13:35:18] [DEBUG] Querying patient data untuk accession: ACC001
+[16-Apr-2026 13:35:18 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\laragon\www\simpleModulERMJKN\dicomrouter-webhook2.php on line 47
+[16-Apr-2026 13:35:18 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\laragon\www\simpleModulERMJKN\dicomrouter-webhook2.php on line 47
+[2026-04-16 13:35:18] [ERROR] Database error: Database connection failed: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+[2026-04-16 13:35:18] [WARNING] Patient data not found di database
+[2026-04-16 13:35:19] [INFO] Notifikasi Telegram berhasil dikirim
+[2026-04-16 13:35:19] [INFO] Webhook processed successfully - Accession: ACC001
+[2026-04-16 13:39:35] [DEBUG] Raw input received (214 bytes)
+[2026-04-16 13:39:35] [DEBUG] Payload: {
+  "status": true,
+  "stage": "STORE",
+  "data": {
+    "accessionNumber": "ACC001",
+    "studyInstanceUID": "1.2.840.10008.1",
+    "imagingStudyId": "thorax_ap.dcm"
+  },
+  "message": "Test dari Postman"
+}
+[2026-04-16 13:39:35] [DEBUG] Payload valid, structure: {"status":true,"stage":"STORE","has_data":true,"has_error":false}
+[2026-04-16 13:39:35] [INFO] Accession number found: ACC001
+[2026-04-16 13:39:35] [DEBUG] Querying patient data untuk accession: ACC001
+[16-Apr-2026 13:39:35 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\laragon\www\simpleModulERMJKN\dicomrouter-webhook2.php on line 47
+[16-Apr-2026 13:39:35 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\laragon\www\simpleModulERMJKN\dicomrouter-webhook2.php on line 47
+[2026-04-16 13:39:35] [ERROR] Database error: Database connection failed: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+[2026-04-16 13:39:35] [WARNING] Patient data not found di database
+[2026-04-16 13:39:37] [INFO] Notifikasi Telegram berhasil dikirim
+[2026-04-16 13:39:37] [INFO] Webhook processed successfully - Accession: ACC001
+[2026-04-16 13:40:19] [DEBUG] Raw input received (214 bytes)
+[2026-04-16 13:40:19] [DEBUG] Payload: {
+  "status": true,
+  "stage": "STORE",
+  "data": {
+    "accessionNumber": "ACC001",
+    "studyInstanceUID": "1.2.840.10008.1",
+    "imagingStudyId": "thorax_ap.dcm"
+  },
+  "message": "Test dari Postman"
+}
+[2026-04-16 13:40:19] [DEBUG] Payload valid, structure: {"status":true,"stage":"STORE","has_data":true,"has_error":false}
+[2026-04-16 13:40:19] [INFO] Accession number found: ACC001
+[2026-04-16 13:40:19] [DEBUG] Querying patient data untuk accession: ACC001
+[16-Apr-2026 13:40:19 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\laragon\www\simpleModulERMJKN\dicomrouter-webhook2.php on line 47
+[16-Apr-2026 13:40:19 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\laragon\www\simpleModulERMJKN\dicomrouter-webhook2.php on line 47
+[2026-04-16 13:40:19] [ERROR] Database error: Database connection failed: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+[2026-04-16 13:40:19] [WARNING] Patient data not found di database
+[2026-04-16 13:40:21] [INFO] Notifikasi Telegram berhasil dikirim
+[2026-04-16 13:40:21] [INFO] Webhook processed successfully - Accession: ACC001

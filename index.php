@@ -33,22 +33,22 @@ $bpjs   = new BpjsMrSender($config);
 //default org
 $orgId = 'xxxxxxxxx';
 //list data pasien format per pasien
-$noSep        = "0187R0060426V000003";
-$tglSep       = "2026-04-14";
+$noSep        = "0187R0060426V000004";
+$tglSep       = "2026-04-15";
 $jnsPelayanan = "R.Jalan";
 $kelasRawat   = "-";
-$diagnosa     = "E10 - Insulin-dependent diabetes mellitus";
+$diagnosa     = "S83.3 - Tear of articular cartilage of knee, current";
 $noRujukan    = "";
 $noKartu      = "0002033378673";
 $nama         = "ABDUL GAFAR";
 $tglLahir     = "1960-06-03";
-$noMr         = "0000099";
+$noMr         = "00150457";
 $kelamin      = "male";
-$nik          = "00000000001345";
+$nik          = "1308042002850002";
 $alamat       = "Alamat nya di sini";
-$hp           = '000033344';
-$start        = "2026-04-14 08:55:25";
-$end          = "2026-04-14 10:25:30";
+$hp           = '081234567890';
+$start        = "2026-04-15 08:55:25";
+$end          = "2026-04-15 10:25:30";
 //end list pasien
 
 $id2         = $noMr;
@@ -189,16 +189,16 @@ foreach ($org_list as $org) {
     $entries[] = entry(organization($org));
 }
 //data dokter
-$id_pr      = "kode_dokter";
+$id_pr      = "123456789";
 $sip        = "sip";
 $nik_pr     = "nik";
-$nama_pr    = "NAMA DOKTER";
+$nama_pr    = "MUSA ARAFAH";
 $phone      = "09999999";
 $email      = "email@email.co.id";
 $address    = "Jl. in aja dulu";
 $city       = "Klaten";
-$district   = "Klaten Utara";
-$state      = "JAWA TENGAH";
+$district   = "Malang";
+$state      = "JAWA TIMUR";
 $postalCode = "53146";
 $gender     = "female";
 $birthDate  = "0000-11-01";
@@ -212,10 +212,11 @@ $kunjungan = [
     "tgl_keluar" => $end,
 ];
 
+
 $diagnosa = [
     [
-        "code"    => "233513008",
-        "display" => "Extracorporeal dialysis",
+        "code"    => "156515005",
+        "display" => "Cartilage tear - knee",
 
     ],
     [
@@ -230,14 +231,6 @@ $diagnosa = [
     ],
 
 ];
-//ini unutk lab nya
-$lab = [
-    "loinc"       => "20509-6",
-    "pemeriksaan" => "Hemoglobin",
-    "hasil"       => "13",
-    "satuan"      => "g/dL",
-];
-//endlab
 
 //prosedure_area
 $procedures = [
@@ -291,6 +284,7 @@ $procedures = [
         ],
     ],
 ];
+
 
 $result = Procedures(
     $orgId,
@@ -371,6 +365,20 @@ $data_med  = buildMedicationResource($listObat, $pasien, $dokter, $diagnosa);
 $entries[] = entry($data_med);
 //end medic
 
+//ini unutk lab nya
+$lab = [
+    "loinc"       => "20509-6",
+    "pemeriksaan" => "Hemoglobin",
+    "hasil"       => "13",
+    "satuan"      => "g/dL",
+];
+//endlab
+
+$data_lab  = diagnostic($encounterId,$pasien,$dokter, $start);
+//$entries[] = entry($data_lab);
+
+
+
 /* ------------------ GENERATE RESOURCE ------------------ */
 
 $entries[] = entry(patient($id2, $noMr, $noKartu, $nik, $nama, $kelamin, $tglLahir, $hp, $alamat));
@@ -420,8 +428,8 @@ if ($bulan == '') {
 }
 // var_dump($bulan,$tahun);die;
 $payload = json_encode($bundle, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
- echo $payload;
- die;
+// echo $payload;
+// die;
 $result = $bpjs->sendMR($noSep, 2, $bulan, $tahun, $payload);
 // DEBUG
 echo "<pre>";

@@ -29,10 +29,15 @@ function Conditions($orgId, $noMr, $diagnosa, $start)
                     "text" => $diag["display"],
                     "coding" => [
                         [
-                            "system" => "http://snomed.info/sct",
+                            "system" => "http://hl7.org/fhir/sid/icd-10",
                             "code" => $diag["code"],
                             "display" => $diag["display"]
-                        ]
+                        ],
+                      /*   [
+                            "system" => "http://hl7.org/fhir/sid/icd-10",
+                            "code" => "R06.5",
+                            "display" => "Mouth breathing"
+                        ], */
                     ]
                 ],
                 "subject" => [
