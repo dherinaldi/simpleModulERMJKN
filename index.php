@@ -9,7 +9,7 @@ require "resource/encounter.php";
 require "resource/condition.php";
 require "resource/procedure.php";
 require "resource/observation.php";
-require "resource/diagnostic.php";
+require "resource/diagnostic_ubah.php";
 require "resource/medication.php";
 require "resource/composition.php";
 require "BpjsMrSender.php";
@@ -65,6 +65,7 @@ $pasien = [
     "tgl_lahir" => $tglLahir,
     "sep"       => $noSep,
 ];
+
 //list organisasi RS bisa di buat statis jika pasien tertentu
 $org_list = [
     [
@@ -375,7 +376,7 @@ $lab = [
 //endlab
 
 $data_lab  = diagnostic($encounterId,$pasien,$dokter, $start);
-//$entries[] = entry($data_lab);
+$entries[] = $data_lab;
 
 
 
@@ -398,7 +399,7 @@ $entries[] = entry(practitioner($id_pr,
 $entries[] = entry(encounter($encounterId, $id2, $nama, $noSep, $start, $end, $conditionId));
 // $entries[]=entry(procedure($noMr));
 // $entries[]=entry(observation($lab));
-// $entries[]=entry(diagnostic($noMr));
+//$entries[]=entry(diagnostic($noMr));
 $entries[] = entry(composition($compositionId, $noMr,
     $nama,
     $encounterId,
@@ -426,10 +427,13 @@ $bulan = date('m', strtotime($tglSep));
 if ($bulan == '') {
     echo "Bulan Kosong";
 }
+
 // var_dump($bulan,$tahun);die;
 $payload = json_encode($bundle, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-// echo $payload;
-// die;
+
+echo $payload;
+//die;
+
 $result = $bpjs->sendMR($noSep, 2, $bulan, $tahun, $payload);
 // DEBUG
 echo "<pre>";

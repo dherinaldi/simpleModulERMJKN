@@ -2,7 +2,7 @@
     "resourceType": "Bundle",
     "id": "1413R001-6207033-30-20e8c321-899d-fdee-47fc-01aada092adb",
     "meta": {
-        "lastUpdated": "2025-09-25 03:45:47"
+        "lastUpdated": "2026-04-01 00:12:00"
     },
     "identifier": {
         "use": null,
@@ -11,7 +11,7 @@
             "text": null
         },
         "system": "SEP",
-        "value": "1413R0010925V000038",
+        "value": "0187R0060426V000001",
         "assigner": {
             "display": null
         }
@@ -1165,6 +1165,378 @@
                                 "display": "SITI MARYANI,dr,Sp.PD."
                             },
                             "conclusion": "Tanda Vital"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "DiagnosticReport",
+                    "id": "1413R001-6207033-22-cfecdb27-6f63-4854-f3ef-915e2e980c31",
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI",
+                        "noSep": "1413R0010925V000031"
+                    },
+                    "category": {
+                        "coding": {
+                            "system": "http:\/\/hl7.org\/fhir\/v2\/0074",
+                            "code": "RAD",
+                            "display": "Radiology"
+                        }
+                    },
+                    "status": "final",
+                    "performer": [
+                        {
+                            "reference": "Organization\/1413R001-6207033-22-7a999e18-0150-ad51-714e-7eb7057ef7ba",
+                            "display": "Ultrasonografi"
+                        }
+                    ],
+                    "result": [
+                        {
+                            "resourceType": "Observation",
+                            "id": "2509230001190",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Disimpulkan adanya gawat janin"
+                            },
+                            "issued": "2025-09-23 11:25:29",
+                            "effectiveDateTime": "2025-09-23 11:13:26",
+                            "valueQuantity": {
+                                "value": "-",
+                                "comparator": "",
+                                "unit": "-",
+                                "system": "-",
+                                "code": "-"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\\\/\\\/hl7.org\\\/fhir\\\/v2\\\/0078",
+                                    "code": "-",
+                                    "display": "-"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "-",
+                                    "unit": "-",
+                                    "system": "http:\\\/\\\/unitsofmeasure.org",
+                                    "code": "-"
+                                },
+                                "high": {
+                                    "value": "-",
+                                    "unit": "-",
+                                    "system": "http:\\\/\\\/unitsofmeasure.org",
+                                    "code": "-"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "45036003",
+                                    "display": "Ultrasonography of abdomen"
+                                },
+                                "text": "USG Abdomen"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-222c8117-a97a-f595-5508-873cede69613",
+                                "display": "TONI HENDRAWAN MARDIHUSODO,dr,Sp.Rad"
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/3a842997e6380e4dc4db4a3f12c59e28.png",
+                                        "display": "Laporan Radiologi"
+                                    }
+                                }
+                            ],
+                            "conclusion": "Usia kehamilan 32 minggu, taksiran berat janin sesuai, air ketuban sangat sedikit, dan denyut jantung janin cepat"
+                        }
+                    ],
+                    "basedOn": [
+                        {
+                            "reference": "Procedure\/1413R001-6207033-22-1819e32c-53cb-9866-2f4d-608dd54d54d4",
+                            "display": "Prosedur Radiologi"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "DiagnosticReport",
+                    "id": "1413R001-6207033-22-81374713-d991-042a-0e18-865aa693cc24",
+                    "subject": {
+                        "reference": "Patient\/1413R001-6207033-22-8580d657-e29c-423a-e111-db6f9beedc65",
+                        "display": "ZULIYATI",
+                        "noSep": "1413R0010925V000031"
+                    },
+                    "category": {
+                        "coding": {
+                            "system": "http:\/\/hl7.org\/fhir\/v2\/0074",
+                            "code": "LAB",
+                            "display": "Laboratory"
+                        }
+                    },
+                    "status": "final",
+                    "performer": [
+                        {
+                            "reference": "Organization\/1413R001-6207033-22-2ddfd761-3cab-5702-011e-d34aa4c85f34",
+                            "display": "Laboratorium"
+                        }
+                    ],
+                    "result": [
+                        {
+                            "resourceType": "Observation",
+                            "id": "2509230001250923000056",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Urine Lengkap"
+                            },
+                            "issued": "2025-09-23 11:16:12",
+                            "effectiveDateTime": "2025-09-23 11:12:11",
+                            "valueQuantity": {
+                                "value": "2",
+                                "comparator": "",
+                                "unit": "mg\/dL",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "mg\/dL"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "L",
+                                    "display": "Low"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "Negatif",
+                                    "unit": "mg\/dL",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "mg\/dL"
+                                },
+                                "high": {
+                                    "value": "Negatif",
+                                    "unit": "mg\/dL",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "mg\/dL"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "386312004",
+                                    "display": "Urinalysis"
+                                },
+                                "text": "Urine Lengkap"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-f0b5f768-dd91-1137-1184-3e7e236aff52",
+                                "display": "RAPINA AMBARITA,dr,Sp.PK"
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/cdce7f934ff75fd572840339d4508cff.png",
+                                        "display": "Laporan Laboratorium"
+                                    }
+                                }
+                            ],
+                            "conclusion": "Nilai Hasil Pengujian A.5 Proteiun Urine  2 mg\/dL"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "2509230001250923000125",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Darah Lengkap Analiser"
+                            },
+                            "issued": "2025-09-23 11:18:21",
+                            "effectiveDateTime": "2025-09-23 11:12:11",
+                            "valueQuantity": {
+                                "value": "180",
+                                "comparator": "",
+                                "unit": "10^3\/ul",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "10^3\/ul"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "N",
+                                    "display": "Normal"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "150",
+                                    "unit": "10^3\/ul",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "10^3\/ul"
+                                },
+                                "high": {
+                                    "value": "400",
+                                    "unit": "10^3\/ul",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "10^3\/ul"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "26604007",
+                                    "display": "Complete blood count"
+                                },
+                                "text": "Darah Lengkap Analiser"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-f0b5f768-dd91-1137-1184-3e7e236aff52",
+                                "display": "RAPINA AMBARITA,dr,Sp.PK"
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/cdce7f934ff75fd572840339d4508cff.png",
+                                        "display": "Laporan Laboratorium"
+                                    }
+                                }
+                            ],
+                            "conclusion": "Nilai Hasil Pengujian 3. Trombosit  180 10^3\/ul"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "2509230001250923000127",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Darah Lengkap Analiser"
+                            },
+                            "issued": "2025-09-23 11:18:21",
+                            "effectiveDateTime": "2025-09-23 11:12:11",
+                            "valueQuantity": {
+                                "value": "15",
+                                "comparator": "",
+                                "unit": "10^3\/ul",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "10^3\/ul"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "H",
+                                    "display": "High"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "4",
+                                    "unit": "10^3\/ul",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "10^3\/ul"
+                                },
+                                "high": {
+                                    "value": "11",
+                                    "unit": "10^3\/ul",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "10^3\/ul"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "26604007",
+                                    "display": "Complete blood count"
+                                },
+                                "text": "Darah Lengkap Analiser"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-f0b5f768-dd91-1137-1184-3e7e236aff52",
+                                "display": "RAPINA AMBARITA,dr,Sp.PK"
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/cdce7f934ff75fd572840339d4508cff.png",
+                                        "display": "Laporan Laboratorium"
+                                    }
+                                }
+                            ],
+                            "conclusion": "Nilai Hasil Pengujian 2. Leukosit  15 10^3\/ul"
+                        },
+                        {
+                            "resourceType": "Observation",
+                            "id": "2509230001250923000129",
+                            "status": "final",
+                            "text": {
+                                "status": "generated",
+                                "div": "Darah Lengkap Analiser"
+                            },
+                            "issued": "2025-09-23 11:18:21",
+                            "effectiveDateTime": "2025-09-23 11:12:11",
+                            "valueQuantity": {
+                                "value": "11",
+                                "comparator": "",
+                                "unit": "gr\/dl",
+                                "system": "http:\/\/unitsofmeasure.org",
+                                "code": "gr\/dl"
+                            },
+                            "interpretation": {
+                                "coding": {
+                                    "system": "http:\/\/hl7.org\/fhir\/v2\/0078",
+                                    "code": "L",
+                                    "display": "Low"
+                                },
+                                "text": ""
+                            },
+                            "referenceRange": {
+                                "low": {
+                                    "value": "12",
+                                    "unit": "gr\/dl",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "gr\/dl"
+                                },
+                                "high": {
+                                    "value": "16",
+                                    "unit": "gr\/dl",
+                                    "system": "http:\/\/unitsofmeasure.org",
+                                    "code": "gr\/dl"
+                                }
+                            },
+                            "code": {
+                                "coding": {
+                                    "system": "http:\/\/snomed.info\/sct",
+                                    "code": "26604007",
+                                    "display": "Complete blood count"
+                                },
+                                "text": "Darah Lengkap Analiser"
+                            },
+                            "performer": {
+                                "reference": "Practitioner\/1413R001-6207033-22-f0b5f768-dd91-1137-1184-3e7e236aff52",
+                                "display": "RAPINA AMBARITA,dr,Sp.PK"
+                            },
+                            "image": [
+                                {
+                                    "comment": "",
+                                    "link": {
+                                        "reference": "https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/cdce7f934ff75fd572840339d4508cff.png",
+                                        "display": "Laporan Laboratorium"
+                                    }
+                                }
+                            ],
+                            "conclusion": "Nilai Hasil Pengujian 1. Haemoglobin Wanita  11 gr\/dl"
+                        }
+                    ],
+                    "basedOn": [
+                        {
+                            "reference": "Procedure\/1413R001-6207033-22-95d63b53-d4c6-5db1-10ff-fccd0d1cba3f",
+                            "display": "Prosedur Laboratorium"
                         }
                     ]
                 }

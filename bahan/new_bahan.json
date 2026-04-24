@@ -1,0 +1,1867 @@
+{
+  "resourceType": "Bundle",
+  "id": "0186R004-3506025-1-2bbf05e6-8b81-4a35-a23a-bf02efc7c824",
+  "meta": {
+    "lastUpdated": "2026-04-02 00:00:00"
+  },
+  "identifier": {
+    "system": "SEP",
+    "value": "0187R0060426V000002"
+  },
+  "type": "document",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "MR"
+                }
+              ],
+              "text": "Nomor RM"
+            },
+            "value": "2024-000505",
+            "assigner": {
+              "display": "RS TRUSTMEDIS JAKARTA"
+            }
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "MB"
+                }
+              ],
+              "text": "Nomor Peserta BPJS Kesehatan"
+            },
+            "value": "0002049121618",
+            "assigner": {
+              "display": "BPJS KESEHATAN"
+            }
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "NNIDN"
+                }
+              ],
+              "text": "NIK"
+            },
+            "value": "3328100205470001",
+            "assigner": {
+              "display": "KEMDAGRI"
+            }
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": "NASIKIN, SAUDARA"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/MaritalStatus",
+              "code": "U"
+            }
+          ]
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "08568888888",
+            "use": "mobile"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1945-05-02",
+        "deceasedBoolean": false,
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "text": "JL PERAK BARAT 275",
+            "line": [
+              "JL PERAK BARAT 275"
+            ],
+            "city": "kota Surabaya",
+            "district": "PABEAN CANTIAN",
+            "state": "PERAK UTARA",
+            "postalCode": "16065",
+            "country": "IDN"
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization/0186R004-3506025-1-7cd35767-047e-4ec3-9344-8b02f1916325",
+          "display": "RS TRUSTMEDIS JAKARTA"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:nomor_sip",
+            "value": "11223344556"
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "NNIDN"
+                }
+              ],
+              "text": "NIK"
+            },
+            "value": "3519111703800007",
+            "assigner": {
+              "display": "KEMDAGRI"
+            }
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "08564844444",
+            "use": "work"
+          },
+          {
+            "system": "email",
+            "value": "abc@gmail.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "text": "No Address",
+            "line": [
+              "No Address"
+            ],
+            "city": "",
+            "district": "",
+            "state": "",
+            "postalCode": "",
+            "country": "IDN"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2023-02-27"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "0186R004-3506025-1-7cd35767-047e-4ec3-9344-8b02f1916325",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:bpjs",
+            "value": "0186R004"
+          },
+          {
+            "use": "official",
+            "system": "urn:oid:kemkes",
+            "value": "3506025"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ],
+            "text": "RS TRUSTMEDIS JAKARTA"
+          }
+        ],
+        "name": "IGD",
+        "alias": [
+          "RS TRUSTMEDIS JAKARTA"
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "081134212",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "type": "physical",
+            "text": "Jl. Kertajaya Indah Timur XVI No 32",
+            "line": [
+              "Jl. Kertajaya Indah Timur XVI No 32"
+            ],
+            "city": "KABUPATEN BERAU",
+            "district": "",
+            "state": "",
+            "postalCode": "60117",
+            "country": "IDN"
+          }
+        ],
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PATINF",
+                  "display": "Patient Information"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "081134212"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e",
+        "identifier": [
+          {
+            "system": "http://api.bpjs-kesehatan.go.id:8080/Vclaim-rest/SEP/",
+            "value": "0186R0040426V000009"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+          "display": "NASIKIN, SAUDARA",
+          "noSep": "0186R0040426V000009"
+        },
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "incomingReferral": [
+          {
+            "identifier": [
+              {
+                "system": "nomor_rujukan_bpjs",
+                "value": ""
+              }
+            ]
+          }
+        ],
+        "reason": [
+          {
+            "coding": [
+              {
+                "code": "K20",
+                "display": "Oesophagitis",
+                "system": "http://hl7.org/fhir/sid/icd-10"
+              }
+            ],
+            "text": "Oesophagitis"
+          }
+        ],
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/0186R004-3506025-1-3c4af740-3eae-4bcf-8c8a-384303f09efc",
+              "role": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/diagnosis-role",
+                    "code": "DD",
+                    "display": "Discharge Diagnosis"
+                  }
+                ]
+              },
+              "rank": 1
+            }
+          },
+          {
+            "condition": {
+              "reference": "Condition/0186R004-3506025-1-5e274e3c-a893-4d64-9d1c-9994dffdb92e",
+              "role": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/diagnosis-role",
+                    "code": "DD",
+                    "display": "Discharge Diagnosis"
+                  }
+                ]
+              },
+              "rank": 2
+            }
+          }
+        ],
+        "hospitalization": {
+          "dischargeDisposition": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+                  "code": "",
+                  "display": ""
+                }
+              ]
+            }
+          ]
+        },
+        "period": {
+          "start": "2026-04-20T10:36:04.000Z",
+          "end": "2026-04-21T08:26:44.396Z"
+        },
+        "status": "finished",
+        "text": {
+          "div": "Admitted to IGD RS TRUSTMEDIS JAKARTA between 20/4/2026, 17.36.04 and -",
+          "status": "generated"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "0186R004-3506025-1-3c4af740-3eae-4bcf-8c8a-384303f09efc",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "K20",
+              "display": "Oesophagitis"
+            }
+          ],
+          "text": "Oesophagitis"
+        },
+        "onsetDateTime": "2026-04-20T10:36:04.000Z",
+        "subject": {
+          "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+          "display": "NASIKIN, SAUDARA"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "0186R004-3506025-1-5e274e3c-a893-4d64-9d1c-9994dffdb92e",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "R22",
+              "display": "Localized swelling, mass and lump of skin and subcutaneous tissue"
+            }
+          ],
+          "text": "Localized swelling, mass and lump of skin and subcutaneous tissue"
+        },
+        "onsetDateTime": "2026-04-20T10:36:04.000Z",
+        "subject": {
+          "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+          "display": "NASIKIN, SAUDARA"
+        }
+      }
+    },
+    {
+      "resource": [
+        {
+          "resourceType": "Procedure",
+          "id": "0186R004-3506025-1-fc4efd2a-151c-4b79-8cd8-b334f8475f15",
+          "text": {
+            "status": "generated",
+            "div": "Generated Narrative with Details"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "",
+                "code": "A1801081",
+                "display": "PASANG IUD OLEH DOKTER UMUM"
+              }
+            ]
+          },
+          "performedPeriod": {
+            "start": "2026-04-20T10:45:55.000Z",
+            "end": "2026-04-20T10:45:55.000Z"
+          },
+          "bodySite": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "38866009",
+                  "display": "Body part structure (body structure)"
+                }
+              ]
+            }
+          ],
+          "focalDevice": [
+            {
+              "action": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/device-action",
+                    "code": "implanted",
+                    "display": "Implanted"
+                  }
+                ]
+              },
+              "manipulated": {
+                "reference": "Device/unknown"
+              }
+            }
+          ],
+          "note": [
+            {
+              "text": ""
+            }
+          ],
+          "subject": {
+            "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+            "display": "NASIKIN, SAUDARA"
+          },
+          "context": {
+            "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e",
+            "display": ""
+          },
+          "reasonCode": [
+            {
+              "text": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e"
+            }
+          ],
+          "performer": [
+            {
+              "role": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "158965000",
+                    "display": "Medical practitioner (occupation)"
+                  }
+                ]
+              },
+              "actor": {
+                "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+                "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+              }
+            }
+          ]
+        },
+        {
+          "resourceType": "Procedure",
+          "id": "0186R004-3506025-1-ed796ce9-ef1f-403c-b66d-7bf5509ef5c5",
+          "text": {
+            "status": "generated",
+            "div": "Generated Narrative with Details"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "80146002",
+                "display": "Appendectomy (procedure)"
+              }
+            ]
+          },
+          "performedPeriod": {
+            "start": "2026-04-20T16:26:25.000Z",
+            "end": "2026-04-20T16:26:25.000Z"
+          },
+          "bodySite": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "38866009",
+                  "display": "Body part structure (body structure)"
+                }
+              ]
+            }
+          ],
+          "focalDevice": [
+            {
+              "action": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/device-action",
+                    "code": "implanted",
+                    "display": "Implanted"
+                  }
+                ]
+              },
+              "manipulated": {
+                "reference": "Device/0186R004-3506025-1-77cb46b0-a390-4b22-8065-e74aec897e46"
+              }
+            }
+          ],
+          "note": [
+            {
+              "text": ""
+            }
+          ],
+          "subject": {
+            "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+            "display": "NASIKIN, SAUDARA"
+          },
+          "context": {
+            "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e",
+            "display": ""
+          },
+          "reasonCode": [
+            {
+              "text": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e"
+            }
+          ],
+          "performer": [
+            {
+              "role": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "158965000",
+                    "display": "Medical practitioner (occupation)"
+                  }
+                ]
+              },
+              "actor": {
+                "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+                "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": [
+        {
+          "resourceType": "MedicationRequest",
+          "id": "0186R004-3506025-1-21cb1d55-c9ce-4967-ae3e-a61f95db8e42",
+          "identifier": {
+            "system": "id_resep_pulang",
+            "value": "0186R004-3506025-1-21cb1d55-c9ce-4967-ae3e-a61f95db8e42"
+          },
+          "status": "active",
+          "intent": "order",
+          "meta": {
+            "lastUpdated": "2026-04-21T08:26:44.396Z"
+          },
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://sys-ids.kemkes.go.id/kfa",
+                "code": "93001535",
+                "display": "Amoxicillin Trihydrate 500 mg Tablet (HEXPHARM JAYA LABORATORIES)"
+              }
+            ],
+            "text": "AMOXICILIN CAP 500MG NEW"
+          },
+          "subject": {
+            "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+            "display": "NASIKIN, SAUDARA"
+          },
+          "requester": {
+            "agent": {
+              "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+              "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+            },
+            "onBehalfOf": {
+              "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+              "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+            }
+          },
+          "reasonCode": [
+            {
+              "coding": [
+                {
+                  "system": "",
+                  "code": "",
+                  "display": ""
+                }
+              ],
+              "text": ""
+            }
+          ],
+          "dosageInstruction": [
+            {
+              "route": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral"
+                  }
+                ]
+              },
+              "timing": {
+                "repeat": {
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              },
+              "doseQuantity": {
+                "value": 1,
+                "unit": "CAPSUL",
+                "system": "http://unitsofmeasure.org",
+                "code": ""
+              },
+              "additionalInstruction": [
+                {
+                  "text": "1X1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "resourceType": "MedicationRequest",
+          "id": "0186R004-3506025-1-839c5428-8bda-40a5-821b-858396bdc835",
+          "identifier": {
+            "system": "id_resep_pulang",
+            "value": "0186R004-3506025-1-839c5428-8bda-40a5-821b-858396bdc835"
+          },
+          "status": "active",
+          "intent": "order",
+          "meta": {
+            "lastUpdated": "2026-04-21T08:26:44.396Z"
+          },
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://sys-ids.kemkes.go.id/kfa",
+                "code": "",
+                "display": "AMOXIL 500 CAP"
+              }
+            ],
+            "text": "AMOXIL 500 CAP"
+          },
+          "subject": {
+            "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+            "display": "NASIKIN, SAUDARA"
+          },
+          "requester": {
+            "agent": {
+              "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+              "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+            },
+            "onBehalfOf": {
+              "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+              "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+            }
+          },
+          "reasonCode": [
+            {
+              "coding": [
+                {
+                  "system": "",
+                  "code": "",
+                  "display": ""
+                }
+              ],
+              "text": ""
+            }
+          ],
+          "dosageInstruction": [
+            {
+              "route": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral"
+                  }
+                ]
+              },
+              "timing": {
+                "repeat": {
+                  "frequency": 3,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              },
+              "doseQuantity": {
+                "value": 1,
+                "unit": "CAPSUL",
+                "system": "http://unitsofmeasure.org",
+                "code": ""
+              },
+              "additionalInstruction": [
+                {
+                  "text": "3x1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "resourceType": "MedicationRequest",
+          "id": "0186R004-3506025-1-d6e22fb8-95ce-4777-a5f7-be10567fff97",
+          "identifier": {
+            "system": "id_resep_pulang",
+            "value": "0186R004-3506025-1-d6e22fb8-95ce-4777-a5f7-be10567fff97"
+          },
+          "status": "active",
+          "intent": "order",
+          "meta": {
+            "lastUpdated": "2026-04-21T08:26:44.396Z"
+          },
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://sys-ids.kemkes.go.id/kfa",
+                "code": "93008992",
+                "display": "Amoxicillin 250 mg / Potassium Clavulanate 62,5 mg / 5 mL Sirup Kering (60 mL, AMICLAV)"
+              }
+            ],
+            "text": "AMOXICILIN CAP 250MG GEN"
+          },
+          "subject": {
+            "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+            "display": "NASIKIN, SAUDARA"
+          },
+          "requester": {
+            "agent": {
+              "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+              "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+            },
+            "onBehalfOf": {
+              "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+              "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+            }
+          },
+          "reasonCode": [
+            {
+              "coding": [
+                {
+                  "system": "",
+                  "code": "",
+                  "display": ""
+                }
+              ],
+              "text": ""
+            }
+          ],
+          "dosageInstruction": [
+            {
+              "route": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral"
+                  }
+                ]
+              },
+              "timing": {
+                "repeat": {
+                  "frequency": 3,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              },
+              "doseQuantity": {
+                "value": 1,
+                "unit": "TABLET",
+                "system": "http://unitsofmeasure.org",
+                "code": ""
+              },
+              "additionalInstruction": [
+                {
+                  "text": "3x sehari 1 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "resourceType": "MedicationRequest",
+          "id": "0186R004-3506025-1-6c4a1a01-c39c-4c3d-a856-38102e1540c1",
+          "identifier": {
+            "system": "id_resep_pulang",
+            "value": "0186R004-3506025-1-6c4a1a01-c39c-4c3d-a856-38102e1540c1"
+          },
+          "status": "active",
+          "intent": "order",
+          "meta": {
+            "lastUpdated": "2026-04-21T08:26:44.396Z"
+          },
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://sys-ids.kemkes.go.id/kfa",
+                "code": "93001535",
+                "display": "Amoxicillin Trihydrate 500 mg Tablet (HEXPHARM JAYA LABORATORIES)"
+              }
+            ],
+            "text": "Amlodipin 5 SK tab 5 mg (Akpol) (RS Assalam)"
+          },
+          "subject": {
+            "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+            "display": "NASIKIN, SAUDARA"
+          },
+          "requester": {
+            "agent": {
+              "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+              "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+            },
+            "onBehalfOf": {
+              "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+              "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+            }
+          },
+          "reasonCode": [
+            {
+              "coding": [
+                {
+                  "system": "",
+                  "code": "",
+                  "display": ""
+                }
+              ],
+              "text": ""
+            }
+          ],
+          "dosageInstruction": [
+            {
+              "route": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral"
+                  }
+                ]
+              },
+              "timing": {
+                "repeat": {
+                  "frequency": 3,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              },
+              "doseQuantity": {
+                "value": 1,
+                "unit": "TABLET",
+                "system": "http://unitsofmeasure.org",
+                "code": ""
+              },
+              "additionalInstruction": [
+                {
+                  "text": "3x sehari 1 tablet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": [
+        {
+          "resourceType": "DiagnosticReport",
+          "id": "0186R004-3506025-1-d5d8e61a-f955-43f5-b708-10e0df4db2e6",
+          "category": {
+            "coding": {
+              "system": "http://hl7.org/fhir/v2/0074",
+              "code": "LAB",
+              "display": "Laboratory"
+            }
+          },
+          "status": "final",
+          "result": [
+            {
+              "resourceType": "Observation",
+              "id": "0186R004-3506025-1-592b56a9-e892-45d9-b3d6-c92c7fd10997",
+              "status": "final",
+              "text": {
+                "status": "generated",
+                "div": "<div>Neutrofil %: 30</div>"
+              },
+              "issued": "2026-04-20T15:44:01.000Z",
+              "effectiveDateTime": "2026-04-20T15:40:10.000Z",
+              "code": {
+                "coding": {
+                  "system": "http://loinc.org",
+                  "code": "73984-7",
+                  "display": "Hemoglobin.other [Type] in Blood"
+                },
+                "text": "Neutrofil %"
+              },
+              "image": [
+                {
+                  "comment": "",
+                  "link": {
+                    "reference": "",
+                    "display": ""
+                  }
+                }
+              ],
+              "conclusion": "",
+              "valueQuantity": {
+                "value": "30",
+                "unit": "%",
+                "system": "",
+                "code": ""
+              },
+              "interpretation": {
+                "coding": {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "N",
+                  "display": "Normal"
+                }
+              },
+              "referenceRange": {
+                "low": {
+                  "value": 28
+                },
+                "high": {
+                  "value": 78
+                }
+              }
+            },
+            {
+              "resourceType": "Observation",
+              "id": "0186R004-3506025-1-9549b689-2de2-497d-97af-29d2dfd3fab4",
+              "status": "final",
+              "text": {
+                "status": "generated",
+                "div": "<div>Trombosit: 40</div>"
+              },
+              "issued": "2026-04-20T15:44:01.000Z",
+              "effectiveDateTime": "2026-04-20T15:40:10.000Z",
+              "code": {
+                "coding": {
+                  "system": "http://loinc.org",
+                  "code": "73984-7",
+                  "display": "Hemoglobin.other [Type] in Blood"
+                },
+                "text": "Trombosit"
+              },
+              "image": [
+                {
+                  "comment": "",
+                  "link": {
+                    "reference": "",
+                    "display": ""
+                  }
+                }
+              ],
+              "conclusion": "",
+              "valueQuantity": {
+                "value": "40",
+                "unit": "/g",
+                "system": "",
+                "code": ""
+              },
+              "interpretation": {
+                "coding": {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "L",
+                  "display": "Low"
+                }
+              },
+              "referenceRange": {
+                "low": {
+                  "value": 150
+                },
+                "high": {
+                  "value": 350
+                }
+              }
+            },
+            {
+              "resourceType": "Observation",
+              "id": "0186R004-3506025-1-a1d689c2-83b0-4135-8fa2-af6b4ffa9873",
+              "status": "final",
+              "text": {
+                "status": "generated",
+                "div": "<div>Platelet Distribution Width (PDW): 60</div>"
+              },
+              "issued": "2026-04-20T15:44:01.000Z",
+              "effectiveDateTime": "2026-04-20T15:40:10.000Z",
+              "code": {
+                "coding": {
+                  "system": "http://loinc.org",
+                  "code": "73984-7",
+                  "display": "Hemoglobin.other [Type] in Blood"
+                },
+                "text": "Platelet Distribution Width (PDW)"
+              },
+              "image": [
+                {
+                  "comment": "",
+                  "link": {
+                    "reference": "",
+                    "display": ""
+                  }
+                }
+              ],
+              "conclusion": "",
+              "valueQuantity": {
+                "value": "60",
+                "unit": "%",
+                "system": "",
+                "code": ""
+              },
+              "interpretation": {
+                "coding": {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "H",
+                  "display": "High"
+                }
+              },
+              "referenceRange": {
+                "low": {
+                  "value": 15
+                },
+                "high": {
+                  "value": 17
+                }
+              }
+            },
+            {
+              "resourceType": "Observation",
+              "id": "0186R004-3506025-1-c3e45c96-1058-47ee-a3df-00c928773146",
+              "status": "final",
+              "text": {
+                "status": "generated",
+                "div": "<div>Basofil %: 100</div>"
+              },
+              "issued": "2026-04-20T15:44:01.000Z",
+              "effectiveDateTime": "2026-04-20T15:40:10.000Z",
+              "code": {
+                "coding": {
+                  "system": "http://loinc.org",
+                  "code": "73984-7",
+                  "display": "Hemoglobin.other [Type] in Blood"
+                },
+                "text": "Basofil %"
+              },
+              "image": [
+                {
+                  "comment": "",
+                  "link": {
+                    "reference": "",
+                    "display": ""
+                  }
+                }
+              ],
+              "conclusion": "",
+              "valueQuantity": {
+                "value": "100",
+                "unit": "%",
+                "system": "",
+                "code": ""
+              },
+              "interpretation": {
+                "coding": {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "H",
+                  "display": "High"
+                }
+              },
+              "referenceRange": {
+                "low": {
+                  "value": 0
+                },
+                "high": {
+                  "value": 2
+                }
+              }
+            },
+            {
+              "resourceType": "Observation",
+              "id": "0186R004-3506025-1-2f4ca290-cf96-4cfb-9233-fead8aa6ba72",
+              "status": "final",
+              "text": {
+                "status": "generated",
+                "div": "<div>MCH: 30</div>"
+              },
+              "issued": "2026-04-20T15:49:16.000Z",
+              "effectiveDateTime": "2026-04-20T15:40:10.000Z",
+              "code": {
+                "coding": {
+                  "system": "http://loinc.org",
+                  "code": "73984-7",
+                  "display": "Hemoglobin.other [Type] in Blood"
+                },
+                "text": "MCH"
+              },
+              "image": [
+                {
+                  "comment": "",
+                  "link": {
+                    "reference": "",
+                    "display": ""
+                  }
+                }
+              ],
+              "conclusion": "",
+              "valueQuantity": {
+                "value": "30",
+                "unit": "/g",
+                "system": "",
+                "code": ""
+              },
+              "interpretation": {
+                "coding": {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "N",
+                  "display": "Normal"
+                }
+              },
+              "referenceRange": {
+                "low": {
+                  "value": 26
+                },
+                "high": {
+                  "value": 34
+                }
+              }
+            },
+            {
+              "resourceType": "Observation",
+              "id": "0186R004-3506025-1-3534202b-dab7-43f4-990b-338f7a7a896d",
+              "status": "final",
+              "text": {
+                "status": "generated",
+                "div": "<div>MCV: 90</div>"
+              },
+              "issued": "2026-04-20T15:49:16.000Z",
+              "effectiveDateTime": "2026-04-20T15:40:10.000Z",
+              "code": {
+                "coding": {
+                  "system": "http://loinc.org",
+                  "code": "73984-7",
+                  "display": "Hemoglobin.other [Type] in Blood"
+                },
+                "text": "MCV"
+              },
+              "image": [
+                {
+                  "comment": "",
+                  "link": {
+                    "reference": "",
+                    "display": ""
+                  }
+                }
+              ],
+              "conclusion": "",
+              "valueQuantity": {
+                "value": "90",
+                "unit": "uL",
+                "system": "",
+                "code": ""
+              },
+              "interpretation": {
+                "coding": {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "N",
+                  "display": "Normal"
+                }
+              },
+              "referenceRange": {
+                "low": {
+                  "value": 80
+                },
+                "high": {
+                  "value": 100
+                }
+              }
+            },
+            {
+              "resourceType": "Observation",
+              "id": "0186R004-3506025-1-8b6bf0bf-f43a-4172-b7a8-abfee01e2fff",
+              "status": "final",
+              "text": {
+                "status": "generated",
+                "div": "<div>Hemoglobin: 5</div>"
+              },
+              "issued": "2026-04-21T15:16:08.000Z",
+              "effectiveDateTime": "2026-04-20T15:40:10.000Z",
+              "code": {
+                "coding": {
+                  "system": "http://loinc.org",
+                  "code": "73984-7",
+                  "display": "Hemoglobin.other [Type] in Blood"
+                },
+                "text": "Hemoglobin"
+              },
+              "image": [
+                {
+                  "comment": "",
+                  "link": {
+                    "reference": "",
+                    "display": ""
+                  }
+                }
+              ],
+              "conclusion": "",
+              "valueQuantity": {
+                "value": "5",
+                "unit": "g/dl",
+                "system": "",
+                "code": ""
+              },
+              "interpretation": {
+                "coding": {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "AA",
+                  "display": "Critical alert"
+                }
+              },
+              "referenceRange": {
+                "low": {
+                  "value": 13
+                },
+                "high": {
+                  "value": 18
+                }
+              }
+            },
+            {
+              "resourceType": "Observation",
+              "id": "0186R004-3506025-1-ea1f050d-6dc8-4cc6-819b-583091dd5696",
+              "status": "final",
+              "text": {
+                "status": "generated",
+                "div": "<div>Leukosit: 5</div>"
+              },
+              "issued": "2026-04-21T15:26:33.000Z",
+              "effectiveDateTime": "2026-04-20T15:40:10.000Z",
+              "code": {
+                "coding": {
+                  "system": "http://loinc.org",
+                  "code": "73984-7",
+                  "display": "Hemoglobin.other [Type] in Blood"
+                },
+                "text": "Leukosit"
+              },
+              "image": [
+                {
+                  "comment": "",
+                  "link": {
+                    "reference": "",
+                    "display": ""
+                  }
+                }
+              ],
+              "conclusion": "",
+              "valueQuantity": {
+                "value": "5",
+                "unit": "uL",
+                "system": "",
+                "code": ""
+              },
+              "interpretation": {
+                "coding": {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "N",
+                  "display": "Normal"
+                }
+              },
+              "referenceRange": {
+                "low": {
+                  "value": 4.7
+                },
+                "high": {
+                  "value": 10.3
+                }
+              }
+            }
+          ],
+          "subject": {
+            "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+            "display": "NASIKIN, SAUDARA",
+            "noSep": "0186R0040426V000009"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+              "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+            }
+          ]
+        },
+        {
+          "resourceType": "DiagnosticReport",
+          "id": "0186R004-3506025-1-877a1154-dd12-44e0-a861-1c5c445925bb",
+          "category": {
+            "coding": {
+              "system": "http://hl7.org/fhir/v2/0074",
+              "code": "RAD",
+              "display": "Radiology"
+            }
+          },
+          "status": "final",
+          "result": [
+            {
+              "resourceType": "Observation",
+              "id": "0186R004-3506025-1-795bd7c3-8a35-4a8d-ada5-ab24e64643f0",
+              "status": "final",
+              "text": {
+                "status": "generated",
+                "div": "<div></div>"
+              },
+              "issued": "2026-03-11T14:18:11.000Z",
+              "effectiveDateTime": "2026-03-11T14:18:11.000Z",
+              "code": {
+                "coding": {
+                  "system": "",
+                  "code": "",
+                  "display": "USG ABDOMEN"
+                },
+                "text": "USG ABDOMEN"
+              },
+              "image": [
+                {
+                  "comment": "",
+                  "link": {
+                    "reference": "https://res.cloudinary.com/dwgv2ylgv/image/upload/v1761707291/RA15102025-00161.001_15e49694-c569a0ab-88805a48-20419e35-51fe5932_1_qyowyy.jpg",
+                    "display": "USG ABDOMEN"
+                  }
+                }
+              ],
+              "conclusion": "",
+              "valueQuantity": {
+                "value": "",
+                "unit": "",
+                "system": "",
+                "code": ""
+              },
+              "interpretation": {
+                "coding": {
+                  "system": "",
+                  "code": "",
+                  "display": ""
+                }
+              },
+              "referenceRange": {
+                "low": {
+                  "value": 0
+                },
+                "high": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "subject": {
+            "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+            "display": "NASIKIN, SAUDARA",
+            "noSep": "0186R0040426V000009"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+              "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+            }
+          ]
+        },
+        {
+          "resourceType": "DiagnosticReport",
+          "id": "0186R004-3506025-1-0323f865-c701-45a8-8d4d-70ff22227b31",
+          "category": {
+            "coding": {
+              "system": "http://hl7.org/fhir/v2/0074",
+              "code": "RAD",
+              "display": "Radiology"
+            }
+          },
+          "status": "final",
+          "result": [
+            {
+              "resourceType": "Observation",
+              "id": "0186R004-3506025-1-2841b141-738d-464c-8bb3-1fbba80e3fb3",
+              "status": "final",
+              "text": {
+                "status": "generated",
+                "div": "<div> lebih rajin</div>"
+              },
+              "issued": "2026-04-20T15:58:00.000Z",
+              "effectiveDateTime": "2026-04-20T15:58:00.000Z",
+              "code": {
+                "coding": {
+                  "system": "http://loinc.org",
+                  "code": "24648-8",
+                  "display": "XR Chest PA upright"
+                },
+                "text": "THORAX"
+              },
+              "image": [
+                {
+                  "comment": " lebih rajin",
+                  "link": {
+                    "reference": "",
+                    "display": "THORAX"
+                  }
+                }
+              ],
+              "conclusion": " lebih rajin",
+              "valueQuantity": {
+                "value": "",
+                "unit": "",
+                "system": "",
+                "code": ""
+              },
+              "interpretation": {
+                "coding": {
+                  "system": "",
+                  "code": "",
+                  "display": ""
+                }
+              },
+              "referenceRange": {
+                "low": {
+                  "value": 0
+                },
+                "high": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "subject": {
+            "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+            "display": "NASIKIN, SAUDARA",
+            "noSep": "0186R0040426V000009"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+              "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+            }
+          ]
+        },
+        {
+          "resourceType": "DiagnosticReport",
+          "id": "0186R004-3506025-1-33785a09-dc71-480a-8203-dc2ef9331412",
+          "category": {
+            "coding": {
+              "system": "http://hl7.org/fhir/v2/0074",
+              "code": "RAD",
+              "display": "Radiology"
+            }
+          },
+          "status": "final",
+          "result": [
+            {
+              "resourceType": "Observation",
+              "id": "0186R004-3506025-1-9df09af8-cff4-402f-810c-6c0d94472a78",
+              "status": "final",
+              "text": {
+                "status": "generated",
+                "div": "<div>Resume thorax sudah ok baik</div>"
+              },
+              "issued": "2026-04-21T15:18:03.000Z",
+              "effectiveDateTime": "2026-04-21T15:18:03.000Z",
+              "code": {
+                "coding": {
+                  "system": "",
+                  "code": "",
+                  "display": "USG THORAX"
+                },
+                "text": "USG THORAX"
+              },
+              "image": [
+                {
+                  "comment": "Resume thorax sudah ok baik",
+                  "link": {
+                    "reference": "",
+                    "display": "USG THORAX"
+                  }
+                }
+              ],
+              "conclusion": "Resume thorax sudah ok baik",
+              "valueQuantity": {
+                "value": "",
+                "unit": "",
+                "system": "",
+                "code": ""
+              },
+              "interpretation": {
+                "coding": {
+                  "system": "",
+                  "code": "",
+                  "display": ""
+                }
+              },
+              "referenceRange": {
+                "low": {
+                  "value": 0
+                },
+                "high": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "subject": {
+            "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+            "display": "NASIKIN, SAUDARA",
+            "noSep": "0186R0040426V000009"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+              "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": [
+        {
+          "resourceType": "Device",
+          "id": "0186R004-3506025-1-77cb46b0-a390-4b22-8065-e74aec897e46",
+          "text": {
+            "status": "generated",
+            "div": "<div>Generated Narrative with Details id: 0186R004-3506025-1-77cb46b0-a390-4b22-8065-e74aec897e46 identifier: 2234ddd type: Mesin ECG display manufacturer: ffff model: www patient: Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157</div>"
+          },
+          "identifier": [
+            {
+              "system": "http://acme.com/devices/pacemakers/octane/serial",
+              "value": "2234ddd"
+            }
+          ],
+          "type": {
+            "coding": [
+              {
+                "system": "http://acme.com/devices",
+                "code": "2234ddd",
+                "display": "Mesin ECG display"
+              }
+            ]
+          },
+          "lotNumber": "ddw",
+          "manufacturer": "ffff",
+          "model": "www",
+          "patient": {
+            "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157"
+          },
+          "contact": [
+            {
+              "system": "phone",
+              "value": "ado",
+              "use": "work"
+            }
+          ],
+          "manufactureDate": "2026-04-01T00:00:00.000Z",
+          "expirationDate": "2026-05-02T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "resourceType": "Composition",
+        "id": "0186R004-3506025-1-8c702b8a-6c6f-481a-ac6b-c22d99a3ed4d",
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "81218-0",
+              "display": "Discharge Summary"
+            }
+          ],
+          "text": "Discharge Summary"
+        },
+        "date": "2026-04-20T10:36:04.000Z",
+        "title": "Discharge Summary",
+        "confidentiality": "N",
+        "section": {
+          "1": {
+            "title": "Chief complaint Narrative - Reported",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10154-3",
+                  "display": "Chief complaint Narrative - Reported"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div></div>"
+            },
+            "mode": "working",
+            "entry": [
+              {
+                "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e"
+              }
+            ]
+          },
+          "2": {
+            "title": "History of present illness Narrative",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10164-2",
+                  "display": "History of present illness Narrative"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div></div>"
+            },
+            "mode": "working",
+            "entry": [
+              {
+                "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e"
+              }
+            ]
+          },
+          "3": {
+            "title": "Physical findings Narrative",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "29545-1",
+                  "display": "Physical findings Narrative"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div></div>"
+            },
+            "mode": "working",
+            "entry": [
+              {
+                "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e"
+              }
+            ]
+          },
+          "4": {
+            "title": "Relevant diagnostic tests/laboratory data Narrative",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "30954-2",
+                  "display": "Relevant diagnostic tests/laboratory data Narrative"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div>TERLAMPIR</div>"
+            },
+            "mode": "working",
+            "entry": [
+              {
+                "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e"
+              }
+            ]
+          },
+          "5": {
+            "title": "Plan of treatment (narrative)",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "18776-5",
+                  "display": "Plan of treatment (narrative)"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div></div>"
+            },
+            "mode": "working",
+            "entry": [
+              {
+                "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e"
+              }
+            ]
+          },
+          "6": {
+            "title": "Vital signs",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8716-3",
+                  "display": "Vital signs"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div></div>"
+            },
+            "mode": "working",
+            "entry": [
+              {
+                "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e"
+              }
+            ]
+          },
+          "7": {
+            "title": "Payment sources Document",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48768-6",
+                  "display": "Payment sources Document"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div>BPJS KESEHATAN</div>"
+            },
+            "mode": "working",
+            "entry": [
+              {
+                "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e"
+              }
+            ]
+          },
+          "8": {
+            "title": "Hospital admission diagnosis Narrative - Reported",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "46241-6",
+                  "display": "Hospital admission diagnosis Narrative - Reported"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div></div>"
+            },
+            "mode": "working",
+            "entry": [
+              {
+                "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e"
+              }
+            ]
+          },
+          "9": {
+            "title": "Discharge medications Narrative",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "75311-1",
+                  "display": "Discharge medications Narrative"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div>Tidak ada obat</div>"
+            },
+            "mode": "working",
+            "entry": [
+              {
+                "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e"
+              }
+            ]
+          },
+          "10": {
+            "title": "Allergies and adverse reactions Document",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48765-2",
+                  "display": "Allergies and adverse reactions Document"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div></div>"
+            },
+            "mode": "working",
+            "entry": [
+              {
+                "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e"
+              }
+            ]
+          }
+        },
+        "subject": {
+          "reference": "Patient/0186R004-3506025-1-ba645239-e197-4451-82c1-66fde4718157",
+          "display": "NASIKIN, SAUDARA"
+        },
+        "encounter": {
+          "reference": "Encounter/0186R004-3506025-1-12e61bc1-d40d-4da9-87a3-b98fa0b78e7e",
+          "display": ""
+        },
+        "author": [
+          {
+            "reference": "Practitioner/0186R004-3506025-1-e5b262ef-c866-4a59-8abc-d156bd672603",
+            "display": "dr Luluk Aflakah,Sp.PD (INT) (RST)"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+ {
+        "resourceType": "Bundle",
+        "id": "0901R001-1193709-34-19c94c1a-1b06-4716-a952-6127c45a09a8",
+        "meta": {
+            "lastUpdated": "2026-04-15 00:12:00"
+        },
+        "identifier": {
+            "system": "sep",
+            "value": "0187R0060426V000004"
+        },
+        "type": "document",
+        "entry": [
+            {
+                "resource": {
+                    "resourceType": "Composition",
+                    "id": "0901R001-1193709-34-16f6a17f-f5c7-4f62-b418-f107dc8a89fb",
+                    "status": "final",
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http:\/\/loinc.org",
+                                "code": "81218-0"
+                            }
+                        ],
+                        "text": "Discharge Summary"
+                    },
+                    "subject": {
+                        "reference": "Patient\/0901R001-1193709-34-af125c4b-cd0f-4877-b76a-532a3656da97",
+                        "display": "NURUL"
+                    },
+                    "encounter": {
+                        "reference": "Encounter\/0901R001-1193709-34-8d887b38-feb9-4edf-b818-c49336448c90"
+                    },
+                    "date": "2018-12-31 17:08:43",
+                    "author": [
+                        {
+                            "reference": "Practitioner\/0901R001-1193709-34-6b72e7ad-4be4-419c-9a21-36119e177c47",
+                            "display": "Harakiri, dr., SpA(K)"
+                        }
+                    ],
+                    "title": "Discharge Summary",
+                    "confidentiality": "N",
+                    "section": [
+                        {
+                            "title": "Reason for admission",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/loinc.org",
+                                        "code": "29299-5",
+                                        "display": "Reason for visit Narrative"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "status": "additional",
+                                "div": "<\/div>"
+                            }
+                        },
+                        {
+                            "title": "Chief complaint",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/loinc.org",
+                                        "code": "10154-3",
+                                        "display": "Chief complaint Narrative"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "status": "additional",
+                                "div": "<\/div>"
+                            }
+                        },
+                        {
+                            "title": "Admission diagnosis",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/loinc.org",
+                                        "code": "42347-5",
+                                        "display": "Admission diagnosis Narrative"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "status": "additional",
+                                "div": "ANEMIA APLASTIK, HEMOROID INTERN, <\/div>"
+                            },
+                            "entry": [
+                                {
+                                    "reference": "urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Discharge diagnosis",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/loinc.org",
+                                        "code": "78375-3",
+                                        "display": "Discharge diagnosis Narrative"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "status": "additional",
+                                "div": "Aplastic anaemia, unspecified, ANEMIA APLASTIK, HEMOROID INTERN, Internal haemorrhoids without complication, <\/div>"
+                            },
+                            "entry": [
+                                {
+                                    "reference": "urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Plan of care",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/loinc.org",
+                                        "code": "18776-5",
+                                        "display": "Plan of care"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "status": "additional",
+                                "div": "<\/div>"
+                            },
+                            "mode": "working",
+                            "entry": [
+                                {
+                                    "reference": "MedicationRequest\/124a6916-5d84-4b8c-b250-10cefb8e6e86"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Known allergies",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http:\/\/loinc.org",
+                                        "code": "48765-2",
+                                        "display": "Allergies and adverse reactions"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "status": "additional",
+                                "div": "<\/div>"
+                            },
+                            "entry": [
+                                {
+                                    "reference": "AllergyIntolerance\/47600e0f-b6b5-4308-84b5-5dec157f7637"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+	    ]
+    }
