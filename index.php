@@ -9,7 +9,7 @@ require "resource/encounter.php";
 require "resource/condition.php";
 require "resource/procedure.php";
 require "resource/observation.php";
-require "resource/diagnostic_ubah.php";
+require "resource/diagnostic.php";
 require "resource/medication.php";
 require "resource/composition.php";
 require "BpjsMrSender.php";
@@ -33,8 +33,8 @@ $bpjs   = new BpjsMrSender($config);
 //default org
 $orgId = 'xxxxxxxxx';
 //list data pasien format per pasien
-$noSep        = "0187R0060426V000004";
-$tglSep       = "2026-04-15";
+$noSep        = "0187R0060426V000005";
+$tglSep       = "2026-04-24";
 $jnsPelayanan = "R.Jalan";
 $kelasRawat   = "-";
 $diagnosa     = "S83.3 - Tear of articular cartilage of knee, current";
@@ -49,6 +49,8 @@ $alamat       = "Alamat nya di sini";
 $hp           = '081234567890';
 $start        = "2026-04-15 08:55:25";
 $end          = "2026-04-15 10:25:30";
+
+$prefix = "rme_bpjs";
 //end list pasien
 
 $id2         = $noMr;
@@ -213,7 +215,6 @@ $kunjungan = [
     "tgl_keluar" => $end,
 ];
 
-
 $diagnosa = [
     [
         "code"    => "156515005",
@@ -229,6 +230,18 @@ $diagnosa = [
         "code"    => "302497006",
         "display" => "Haemodialysis",
 
+    ],
+    [
+        "code"    => "M16",
+        "display" => "Coxarthrosis [arthrosis of hip]",
+    ],
+    [
+        "code"    => "M43",
+        "display" => "Other deforming dorsopathies",
+    ],
+    [
+        "code"    => "M43.0",
+        "display" => "Spondylolysis",
     ],
 
 ];
@@ -285,7 +298,6 @@ $procedures = [
         ],
     ],
 ];
-
 
 $result = Procedures(
     $orgId,
@@ -367,18 +379,55 @@ $entries[] = entry($data_med);
 //end medic
 
 //ini unutk lab nya
+// "code": "26604007",  "display": "Complete blood count"                },                "text": "Darah Lengkap Analiser"
+
 $lab = [
-    "loinc"       => "20509-6",
-    "pemeriksaan" => "Hemoglobin",
-    "hasil"       => "13",
-    "satuan"      => "g/dL",
+    [
+        "loinc"            => "20509-6",
+        "pemeriksaan"      => "Hemoglobin",
+        "hasil"            => "13",
+        "satuan"           => "g/dL",
+        "display"          => "Hemoglobin [Mass/volume] in Blood by calculation",
+        "category_code"    => "LAB",
+        "category_display" => "Laboratory",
+        "image"=>'',
+        "conclusion"=>"hasil bacaan HB"
+    ],
+    [
+        "loinc"            => "26604007",
+        "pemeriksaan"      => "Darah Lengkap Analiser",
+        "hasil"            => "13",
+        "satuan"           => "g/dL",
+        "display"          => "Complete blood count",
+        "category_code"    => "LAB",
+        "category_display" => "Laboratory",
+        "image"=>'',
+        "conclusion"=>"hasil bacaan Darah Lengkap"
+    ],
+    [
+        "loinc"            => "45036003",
+        "pemeriksaan"      => "USG Abdomen",
+        "hasil"            => "-",
+        "satuan"           => "-",
+        "display"          => "Ultrasonography of abdomen",
+        "category_code"    => "RAD",
+        "category_display" => "RADIOLOGI",
+        "image"=> [
+            [
+                "comment"=>"",
+                "link"=>[
+                    "reference"=>"https:\/\/simgos.sukamarakab.go.id:8888\/RSUD-api\/QRCode\/3a842997e6380e4dc4db4a3f12c59e28.png",
+                "display"=>"Laporan Radiologi"
+                ]
+            ]
+        ],
+        "conclusion"=>"hasil bacaan USG nya dunk "
+    ],
 ];
 //endlab
 
-$data_lab  = diagnostic($encounterId,$pasien,$dokter, $start);
+$data_lab  = diagnostic($encounterId, $pasien, $dokter, $start, $lab);
 $entries[] = $data_lab;
-
-
 
 /* ------------------ GENERATE RESOURCE ------------------ */
 
@@ -437,4 +486,5 @@ echo $payload;
 $result = $bpjs->sendMR($noSep, 2, $bulan, $tahun, $payload);
 // DEBUG
 echo "<pre>";
+
 print_r($result);

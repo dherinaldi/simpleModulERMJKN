@@ -21,16 +21,17 @@ $config = [
 $config = dataRahasia('DEV');
 $bpjs   = new BpjsMrSender($config);
 
-$path = __DIR__ . '/bahan/generate-2509250005-modif.json';
+//$path = __DIR__ . '/bahan/generate-2509250005-modif.json';
 //$path = __DIR__ . '/bahan/new_bahan.json';
+$path = __DIR__ . '/bahan/data_json_pak_hery.json';
 
 $json = file_get_contents($path);
 $data = json_decode($json, true);
 
 //var_dump($json);die();
 
-$noSep        = "0187R0060426V000005";
-$tglSep       = "2026-04-24";
+$noSep        = "0187R0061225V000007";
+$tglSep       = "2025-12-01";
 
 $id = "coba-".$noSep;
 

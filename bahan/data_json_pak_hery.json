@@ -1,0 +1,132 @@
+{
+  "id": null,
+  "meta": { "lastUpdated": "2026-04-30 13:52:24.000000" },
+  "type": "document",
+  "entry": [
+    {
+      "resource": {
+        "id": null,
+        "nik": "1308042002850002",
+        "meta": null,
+        "name": null,
+        "active": 1,
+        "gender": null,
+        "address": null,
+        "telecom": null,
+        "birthDate": null,
+        "extension": null,
+        "identifier": null,
+        "resourceType": "Patient",
+        "communication": null,
+        "maritalStatus": null,
+        "deceasedBoolean": 0,
+        "multipleBirthBoolean": 0,
+        "multipleBirthInteger": 0
+      }
+    },    
+    {
+      "resource": {
+        "id": null,
+        "name": "IGD TRIASE",
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "dept",
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "display": "Hospital Department"
+              }
+            ]
+          }
+        ],
+        "alias": "",
+        "active": 1,
+        "partOf": {
+          "reference": "Organization/e71f1880-9f1e-4888-9b83-3e624837d024"
+        },
+        "resourceType": "Organization"
+      }
+    },
+    {
+      "resource": {
+        "id": null,
+        "class": {
+          "code": "EMER",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "emergency"
+        },
+        "period": { "start": "2026-04-24T02:40:47+00:00" },
+        "status": "in-progress",
+        "subject": null,
+        "location": [
+          {
+            "period": { "start": "2026-04-24T02:47:26+00:00" },
+            "location": {
+              "display": "IGD TRIASE",
+              "reference": "Location/fb456cb4-87a1-48ec-aced-e47cfe706e35"
+            },
+            "extension": [
+              {
+                "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass",
+                "extension": [
+                  {
+                    "url": "value",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "code": "reguler",
+                          "system": "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
+                          "display": "Kelas Reguler"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "url": "upgradeClassIndicator",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "code": "kelas-tetap",
+                          "system": "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass",
+                          "display": "Kelas Tetap Perawatan"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "diagnosis": null,
+        "identifier": [
+          {
+            "use": "official",
+            "value": "2604240001",
+            "system": "https://sys-ids.kemkes.go.id/encounter/100026255"
+          }
+        ],
+        "participant": null,
+        "resourceType": "Encounter",
+        "episodeOfCare": null,
+        "statusHistory": [
+          {
+            "period": {
+              "end": "2026-04-24T02:47:26+00:00",
+              "start": "2026-04-24T02:40:47+00:00"
+            },
+            "status": "arrived"
+          },
+          {
+            "period": { "start": "2026-04-24T02:47:26+00:00" },
+            "status": "in-progress"
+          }
+        ],
+        "hospitalization": null,
+        "serviceProvider": { "reference": "Organization/100026255" }
+      }
+    }
+  ],
+  "identifier": { "value": "0187R0060426V000005", "system": "sep" },
+  "resourceType": "Bundle"
+}
