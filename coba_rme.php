@@ -344,9 +344,9 @@ $sectionData = [
 ];
 //condition part
 $result = Conditions($orgId, $noMr, $diagnosa, $start);
-/* foreach ($result["conditions"] as $c) {
+ foreach ($result["conditions"] as $c) {
     $entries[] = $c;
-} */
+} 
 
 $compositionId     = $noSep . '-' . $start;
 $encounter_display = "Admitted to UGD , RS INI SAJA between $start and $end";
@@ -401,7 +401,9 @@ $dokter = [
     "org"  => "id org header/ rs nya",
 ];
 $data_med = buildMedicationResource($listObat, $pasien, $dokter, $diagnosa);
-#$entries[] = entry($data_med);
+$entries[] = entry($data_med);
+
+#var_dump($data_med);die();
 //end medic
 
 #diagnostic report Rad dan Lab 
@@ -468,7 +470,7 @@ FROM layanan.tindakan_medis hl
 				LEFT JOIN `kemkes-ihs`.loinc_terminologi lt ON lt.ID = ttl.LOINC_TERMINOLOGI
 				LEFT JOIN pendaftaran.kunjungan kjgn ON kjgn.NOMOR = hl.KUNJUNGAN
 				LEFT JOIN `master`.tindakan tin ON tin.ID = hl.TINDAKAN
-				WHERE kjgn.NOPEN in ('$nopen') and tin.JENIS =8;
+				WHERE kjgn.NOPEN in ('$nopen') and tin.JENIS =8 and hlab.HASIL !='';
 		;
 		;";
 
@@ -509,11 +511,10 @@ $lab = array_merge(
     diagnostic_data_lab($mysqli, '2604240001')
 );
 
-print_r($lab);
 
 $entries[] = entry(diagnostic($encounterId, $pasien, $dokter, $start, $lab));
 
-//die();
+//print_r($entries);
 
 /* ------------------ GENERATE RESOURCE ------------------ */
 
@@ -544,9 +545,9 @@ $entries[] = entry(encounter($encounterId, $id2, $nama, $noSep, $start, $end, $c
 
 /* ------------------ BUNDLE ------------------ */
 
-$cek_data = json_encode($entries, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+#$cek_data = json_encode($entries, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
-//echo $cek_data;die();
+#echo $cek_data;die();
 
 $id = $prefix . '-' . $noSep;
 //bungkus disini
@@ -566,9 +567,9 @@ if ($bulan == '') {
 }
 // var_dump($bulan,$tahun);die;
 $payload = json_encode($bundle, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-// echo $payload;
-// die;
-$result = $bpjs->sendMR($noSep, 2, $bulan, $tahun, $payload);
+ echo $payload;
+ die;
+#$result = $bpjs->sendMR($noSep, 2, $bulan, $tahun, $payload);
 // DEBUG
 echo "<pre>";
 print_r($result);

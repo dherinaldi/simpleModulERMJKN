@@ -90,7 +90,5 @@ function diagnostic($encounterId, $pasien, $dokter, $start, $lab)
         ];
     }
 
-    return [
-        "resource" => $reports
-    ];
+    return $reports    ;
 }
