@@ -23,7 +23,8 @@ $bpjs   = new BpjsMrSender($config);
 
 //$path = __DIR__ . '/bahan/generate-2509250005-modif.json';
 //$path = __DIR__ . '/bahan/new_bahan.json';
-$path = __DIR__ . '/bahan/data_json_pak_hery.json';
+//$path = __DIR__ . '/bahan/data_json_pak_hery.json';
+$path = __DIR__ . '/bahan/data_json_ku.json';
 
 $json = file_get_contents($path);
 $data = json_decode($json, true);

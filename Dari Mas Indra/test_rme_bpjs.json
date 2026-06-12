@@ -1,0 +1,243 @@
+{
+  "resourceType": "Bundle",
+  "id": "1324R003-841487-4cbb90a9-d2ed-c4fd-fa77-e29572a3a9a8",
+  "meta": { "lastUpdated": "2026-03-09 12:17:07" },
+  "identifier": { "system": "sep", "value": "1324R0030326V000001" },
+  "type": "document",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "1324R003-841487-ec72800a-d08f-4b16-64a2-37eb7ac00c70",
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                { "system": "http:\/\/hl7.org\/fhir\/v2\/0203", "code": "MR" }
+              ]
+            },
+            "value": "174507",
+            "assigner": { "display": "RS RADJIMAN WEDIODININGRAT" }
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                { "system": "http:\/\/hl7.org\/fhir\/v2\/0203", "code": "MB" }
+              ]
+            },
+            "value": "0002032846817",
+            "assigner": { "display": "BPJS KESEHATAN" }
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "system": "http:\/\/hl7.org\/fhir\/v2\/0203",
+                  "code": "NNIDN"
+                }
+              ]
+            },
+            "value": "5103030203920005",
+            "assigner": { "display": "KEMENDAGRI" }
+          }
+        ],
+        "active": true,
+        "name": [{ "use": "official", "text": "I PUTU KISMAWAN" }],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "http:\/\/hl7.org\/fhir\/v3\/MaritalStatus",
+              "code": "U"
+            }
+          ]
+        },
+        "telecom": [{ "system": "phone", "value": "123456", "use": "mobile" }],
+        "gender": "male",
+        "birthDate": "1992-03-02",
+        "deceasedBoolean": false,
+        "address": [
+          {
+            "line": ["jalan test"],
+            "city": "Kabupaten Malang",
+            "district": "Kecamatan Lawang",
+            "state": "Jawa Timur",
+            "postalCode": "",
+            "text": "jalan test",
+            "use": "home",
+            "type": "both"
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization\/1324R003-841487-b220beea-ea93-2bfd-b0ac-d1412b3faf55",
+          "display": "RS Radjiman Wediodiningrat"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "1324R003-841487-b220beea-ea93-2bfd-b0ac-d1412b3faf55",
+        "identifier": [
+          { "use": "official", "system": "urn:oid:bpjs", "value": "1324R003" },
+          { "use": "official", "system": "urn:oid:kemkes", "value": "3507026" }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http:\/\/hl7.org\/fhir\/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "RS Radjiman Wediodiningrat",
+        "alias": ["RSRW"],
+        "telecom": [
+          { "system": "phone", "value": "0341-426015", "use": "work" }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "text": "Jl. Ahmad Yani Kecamatan Lawang, Kabupaten Malang, Jawa Timur",
+            "line": ["Jl. A. Yani"],
+            "city": "Kabupaten Malang",
+            "state": "Jawa Timur",
+            "postalCode": "65216",
+            "country": "IDN"
+          }
+        ],
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http:\/\/hl7.org\/fhir\/contactentity-type",
+                  "code": "PATINF"
+                }
+              ]
+            },
+            "telecom": [{ "system": "phone", "value": "0341-426015" }]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1324R003-841487-f10a28ba-6269-2ede-8d75-96d7ca681f78",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:\/\/hl7.org\/fhir\/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http:\/\/hl7.org\/fhir\/sid\/icd-10",
+              "code": "T31.4",
+              "display": "Burns involving 40-49% of body surface"
+            }
+          ],
+          "text": "Burns involving 40-49% of body surface"
+        },
+        "subject": {
+          "reference": "Patient\/1324R003-841487-ec72800a-d08f-4b16-64a2-37eb7ac00c70"
+        },
+        "onsetDateTime": "2026-03-02 00:00:00"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "1324R003-841487-df95352f-6962-36cf-c819-3da33ef1d0d8",
+        "identifier": [
+          {
+            "system": "http:\/\/api.bpjs-kesehatan.go.id:8080\/Vclaim-rest\/SEP\/",
+            "value": "1324R0030326V000001"
+          }
+        ],
+        "subject": {
+          "reference": "Patient\/1324R003-841487-ec72800a-d08f-4b16-64a2-37eb7ac00c70",
+          "display": "I PUTU KISMAWAN",
+          "noSep": "1324R0030326V000001"
+        },
+        "class": {
+          "system": "http:\/\/hl7.org\/fhir\/v3\/ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "incomingReferral": [
+          {
+            "identifier": [
+              { "system": "nomor_rujukan_bpjs", "value": "0187R0060326B000001" }
+            ]
+          }
+        ],
+        "reason": [
+          {
+            "coding": [
+              {
+                "code": "F20.1",
+                "display": "Hebephrenic schizophrenia",
+                "system": "http:\/\/hl7.org\/fhir\/sid\/icd-10"
+              }
+            ],
+            "text": "LUKA BAKAR 52% TBSA"
+          }
+        ],
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition\/1324R003-841487-f10a28ba-6269-2ede-8d75-96d7ca681f78",
+              "role": {
+                "coding": [
+                  {
+                    "system": "http:\/\/hl7.org\/fhir\/diagnosis-role",
+                    "code": "DD",
+                    "display": "Discharge Diagnosis"
+                  }
+                ]
+              },
+              "rank": 1
+            }
+          }
+        ],
+        "hospitalization": {
+          "dischargeDisposition": [
+            {
+              "coding": [
+                {
+                  "code": "home",
+                  "display": "Home",
+                  "system": "http:\/\/hl7.org\/fhir\/discharge-disposition"
+                }
+              ]
+            }
+          ]
+        },
+        "period": {
+          "end": "2026-03-02 09:27:59",
+          "start": "2026-03-02 08:57:59"
+        },
+        "status": "finished",
+        "text": {
+          "div": "Admitted to IGD RS Dr.Radjiman Wediodiningrat between 2 March 2026 08:57 and 2 March 2026 09:27",
+          "status": "generated"
+        }
+      }
+    }
+  ]
+}

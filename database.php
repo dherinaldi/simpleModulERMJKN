@@ -1,11 +1,11 @@
 <?php
 /* OPTIONAL DATABASE CONNECTION */
 
-$host="localhost";
-$user="";
-$pass="admin";
-$db="erm";
+$host="192.168.10.221";
+$user="admin";
+$pass="S!MRSGos2";
+$db="aplikasi";
 
-$conn = @new mysqli($host,$user,$pass,$db);
+$mysqli = @new mysqli($host,$user,$pass,$db);
 
 ?>

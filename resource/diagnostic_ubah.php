@@ -1,5 +1,5 @@
 <?php
-function diagnostic($encounterId, $pasien, $dokter, $start)
+function diagnostic($encounterId, $pasien, $dokter, $start, $lab)
 {
     $items = [];
 

@@ -1,0 +1,126 @@
+{
+   "resourceType": "Bundle",
+  "id": "1413R001-6207033-30-20e8c321-899d-fdee-47fc-01aada092adb",
+  "meta": {
+    "lastUpdated": "2026-04-24 00:12:00"
+  },
+  "identifier": {
+    "use": null,
+    "type": {
+      "coding": [],
+      "text": null
+    },
+    "system": "SEP",
+    "value": "0187R0060426V000005",
+    "assigner": {
+      "display": null
+    }
+  },
+  "type": "document",
+  "entry": [
+    {
+      "resource": {
+        "id": null,
+        "name": [
+          {
+            "use": "official",
+            "text": "nama"
+          }
+        ],
+        "active": true,
+        "gender": "",
+        "address": [
+          {
+            "use": "home",
+            "city": "kota",
+            "line": ["alamat disini"],
+            "text": "alamat-disni",
+            "type": "both",
+            "state": "provinsi",
+            "district": "kecamatan",
+            "postalCode": "kodepos"
+          }
+        ],
+        "telecom": [
+          {
+            "use": "work",
+            "value": "0341-123456",
+            "system": "phone"
+          },
+          {
+            "use": "mobile",
+            "value": "081234567890",
+            "system": "phone"
+          },
+          {
+            "use": "home",
+            "value": "0341-777777",
+            "system": "phone"
+          }
+        ],
+        "birthDate": null,
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "code": "MR",
+                  "system": "http://hl7.org/fhir/v2/0203"
+                }
+              ]
+            },
+            "value": "",
+            "assigner": {
+              "display": null
+            }
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "code": "MB",
+                  "system": "http://hl7.org/fhir/v2/0203"
+                }
+              ]
+            },
+            "value": "bpjs",
+            "assigner": {
+              "display": "BPJS KESEHATAN"
+            }
+          },
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "code": "NNIDN",
+                  "system": "http://hl7.org/fhir/v2/0203"
+                }
+              ]
+            },
+            "value": "1308042002850002",
+            "assigner": {
+              "display": "KEMENDAGRI"
+            }
+          }
+        ],
+        "resourceType": "Patient",
+        "maritalStatus": {
+          "coding": [
+            {
+              "code": "U",
+              "system": "http://hl7.org/fhir/v3/MaritalStatus"
+            }
+          ]
+        },
+        "deceasedBoolean": false,
+        "managingOrganization": {
+          "display": null,
+          "reference": null
+        }
+      }
+    }
+  ]
+}
