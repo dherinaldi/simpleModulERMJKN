@@ -7,45 +7,29 @@ function Composition($compositionId, $noMr,
     $sections = [];
     $no       = 1;
 
-    $sectionMap = [
-        'Reason for admission'     => 0,
-        'Chief complaint'          => 1,
-        'Admission diagnosis'      => 2,
-        'Procedures'               => 3, #masih di recek kembali 
-        'Medications on Discharge' => 4,
-        'Plan of care'             => 5,
-        'Hospital course'          => 6, #masih di recek kembali
-        'Known allergies'          => 7,
-    ];
-
     foreach ($sectionData as $s) {
-
-        $id = (string) $sectionMap[$s['title']];
-
-        $sections[$id] = [
-            'title' => $s['title'],
-            'code'  => [
-                'coding' => [[
-                    'system'  => $s['system'],
-                    'code'    => $s['code'],
-                    'display' => $s['display'],
+        $sections[(string) $no] = [
+            "title" => $s['title'],
+            "code"  => [
+                "coding" => [[
+                    "system"  => $s['system'],
+                    "code"    => $s['code'],
+                    "display" => $s['display'],
                 ]],
             ],
-            'text'  => [
-                'status' => 'additional',
-                'div'    => $s['text'],
+            "text"  => [
+                "status" => "additional",
+                "div"    => $s['text'],
             ],
+            "entry" => $s['entry'],
         ];
 
-        if (! empty($s['entry'])) {
-            $sections[$id]['entry'] = $s['entry'];
+        if (isset($s['mode'])) {
+            $sections[(string) $no]['mode'] = $s['mode'];
         }
 
-        if (! empty($s['mode'])) {
-            $sections[$id]['mode'] = $s['mode'];
-        }
+        $no++;
     }
-
 
     return [
         "resourceType"    => "Composition",
@@ -73,6 +57,6 @@ function Composition($compositionId, $noMr,
         ]],
         "title"           => "Discharge Summary",
         "confidentiality" => "N",
-        "section"         => (object)$sections,
+        "section"         => $sections,
     ];
 }

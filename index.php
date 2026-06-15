@@ -481,7 +481,7 @@ if ($bulan == '') {
 $payload = json_encode($bundle, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 echo $payload;
-//die;
+die;
 
 $result = $bpjs->sendMR($noSep, 2, $bulan, $tahun, $payload);
 // DEBUG

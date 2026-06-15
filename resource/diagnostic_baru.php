@@ -40,7 +40,10 @@ function diagnostic($encounterId, $pasien, $dokter, $start, $lab)
             } else {
 
                 $result[] = [
-                    "id"    => md5($row['loinc']),
+                    "resourceType"      => "Observation",
+                    "id"                => md5($row['loinc']),
+                    "issued"            => date('Y-m-d H:i:s'),
+                    "effectiveDateTime" => $start,                    
                     "code"  => [
                         "coding" => [
                             [

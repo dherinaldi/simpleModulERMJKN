@@ -341,12 +341,23 @@ $sectionData = [
             ["reference" => "Encounter/" . $encounterId],
         ],
     ],
+
+    [
+        "title"   => "Known allergies",
+        "system"  => "http://loinc.org",
+        "code"    => "48765-2",
+        "display" => "Allergies and adverse reactions",
+        "text"    => "Known allergies UAT",
+        "entry"   => [
+            ["reference" => "Encounter/" . $encounterId],
+        ],
+    ],
 ];
 //condition part
 $result = Conditions($orgId, $noMr, $diagnosa, $start);
- foreach ($result["conditions"] as $c) {
+foreach ($result["conditions"] as $c) {
     $entries[] = $c;
-} 
+}
 
 $compositionId     = $noSep . '-' . $start;
 $encounter_display = "Admitted to UGD , RS INI SAJA between $start and $end";
@@ -400,7 +411,7 @@ $dokter = [
     "nama" => $nama_pr,
     "org"  => "id org header/ rs nya",
 ];
-$data_med = buildMedicationResource($listObat, $pasien, $dokter, $diagnosa);
+$data_med  = buildMedicationResource($listObat, $pasien, $dokter, $diagnosa);
 $entries[] = entry($data_med);
 
 #var_dump($data_med);die();
@@ -461,7 +472,7 @@ function diagnostic_data($mysqli, $nopen)
 function diagnostic_data_lab($mysqli, $nopen)
 {
     $data    = [];
-    $s_query = "select hl.ID, hl.KUNJUNGAN, hl.TINDAKAN, hl.TANGGAL,ttl.LOINC_TERMINOLOGI LOINC,lt.nama_pemeriksaan NAMA_PEMERIKSAAN, tin.NAMA,hlab.HASIL, hlab.NILAI_NORMAL, hlab.SATUAN, hlab.KETERANGAN, tin.NAMA NAMA_TINDAKAN
+    $s_query = "select hl.ID, hl.KUNJUNGAN, hl.TINDAKAN, hl.TANGGAL,ttl.LOINC_TERMINOLOGI LOINC,lt.nama_pemeriksaan NAMA_PEMERIKSAAN,lt.display DISPLAY_PEMERIKSAAN, tin.NAMA,hlab.HASIL, hlab.NILAI_NORMAL, hlab.SATUAN, hlab.KETERANGAN, tin.NAMA NAMA_TINDAKAN
 
 FROM layanan.tindakan_medis hl
 				LEFT JOIN layanan.hasil_lab hlab on hlab.TINDAKAN_MEDIS = hl.ID
@@ -483,15 +494,26 @@ FROM layanan.tindakan_medis hl
         "response" => null,
     ]));
 
+    /* "loinc"            => "26604007",
+    "pemeriksaan"      => "Darah Lengkap Analiser",
+    "hasil"            => "13",
+    "satuan"           => "g/dL",
+    "display"          => "Complete blood count",
+    "category_code"    => "LAB",
+    "category_display" => "Laboratory",
+    "image"            => '',
+    "conclusion"       => "hasil bacaan Darah Lengkap"; */
+
     while ($row = mysqli_fetch_assoc($query)) {
         $data[] = [
             "loinc"            => $row['LOINC'],
             "pemeriksaan"      => $row['NAMA_TINDAKAN'],
             "hasil"            => $row['HASIL'],
             "satuan"           => $row['SATUAN'],
-            "display"          => $row['NAMA_PEMERIKSAAN'],
+            "display"          => $row['DISPLAY_PEMERIKSAAN'],
             "category_code"    => "LAB",
             "category_display" => "Laboratory",
+            "conclusion"       => "hasil bacaan Lab"
         ];
     }
     return $data;
@@ -512,7 +534,13 @@ $lab = array_merge(
 );
 
 
+
+
 $entries[] = entry(diagnostic($encounterId, $pasien, $dokter, $start, $lab));
+
+echo "<pre>";
+#var_dump(entry(diagnostic($encounterId, $pasien, $dokter, $start, $lab)));
+
 
 //print_r($entries);
 
@@ -537,11 +565,20 @@ $entries[] = entry(encounter($encounterId, $id2, $nama, $noSep, $start, $end, $c
 // $entries[]=entry(observation($lab));
 // $entries[]=entry(diagnostic($noMr));
 
-/* $entries[] = entry(composition($compositionId, $noMr,
+$entries[] = entry(composition($compositionId, $noMr,
     $nama,
     $encounterId,
     $id_pr,
-    $nama_pr, $start, $sectionData)); */
+    $nama_pr, $start, $sectionData));
+
+/* echo "<pre>";
+echo json_encode(composition($compositionId, $noMr,
+    $nama,
+    $encounterId,
+    $id_pr,
+    $nama_pr, $start, $sectionData));
+echo "</pre>";
+die(); */
 
 /* ------------------ BUNDLE ------------------ */
 
@@ -567,9 +604,11 @@ if ($bulan == '') {
 }
 // var_dump($bulan,$tahun);die;
 $payload = json_encode($bundle, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
- echo $payload;
- die;
+echo $payload;
+die;
+
 #$result = $bpjs->sendMR($noSep, 2, $bulan, $tahun, $payload);
+
 // DEBUG
 echo "<pre>";
 print_r($result);
