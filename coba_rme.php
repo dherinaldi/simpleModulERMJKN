@@ -26,6 +26,8 @@ $config = [
     "base_url"  => dataRahasia('DEV')['base_url'],
 ];
 
+$nopen = isset($_REQUEST['nopen']) ? $_REQUEST['nopen'] : '2604240001';
+
 #var_dump($config);die;
 
 function getSEP($mysqli, $nopen)
@@ -80,10 +82,12 @@ $bpjs   = new BpjsMrSender($config);
 $orgId = 'xxxxxxxxx';
 //list data pasien format per pasien
 
-$rows = mysqli_num_rows(getSEP($mysqli, '2604240001'));
+$rows = mysqli_num_rows(getSEP($mysqli, $nopen));
+
+##echo 'rows=' . $rows . '&nopen='.$nopen;
 
 if ($rows > 0) {
-    $data = mysqli_fetch_assoc(getSEP($mysqli, '2604240001'));
+    $data = mysqli_fetch_assoc(getSEP($mysqli, $nopen));
 //echo $rows;
 
     $noSep        = $data['noSEP'];
@@ -106,6 +110,11 @@ if ($rows > 0) {
     $dok_nip      = $data['NIP'];
 
 }
+
+if (empty($noMr)) {
+    die('No. RM tidak boleh kosong');
+}
+
 //end list pasien
 $prefix = "rme_bpjs";
 
@@ -202,8 +211,8 @@ if ($rows > 0) {
     $gender     = "female";
     $birthDate  = "0000-11-01";
 //end data dokter
-
 }
+
 //ini asal muasal encounter 
 $kunjungan = [
     "no_reg"     => $noSep,
@@ -233,10 +242,17 @@ function getICD10($mysqli, $nopen)
         "response" => null,
     ]));
 
-    while ($row = mysqli_fetch_assoc($query)) {
+    if ($row = mysqli_num_rows($query)> 0) {
+        while ($row = mysqli_fetch_assoc($query)) {
+            $data[] = [
+                'code'    => $row['SNOMED_CT_ID'],
+                'display' => $row['STR'],
+            ];
+        }
+    } else {
         $data[] = [
-            'code'    => $row['SNOMED_CT_ID'],
-            'display' => $row['STR'],
+            'code'    => '',
+            'display' => '',
         ];
     }
 
@@ -244,7 +260,7 @@ function getICD10($mysqli, $nopen)
 
 }
 
-$diagnosa = getICD10($mysqli, '2604240001');
+$diagnosa = getICD10($mysqli, $nopen);
 
 //ini unutk lab nya
 $lab = [
@@ -279,21 +295,38 @@ function getICD9($mysqli, $nopen, $encounterId)
 
     $dataa = [];
 
-    while ($row = mysqli_fetch_assoc($query)) {
+    if ($row = mysqli_num_rows($query) > 0) {
+        while ($row = mysqli_fetch_assoc($query)) {
 
+            $dataa[] = [
+                "encounter" => $encounterId,
+                "snom_pr"   => $row['SNOMED_CT_ID'],
+                "snom_dsp"  => $row['SCT'],
+                "note"      => $row['SCT'],
+                "coding"    => [
+                    [
+                        "system"  => "http://snomed.info/sct",
+                        "code"    => $row['SNOMED_CT_ID'],
+                        "display" => $row['SCT'],
+                    ],
+                ],
+            ];
+        }
+    } else {
         $dataa[] = [
-            "encounter" => $encounterId,
-            "snom_pr"   => $row['SNOMED_CT_ID'],
-            "snom_dsp"  => $row['SCT'],
-            "note"      => $row['SCT'],
+            "encounter" => '',
+            "snom_pr"   => '',
+            "snom_dsp"  => '',
+            "note"      => '',
             "coding"    => [
                 [
                     "system"  => "http://snomed.info/sct",
-                    "code"    => $row['SNOMED_CT_ID'],
-                    "display" => $row['SCT'],
+                    "code"    => '',
+                    "display" => '',
                 ],
             ],
         ];
+
     }
 
     return ($dataa);
@@ -301,7 +334,7 @@ function getICD9($mysqli, $nopen, $encounterId)
 }
 
 //prosedure_area
-$procedures = getICD9($mysqli, '2604240001', $encounterId);
+$procedures = getICD9($mysqli, $nopen, $encounterId);
 
 #print_r($procedures);die();
 
@@ -369,7 +402,7 @@ $s_query = "SELECT DISTINCT far.ID, far.KUNJUNGAN, far.FARMASI, brg.NAMA NAMA_BA
 		LEFT JOIN pendaftaran.tujuan_pasien tp ON tp.NOPEN = p.NOMOR
 		LEFT JOIN `master`.ruangan r ON r.ID = tp.RUANGAN
 		LEFT JOIN inventory.barang brg on brg.ID = far.FARMASI
-		WHERE k.NOPEN in ('2604240001')
+		WHERE k.NOPEN in ('$nopen')
 		limit 10
 		";
 
@@ -401,6 +434,18 @@ if ($rows > 0) {
             "frequency"   => $data['FREKUENSI'],
         ];
     }
+} else {
+    $listObat[] = [
+        "id_resep"    => '-',
+        "kode_obat"   => '-',
+        "kode_satuan" => "",
+        "nama_obat"   => "",
+        "satuan"      => "",
+        "jumlah"      => "",
+        "aturan"      => "",
+        "frequency"   => "",
+    ];
+
 }
 
 #var_dump($listObat);die();
@@ -513,7 +558,7 @@ FROM layanan.tindakan_medis hl
             "display"          => $row['DISPLAY_PEMERIKSAAN'],
             "category_code"    => "LAB",
             "category_display" => "Laboratory",
-            "conclusion"       => "hasil bacaan Lab"
+            "conclusion"       => "hasil bacaan Lab",
         ];
     }
     return $data;
@@ -525,22 +570,17 @@ $lab = [];
 // tambah radiologi
 $lab = array_merge(
     $lab,
-    diagnostic_data($mysqli, '2604240001')
+    diagnostic_data($mysqli, $nopen)
 );
 
 $lab = array_merge(
     $lab,
-    diagnostic_data_lab($mysqli, '2604240001')
+    diagnostic_data_lab($mysqli, $nopen)
 );
-
-
-
 
 $entries[] = entry(diagnostic($encounterId, $pasien, $dokter, $start, $lab));
 
-echo "<pre>";
 #var_dump(entry(diagnostic($encounterId, $pasien, $dokter, $start, $lab)));
-
 
 //print_r($entries);
 
